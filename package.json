@@ -1,0 +1,19 @@
+{
+  "name": "news-literature-crawling",
+  "version": "1.0.0",
+  "description": "",
+  "main": "puppeteer-mongodb.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "better-sqlite3": "^7.3.1",
+    "mongodb": "^3.6.6",
+    "mysql": "^2.18.1",
+    "puppeteer": "^9.0.0",
+    "puppeteer-core": "^9.0.0"
+  }
+}
