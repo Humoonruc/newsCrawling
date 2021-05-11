@@ -6,6 +6,7 @@
 
 const fs = require("fs");
 const puppeteer = require('puppeteer');
+const { MongoClient } = require("mongodb");
 
 
 // config
@@ -154,7 +155,7 @@ async function crawlReview(dateFloor) {
 async function saveData(items) {
   save2JSON(items); // 更新JSON文件
   save2MongoDB(items); // 插入 MongoDB
-  save2SQLite(items); // 插入 SQLite
+  // items的数据结构，其中有对象的多重嵌套，不适合存放在 SQL 数据库中
 }
 async function save2JSON(items) {
   const savedItems = JSON.parse(fs.readFileSync('./guancha-review.json', "utf8"));
@@ -162,5 +163,36 @@ async function save2JSON(items) {
   fs.writeFileSync('./guancha-review.json', JSON.stringify(itemsUpdated), "utf8");
   console.log('Data in json updated.');
 }
-async function save2MongoDB(items) { }
-async function save2SQLite(items) { }
+async function save2MongoDB(items) {
+
+  // 连接MongoDB服务
+  const client = new MongoClient('mongodb://localhost:27017/', {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  });
+  await client.connect()
+    .then(() => console.log('Connected successfully to MongoDB server.'))
+    .catch(err => {
+      console.error(err);
+    });
+
+
+  // 连接数据库
+  const newsCrawling = client.db("newsCrawling");
+  // 连接 collection
+  const guanchaReview = newsCrawling.collection("guanchaReview");
+  // 添加 documents
+  const insertResult = await guanchaReview.insertMany(items);
+  console.log(`${insertResult.insertedCount} items were inserted`);
+  // 查询 documents
+  // const findOptions = { projection: { _id: 0 }, };
+  // const cursor = guanchaReview.find({}, findOptions).limit(10);
+  // await cursor.forEach(document => console.log(document));
+  // 删除 documents
+  // const deleteResult = await guanchaReview.deleteMany({});
+  // console.log("Deleted " + deleteResult.deletedCount + " documents");
+
+
+  // 关闭与服务器的连接
+  await client.close();
+}

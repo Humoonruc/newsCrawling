@@ -129,7 +129,7 @@ async function crawlRecentNews(timeSpan) {
 
 
     // 计算每日抓取耗时
-    console.log(`\n${dateString} 新闻条目数: ` + dailyItems.length + ', 抓取该日条目消耗时间: ' + (Date.now() - dailyStartTime) + ' 毫秒\n\n');
+    console.log(`\n${dateString} 新闻条目数: ` + dailyItems.length + ', 抓取该日条目消耗时间: ' + (Date.now() - dailyStartTime) + ' 毫秒\n');
 
 
     await currentPage.waitForTimeout(100);
@@ -138,7 +138,7 @@ async function crawlRecentNews(timeSpan) {
 
   // 关闭 headless 浏览器
   await browser.close();
-  console.log('抓取总消耗时间: ' + (Date.now() - crawlStartTime) + ' 毫秒');
+  console.log('抓取总消耗时间: ' + (Date.now() - crawlStartTime) + ' 毫秒\n');
   return XinwenLianbo;
 }
 
@@ -229,9 +229,9 @@ async function save2MongoDB(recentItems) {
   const insertResult = await XinwenLianbo.insertMany(recentItems);
   console.log(`${insertResult.insertedCount} items were inserted`);
   // 查询 documents
-  const findOptions = { projection: { _id: 0, date: 1, number: 1 }, };
-  const cursor = XinwenLianbo.find({}, findOptions).limit(10);
-  await cursor.forEach(document => console.log(document));
+  // const findOptions = { projection: { _id: 0, date: 1, number: 1 }, };
+  // const cursor = XinwenLianbo.find({}, findOptions).limit(10);
+  // await cursor.forEach(document => console.log(document));
   // 删除 documents
   // const deleteResult = await XinwenLianbo.deleteMany({});
   // console.log("Deleted " + deleteResult.deletedCount + " documents");
@@ -274,8 +274,8 @@ async function save2SQLite(recentItems) {
   insertMany(recentItems);
 
   // 查询
-  db.prepare('SELECT * FROM XinwenLianbo').all()
-    .forEach(row => console.log(row.title + row.subtitle));
+  // db.prepare('SELECT * FROM XinwenLianbo').all()
+  //   .forEach(row => console.log(row.title + row.subtitle));
 
   // 删除
   // db.prepare('DELETE FROM XinwenLianbo').run();
