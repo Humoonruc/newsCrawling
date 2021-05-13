@@ -199,7 +199,7 @@ async function saveData(recentItems) {
 function save2JSON(recentItems) {
   const savedItems = JSON.parse(fs.readFileSync('./XinwenLianbo.json', "utf8"));
   const newsUpdated = savedItems.concat(recentItems);
-  fs.writeFileSync('./XinwenLianbo.json', JSON.stringify(newsUpdated), "utf8");
+  fs.writeFileSync('./XinwenLianbo.json', JSON.stringify(newsUpdated, null, "  "), "utf8");
   console.log('Data in json updated.');
 }
 

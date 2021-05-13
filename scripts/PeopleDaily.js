@@ -142,7 +142,7 @@ async function saveData(items) {
 async function save2JSON(items) {
   const savedItems = JSON.parse(fs.readFileSync('./PeopleDaily.json', "utf8"));
   const itemsUpdated = savedItems.concat(items);
-  fs.writeFileSync('./PeopleDaily.json', JSON.stringify(itemsUpdated), "utf8");
+  fs.writeFileSync('./PeopleDaily.json', JSON.stringify(itemsUpdated, null, "  "), "utf8");
   console.log('Data in json updated.');
 }
 async function save2MongoDB(items) {
