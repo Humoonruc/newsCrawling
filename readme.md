@@ -14,27 +14,27 @@ FT中文网和 Foreign Affairs 内容就深一些，主要关注的也是政经�
 
 ### 版本管理
 
-#### 多点同步
+#### 多平台同步
 
-该项目分别保存在个人电脑中和个人服务器上，此外还托管在 Gitee 和 GitHub 上。
+该项目分别保存在个人电脑中和个人服务器上，此外还托管在 CODING、GitHub 和 Gitee 上（Gitee 上的对应仓库由 CODING 导入）。
 
-通过 Git 的同步操作，个人电脑、个人服务器和 Gitee 上的版本很容易保持一致，但由于网络原因，向 GitHub 服务器的推送常常失败，不必强求。平常注意前三者的一致性，有空了在个人电脑上用 GitHub Desktop 向 GitHub 推送新版本。
+以香港服务器运行的 CODING 为主平台，GitHub 和 Gitee 为备份平台。GitHub 的缺点在于国内访问的网络不稳定，Gitee 则面临比较严格的审查，数据文件可能被删除。
 
-#### GUI 操作
-
-VSCode 集成了 Git 功能，可以以鼠标点击的方式 Push 和 Pull 新版本。
+通过 Git 的同步操作，个人电脑、个人服务器和 CODING 上的版本很容易保持一致，然后有空了可以在个人电脑上用 GitHub Desktop 向 GitHub 推送新版本，以及在 Gitee 上手动强制同步。
 
 #### 精简同步
 
 利用 .gitignore 文件，对 puppeteer 这个 headless browser 不同步，SQlite 数据库为二进制文件，也不同步，否则 .git/ 文件夹会膨胀得非常恐怖。
 
+#### GUI 操作
 
+VSCode 集成了 Git 功能，可以以鼠标点击的方式 Push 和 Pull 新版本。
 
 ### 数据保存
 
 #### 冗余备份
 
-1. ./scripts/ 文件夹中的 JSON 文件
+1. ./json/ 文件夹中的 JSON 数据文件
 2. ./database/ 文件夹中的 sqlite3 数据库文件
 3. 本地和服务器上的 MongoDB 数据库（服务器上的数据库相对不安全，又被黑客入侵的危险）
 
@@ -44,4 +44,5 @@ VSCode 集成了 Git 功能，可以以鼠标点击的方式 Push 和 Pull 新�
 
 计划任务中，bash内的各行命令是堵塞式同步执行的，因此是彻底运行完一个脚本才会运行另一个脚本。
 
-运行完所有脚本后，使用 SSH 方式（不必输入账号和密码）执行推送到 Gitee 和 GitHub 的命令
+运行完所有脚本后，使用 SSH 方式（不必输入账号和密码）执行推送到 CODING 的命令。
+
