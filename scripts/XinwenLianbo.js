@@ -17,6 +17,7 @@ main();
 async function main() {
   const recentItems = await crawlRecentNews(timeSpan);
   saveData(recentItems);
+  saveAbstract(recentItems);
 }
 
 
@@ -197,16 +198,16 @@ async function saveData(recentItems) {
 
 
 function save2JSON(recentItems) {
-  const savedItems = JSON.parse(fs.readFileSync('./XinwenLianbo.json', "utf8"));
+  const savedItems = JSON.parse(fs.readFileSync('../json/XinwenLianbo.json', "utf8"));
   const newsUpdated = savedItems.concat(recentItems);
-  fs.writeFileSync('./XinwenLianbo.json', JSON.stringify(newsUpdated, null, "  "), "utf8");
+  fs.writeFileSync('../json/XinwenLianbo.json', JSON.stringify(newsUpdated, null, "  "), "utf8");
   console.log('Data in json updated.');
 }
 
 
 async function save2MongoDB(recentItems) {
 
-  console.log('Insert to MongoDB...');
+  console.log('Inserting to MongoDB...');
 
   // 连接MongoDB服务
   const client = new MongoClient('mongodb://localhost:27017/', {
@@ -214,7 +215,9 @@ async function save2MongoDB(recentItems) {
     useUnifiedTopology: true,
   });
   await client.connect()
-    .then(() => console.log('Connected successfully to server.'))
+    .then(
+      // () => console.log('Connected successfully to server.')
+    )
     .catch(err => {
       console.log('Connected failed. ');
       console.error(err);
@@ -227,7 +230,7 @@ async function save2MongoDB(recentItems) {
   const XinwenLianbo = newsCrawling.collection("XinwenLianbo");
   // 添加 documents
   const insertResult = await XinwenLianbo.insertMany(recentItems);
-  console.log(`${insertResult.insertedCount} items were inserted`);
+  console.log(`${insertResult.insertedCount} items were inserted.`);
   // 查询 documents
   // const findOptions = { projection: { _id: 0, date: 1, number: 1 }, };
   // const cursor = XinwenLianbo.find({}, findOptions).limit(10);
@@ -244,7 +247,7 @@ async function save2MongoDB(recentItems) {
 
 async function save2SQLite(recentItems) {
 
-  console.log('Insert to SQLite...');
+  console.log('Inserting to SQLite...');
 
   // 连接数据库
   const db = new sqliteClient('../database/newsCrawling-sqlite3.db', {
@@ -282,4 +285,18 @@ async function save2SQLite(recentItems) {
 
   // 断开连接
   db.close();
+}
+
+
+function saveAbstract(recentItems) {
+  const abstracts = recentItems.map(item => {
+    const text = item.subtitle === '' ? item.title : '【' + item.title + '】' + item.subtitle;
+    const link = item.link;
+    return `<li><a href="${link}">${text}</a></li>`;
+  }).join('');
+
+  const htmlText = '<h2>新闻联播</h2><ul>' + abstracts + '</ul>';
+
+  fs.writeFileSync('./abstract-XinwenLianbo.txt', htmlText, "utf8");
+  console.log('Abstracts of XinwenLianbo saved.');
 }
