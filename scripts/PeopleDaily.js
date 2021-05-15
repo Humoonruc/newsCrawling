@@ -18,6 +18,7 @@ async function main() {
   const dateRange = getDateRange(timeSpan);
   const itemsToAdd = await crawl(dateRange);
   await saveData(itemsToAdd);
+  saveAbstract(itemsToAdd);
 }
 
 
@@ -140,12 +141,14 @@ async function saveData(items) {
   save2SQLite(items);
 }
 async function save2JSON(items) {
-  const savedItems = JSON.parse(fs.readFileSync('./PeopleDaily.json', "utf8"));
+  const savedItems = JSON.parse(fs.readFileSync('../json/PeopleDaily.json', "utf8"));
   const itemsUpdated = savedItems.concat(items);
-  fs.writeFileSync('./PeopleDaily.json', JSON.stringify(itemsUpdated, null, "  "), "utf8");
+  fs.writeFileSync('../json/PeopleDaily.json', JSON.stringify(itemsUpdated, null, "  "), "utf8");
   console.log('Data in json updated.');
 }
 async function save2MongoDB(items) {
+
+  console.log('Inserting to MongoDB...');
 
   // 连接MongoDB服务
   const client = new MongoClient('mongodb://localhost:27017/', {
@@ -153,7 +156,9 @@ async function save2MongoDB(items) {
     useUnifiedTopology: true,
   });
   await client.connect()
-    .then(() => console.log('Connected successfully to MongoDB server.'))
+    .then(
+      // () => console.log('Connected successfully to MongoDB server.')
+    )
     .catch(err => {
       console.error(err);
     });
@@ -165,7 +170,7 @@ async function save2MongoDB(items) {
   const PeopleDaily = newsCrawling.collection("PeopleDaily");
   // 添加 documents
   const insertResult = await PeopleDaily.insertMany(items);
-  console.log(`${insertResult.insertedCount} items were inserted`);
+  console.log(`${insertResult.insertedCount} items inserted.`);
   // 查询 documents
   // const findOptions = { projection: { _id: 0 }, };
   // const cursor = PeopleDaily.find({}, findOptions).limit(10);
@@ -180,7 +185,7 @@ async function save2MongoDB(items) {
 }
 async function save2SQLite(items) {
 
-  console.log('Insert to SQLite...');
+  console.log('Inserting to SQLite...');
 
   // 连接数据库
   const db = new sqliteClient('../database/newsCrawling-sqlite3.db', {
@@ -224,4 +229,19 @@ async function save2SQLite(items) {
 
   // 断开连接
   db.close();
+}
+
+
+function saveAbstract(recentItems) {
+  const abstracts = recentItems.filter(item => !item.head.includes('广告'))
+    .map(item => {
+      const link = item.link;
+      const text = '【' + item.page + '】' + item.head;
+      return `<li><a href="${link}">${text}</a></li>`;
+    }).join('');
+
+  const htmlText = '<h2>人民日报</h2><ul>' + abstracts + '</ul>';
+
+  fs.writeFileSync('./abstract-PeopleDaily.txt', htmlText, "utf8");
+  console.log('Abstracts of PeopleDaily saved.');
 }

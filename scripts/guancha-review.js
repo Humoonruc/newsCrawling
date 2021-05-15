@@ -29,6 +29,7 @@ async function main() {
 
   // 3. 保存
   saveData(reviewToAdd);
+  saveAbstract(reviewToAdd);
 }
 
 
@@ -158,12 +159,14 @@ async function saveData(items) {
   // items的数据结构，其中有对象的多重嵌套，不适合存放在 SQL 数据库中
 }
 async function save2JSON(items) {
-  const savedItems = JSON.parse(fs.readFileSync('./guancha-review.json', "utf8"));
+  const savedItems = JSON.parse(fs.readFileSync('../json/guancha-review.json', "utf8"));
   const itemsUpdated = savedItems.concat(items);
-  fs.writeFileSync('./guancha-review.json', JSON.stringify(itemsUpdated, null, "  "), "utf8");
+  fs.writeFileSync('../json/guancha-review.json', JSON.stringify(itemsUpdated, null, "  "), "utf8");
   console.log('Data in json updated.');
 }
 async function save2MongoDB(items) {
+
+  console.log('Inserting to MongoDB...');
 
   // 连接MongoDB服务
   const client = new MongoClient('mongodb://localhost:27017/', {
@@ -171,7 +174,9 @@ async function save2MongoDB(items) {
     useUnifiedTopology: true,
   });
   await client.connect()
-    .then(() => console.log('Connected successfully to MongoDB server.'))
+    .then(
+      // () => console.log('Connected successfully to MongoDB server.')
+    )
     .catch(err => {
       console.error(err);
     });
@@ -183,7 +188,7 @@ async function save2MongoDB(items) {
   const guanchaReview = newsCrawling.collection("guanchaReview");
   // 添加 documents
   const insertResult = await guanchaReview.insertMany(items);
-  console.log(`${insertResult.insertedCount} items were inserted`);
+  console.log(`${insertResult.insertedCount} items inserted.`);
   // 查询 documents
   // const findOptions = { projection: { _id: 0 }, };
   // const cursor = guanchaReview.find({}, findOptions).limit(10);
@@ -195,4 +200,19 @@ async function save2MongoDB(items) {
 
   // 关闭与服务器的连接
   await client.close();
+}
+
+
+function saveAbstract(recentItems) {
+  const abstracts = recentItems.map(item => {
+    const link = item.link;
+    const title = item.dispassionateTitle;
+    const abstract = item.abstract;
+    return `<li><span>【</span><a href="${link}">${title}</a><span>】${abstract}</span></li>`;
+  }).join('');
+
+  const htmlText = '<h2>观察者网时评</h2><ul>' + abstracts + '</ul>';
+
+  fs.writeFileSync('./abstract-guancha.txt', htmlText, "utf8");
+  console.log('Abstracts of guancha-review saved.');
 }
