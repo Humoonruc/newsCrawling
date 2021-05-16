@@ -19,6 +19,7 @@ const XinwenLianbo = fs.readFileSync('./abstract-XinwenLianbo.txt', "utf8");
 const guancha = fs.readFileSync('./abstract-guancha.txt', "utf8");
 const PeopleDaily = fs.readFileSync('./abstract-PeopleDaily.txt', "utf8");
 
+
 const htmlString = `
 <!DOCTYPE html>
 <html lang="en">
@@ -37,8 +38,17 @@ const htmlString = `
 `;
 
 
-// 项目文件夹作为首页
-fs.writeFileSync('../index.html', htmlString, "utf8");
-
 // html文件夹留档
-fs.writeFileSync(`../html/${dateString}.html`, htmlString, "utf8");
+fs.writeFileSync(`../html/${dateString}-中文媒体.html`, htmlString, "utf8");
+
+
+
+
+
+
+
+
+
+// 项目文件夹中创建 index.html 作为首页
+// 想办法把同一日期的所有 .html 文件的文件名和路径记录下来，然后化为一个列表写入 index.html 作为首页
+// fs.writeFileSync('../index.html', indexString, "utf8");
