@@ -14,7 +14,6 @@
     "imap": "^0.8.19",
     "mailparser": "^3.2.0",
     "mongodb": "^3.6.6",
-    "mysql": "^2.18.1",
     "puppeteer": "^9.0.0",
     "puppeteer-core": "^9.0.0"
   }
