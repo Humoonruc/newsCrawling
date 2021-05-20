@@ -59,7 +59,7 @@ const indexString = `
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>每日新闻集萃</title>
+  <title>每日政经新闻聚合平台</title>
   <style>
     li {
       font-size: 1em;
@@ -69,7 +69,7 @@ const indexString = `
 
 <body>
 
-  <h1>昨日新闻集萃: ${dateString}</h1>${ulString}
+  <h1>${dateString} 政经要闻</h1>${ulString}
 
   </body>
 </html>
