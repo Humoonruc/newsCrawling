@@ -2,11 +2,12 @@
 'use strict';
 
 // guancha-review.js
-// 爬取观察者网的时评
+// 爬取过去若干天观察者网的时评
 
 const fs = require("fs");
 const puppeteer = require('puppeteer');
 const { MongoClient } = require("mongodb");
+const moment = require('moment');
 
 
 // config
@@ -22,7 +23,7 @@ async function main() {
   const reviews = await crawlReview(dateFloor); // 从第一页开始爬，直到条目中包含截止日期 dateFloor 就停下
 
   // 2. 从整数页条目中筛选需要的日期，此处没有用数据结构优化，暴力筛选，省脑
-  dateRange.pop(); // 去掉截止日期，仅剩当初打算爬取的日期
+  dateRange.pop(); // 去掉截止日期，仅剩打算留下的日期
   const reviewToAdd = reviews.filter(article => {
     return dateRange.some(date => article.releaseTime.startsWith(date));
   });
@@ -40,14 +41,11 @@ async function main() {
  * @param timeSpan 从昨天开始倒序推算，打算爬取多少天的条目
  */
 function getDateRange(timeSpan) {
-  const date = new Date();
+  const date = moment();
   const dateRange = [];
   for (let i = 0; i <= timeSpan; i++) { // 数组的最后一项是爬取函数停止日期
-    date.setDate(date.getDate() - 1); // 程序一般从新一天的凌晨开始跑，因此爬取从前一天发布的新闻开始
-    const year = date.getFullYear().toString();
-    const month = (date.getMonth() + 1).toString().padStart(2, '0');
-    const day = date.getDate().toString().padStart(2, '0');
-    dateRange.push(`${year}-${month}-${day}`);
+    // 程序一般从新一天的凌晨开始跑，因此爬取从前一天发布的新闻开始
+    dateRange.push(date.subtract(1, 'days').format('YYYY-MM-DD'));
   }
   return dateRange;
 }

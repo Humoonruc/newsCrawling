@@ -6,15 +6,10 @@
 
 const fs = require("fs");
 const path = require('path');
+const moment = require('moment');
 
 
-const date = new Date();
-date.setDate(date.getDate() - 1);
-const year = date.getFullYear().toString();
-const month = (date.getMonth() + 1).toString().padStart(2, '0');
-const day = date.getDate().toString().padStart(2, '0');
-const dateString = `${year}-${month}-${day}`;
-
+const dateString = moment().subtract(1, 'days').format('YYYY-MM-DD');
 
 const XinwenLianbo = fs.readFileSync('./abstract-XinwenLianbo.txt', "utf8");
 const guancha = fs.readFileSync('./abstract-guancha.txt', "utf8");
@@ -38,7 +33,6 @@ const htmlString = `
 </html>
 `;
 
-
 // html文件夹留档
 fs.writeFileSync(`../html/${dateString}-中文媒体.html`, htmlString, "utf8");
 
@@ -46,19 +40,16 @@ fs.writeFileSync(`../html/${dateString}-中文媒体.html`, htmlString, "utf8");
 
 // 项目文件夹中创建 index.html 作为首页
 // 把同一日期的所有 .html 文件的文件名和路径记录下来，然后写入 index.html 作为首页
-
-let ulString = `<ul>`;
-fs.readdirSync(`../html/`)
+// 对读入的文件路径数组进行向量化操作
+let liStringArray = fs.readdirSync(`../html/`)
   .filter(fileName => fileName.startsWith(dateString))
   .sort().reverse()
-  .map(fileName => path.join(`./html/`, fileName))
-  .forEach(filePath => {
-    console.log(filePath);
-    const media = filePath.split(dateString + '-')[1].replace('.html', '');
-    const liString = `<li><a href='${filePath}'>${media}</a></li>`;
-    ulString = ulString + liString;
+  .map(fileName => {
+    const media = fileName.replace(dateString + '-', '').replace('.html', '');
+    const filePath = path.join('.', 'html', fileName);
+    return `<li><a href='${filePath}'>${media}</a></li>`;
   });
-ulString = ulString + '</ul>';
+let ulString = `<ul>` + liStringArray.join('') + '</ul>';
 
 const indexString = `
 <!DOCTYPE html>
@@ -71,7 +62,7 @@ const indexString = `
   <title>每日新闻集萃</title>
   <style>
     li {
-      font-size: 1.25em;
+      font-size: 1em;
     }
   </style>
 </head>

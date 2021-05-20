@@ -7,6 +7,7 @@ const fs = require("fs");
 const puppeteer = require('puppeteer');
 const { MongoClient } = require("mongodb");
 const sqliteClient = require('better-sqlite3');
+const moment = require('moment');
 
 
 // config
@@ -15,36 +16,17 @@ main();
 
 
 async function main() {
-  const dateRange = getDateRange(timeSpan);
-  const itemsToAdd = await crawl(dateRange);
+  const itemsToAdd = await crawl(timeSpan);
   await saveData(itemsToAdd);
   saveAbstract(itemsToAdd);
 }
 
 
 /**
- * 计算待爬取的日期范围
- * @param timeSpan 从昨天向前，爬取多少天的条目
- */
-function getDateRange(timeSpan) {
-  let dateRange = [];
-  const date = new Date();
-  for (let i = 0; i < timeSpan; i++) { // 数组的最后一项是爬取函数停止日期
-    date.setDate(date.getDate() - 1); // 程序一般从新一天的凌晨开始跑，因此爬取从前一天发布的新闻开始
-    const year = date.getFullYear().toString();
-    const month = (date.getMonth() + 1).toString().padStart(2, '0');
-    const day = date.getDate().toString().padStart(2, '0');
-    dateRange.push({ year: year, month: month, day: day });
-  }
-  return dateRange;
-}
-
-
-/**
  * 爬取人民日报全文
- * @param dateRange: 要爬取的日期数组，每个元素都是一个包含了年月日分量的对象
+ * @param timeSpan: 要爬取之前多少天的内容
  */
-async function crawl(dateRange) {
+async function crawl(timeSpan) {
 
   // 启动 headless 浏览器
   const browser = await puppeteer.launch({
@@ -61,13 +43,17 @@ async function crawl(dateRange) {
 
   let PeopleDaily = [];
   // 第一层迭代，迭代日期
-  for (let targetDate of dateRange) {
-    const normalDate = targetDate.year + '-' + targetDate.month + '-' + targetDate.day;
+  let date = moment();
+  for (let i = 0; i < timeSpan; i++) {
+    let today = date.subtract(1, 'days');
+
+    const normalDate = today.format('YYYY-MM-DD');
     console.log('Crawling newspaper on ' + normalDate + ' ...');
 
-    const urlDate = targetDate.year + '-' + targetDate.month + '/' + targetDate.day + '/';
+    const urlDate = today.format('YYYY-MM/DD/');
     const url = 'http://paper.people.com.cn/rmrb/html/' + urlDate + 'nbs.D110000renmrb_01.htm';
     await currentPage.goto(url);
+
     const pageNames = await currentPage.$$eval('div.swiper-slide>a', nodes => nodes.map(node => node.textContent));
     const pageLinks = await currentPage.$$eval('div.swiper-slide>a', nodes => nodes.map(node => node.getAttribute('href')));
 

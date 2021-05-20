@@ -7,6 +7,7 @@ const fs = require("fs");
 const puppeteer = require('puppeteer');
 const { MongoClient } = require("mongodb");
 const sqliteClient = require('better-sqlite3');
+const moment = require('moment');
 
 
 // config
@@ -40,23 +41,19 @@ async function crawlRecentNews(timeSpan) {
   // 函数内全局变量
   const crawlStartTime = Date.now(); // 程序运行计时器
   const XinwenLianbo = []; // 总容器
-  const date = new Date(); // 当前时间对象
 
 
   //迭代日期抓取
+  const date = moment();
   for (let i = 0; i < timeSpan; i++) {
 
     // 当日计时器
     const dailyStartTime = Date.now();
 
-
     // 由日期拼接url;
-    date.setDate(date.getDate() - 1);
-    const year = date.getFullYear().toString();
-    const month = (date.getMonth() + 1).toString().padStart(2, '0');
-    const day = date.getDate().toString().padStart(2, '0');
-    const dateString = `${year}-${month}-${day}`;
-    const url = 'https://tv.cctv.com/lm/xwlb/day/' + year + month + day + '.shtml';
+    const today = date.subtract(1, 'days');
+    const dateString = today.format('YYYY-MM-DD');
+    const url = 'https://tv.cctv.com/lm/xwlb/day/' + today.format('YYYYMMDD') + '.shtml';
 
 
     // 抓取详情页面的链接

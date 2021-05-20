@@ -6,19 +6,11 @@
 const Imap = require('imap'); // 返回 connection 类
 const MailParser = require("mailparser").MailParser;
 const fs = require("fs");
+const moment = require('moment');
 
 
-const now = new Date();
-now.setDate(now.getDate() - 1);
-const year = now.getFullYear().toString();
-const month = (now.getMonth() + 1).toString().padStart(2, '0');
-const monthEng = now.toDateString().split(" ")[1];
-const day = now.toDateString().split(" ")[2];
-const date = `${monthEng} ${day}, ${year}`;
-const dateStandard = `${year}-${month}-${day}`;
-
-
-
+const date = moment().subtract(1, 'days').format('MMM DD, YYYY');
+const dateStandard = moment().subtract(1, 'days').format('YYYY-MM-DD');
 
 
 const imap = new Imap({
@@ -63,13 +55,15 @@ imap.once('ready', () => {
           //邮件头
           mailParser.on("headers", headers => {
             console.log("邮件头信息>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+
+            const receiveTime = moment(headers.get('date')).format('HH[时]mm[分]ss[秒]');
             console.log("邮件主题: " + headers.get('subject'));
             console.log("发件人: " + headers.get('from')["value"][0].name);
             console.log("收件人: " + headers.get('to')["text"]);
 
             const media = {
               id: seqno,
-              name: '【' + headers.get('from')["value"][0].name + '】' + headers.get('subject'),
+              name: receiveTime + '【' + headers.get('from')["value"][0].name + '】' + headers.get('subject'),
             };
             fs.appendFileSync(`../html/mediaNames.txt`, JSON.stringify(media) + '\n', 'utf8');
           });
