@@ -22,6 +22,8 @@ FT中文网和 Foreign Affairs 内容就深一些，主要关注的也是政经�
 
 通过 Git 的同步操作，个人电脑、个人服务器和 CODING 上的版本很容易保持一致，然后有空了可以在 Gitee 上手动强制同步，以及手动 git push 到 GitHub.
 
+生成的 index.html 托管在 GitHub Pages 和 腾讯云上。GitHub Pages 有根据提交自动构建的功能，腾讯云理论上也有，但不知为何不能正常工作，只能用定时构建实现不那么及时的自动化。
+
 #### 精简同步
 
 利用 .gitignore 文件，对 puppeteer 这个 headless browser 不同步，SQlite 数据库为二进制文件，也不同步，否则 .git/ 文件夹会膨胀得非常恐怖。
