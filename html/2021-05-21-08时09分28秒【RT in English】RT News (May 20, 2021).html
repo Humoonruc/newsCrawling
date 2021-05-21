@@ -1,0 +1,496 @@
+<html style="margin: 0;padding: 0;">
+<head>
+    <meta charset="UTF-8">
+    <title>Mail</title>
+    <META content="text/html; charset=UTF8" http-equiv=Content-Type />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+
+        @media (max-width: 710px) {
+            .hide {
+                display: none;
+            }
+
+            .full_article {
+                max-width: 100% !important;
+                width: 100% !important;
+                display: block;
+                text-align: left !important;
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+            }
+
+            .full_article > a > img {
+                margin-bottom: 20px;
+            }
+        }
+
+        @media (max-width: 660px) {
+            .hide {
+                display: none;
+            }
+
+            .full {
+                width: 100% !important;
+                display: block;
+                text-align: left !important;
+                margin-bottom: 10px;
+            }
+
+            .full_date {
+                width: 100% !important;
+                display: block;
+                text-align: left !important;
+                margin-bottom: 10px;
+                padding-left: 0px !important;
+            }
+
+            .bgtitle {
+                font-size: 20px !important;
+            }
+
+            .bgmiddle {
+                font-size: 14px !important;
+            }
+
+            .bgtitle_block {
+                font-size: 24px !important;
+            }
+        }
+
+
+    </style>
+</head>
+<body style="margin: 0;padding: 0;">
+    <div style="background-color:#FFF; font-family: 'Helvetica','Arial', sans-serif;">
+        <div style="max-width: 800px;margin: 0 auto;text-align: center;padding: 10px 20px;"><a class="header-top-text" href="https://subscribe.rt.com/preview/17tZP1" style="display: block; margin: 0;font-family: &quot;Arial&quot;, sans-serif;font-size: 14px;line-height: 20px;color: #a3a3a3;text-align: center; text-decoration: underline;">If you do not see images or links do not work, open the message in your browser.</a></div>
+        <div class="header_logo" style="max-width: 800px;margin: 0 auto;background: #000000;padding-top: 10px;padding-bottom: 10px;">
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                    <td valign="center" width="128"><a href="https://www.rt.com"
+                                                       style="text-decoration: none"><img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJgAAABQCAYAAADlebz4AAAAAXNSR0IArs4c6QAABN5JREFUeAHtnc9LFGEYx591/bVq/og1UwlRwwjpEkW/jCK6mHQoqEt0CoIORQX9AxEVFXSILt06FNFBiOhYsXipiIJKSqIfpBum2aasra6r277SD3V2db+jz8yU34Fwffd5nvedz3x8Z+bdMX2H7jcnhRsJKBHIUarLsiQwSYCCUQRVAhRMFS+LUzA6oEqAgqniZXEKRgdUCVAwVbwsTsHogCoBCqaKl8UpGB1QJUDBVPGyOAWjA6oEKJgqXhanYHRAlQAFU8XL4hSMDqgSoGCqeFmcgtEBVQIUTBUvi1MwOqBKgIKp4mVxCkYHVAlQMFW8LE7B6IAqAQqmipfFKRgdUCWQq1p9ERVPjE44ure+1NTgz0s/Pzg9ltl2nILNRgd47/aBtxKLJICM+YeW1uZLsCkgTbvKpXZtyZ+CN/Z2SWLEWeH/dD7jBQWbAeRf+nYoHBfz7/3DQVnVViEbjiyXvED6Wc2t/aJgLpE3p7iK+kJL72YWjH3DZ8KuexExNbccr5GlDQWSGM3uP02KfBiRJDLZ+SRV3zpuy478aqBgmcgot+cV5ciea41pe+nviknoXI8MdsfTvp+p8c3diDTuKJPdVxoyhVjab+7rgoTOLcg8bkvxVIO35tN0I1yEbZWrAtJ2uV7yS/DD8+x6v6eI4XvgqeH/v4MJVOTKmv1BeAd7Xw5LIo6c8+AuoAQKBuFyNriquQjuMDkuEhvAr+HgjrJMoGBZgnIjbDyR3YX6zLGZi32vbB4aileQeGccn59G4cGYZYqiYB6cp5VAwbTIzrOuuZN81T4AV6lrWSI5/tRagkc2LlO4dCDM2lPk44il99Ghcfn8fFhe3Poq5noK2cxd5/rDVUiKeiwFU0ecvoOxHxPSfuhd+jdttm46Wi1FS71zejS7QcFsHkwvpZmZq+VkjdRvK/PSsCbHQsFcPCRmNX/qZj6ghj62SSVXrg5I68W61GeQ/qmlPPOagrl0KMysc/DO6mm9fwgNyoPTPdPa5vqm/3VM+jpjUrvu79MUc+U4+f70HyEne2ZfFgLmFFe/vdTSPldD6HxYYt+9s7g6dbwUbCoND7zefKxaCiuw0515AqPjQtgDo7cOgYJZmbjaUliWKy0nauAxdD+OSqeNdTO4IzCBgoHAnAiv21IqK3fid4RPrn2Rb++sa2tOjDlTHxQsExmX2zeaNa0gdg82MZaUB2e6Uw8b8mkKlw+f97svKPFPrm2hIx38FJdHV3vRNLV4zmBqaOdfeMWGJdLUWg4XMo9Pf+wYgvM0EiiYBtUFrGl+kaN4Gf7xT8elsET7xhZwJPZKUTB73BzLyi/2y9ZT+F1lPDohobM9qU8G7D1TtlA76OPf7F4YlHYurM0vUGS72alvavvzfeLzZX58x05dZNzYbUq2NBZhHALdDh6t+lp1f+9j9j9CvzP4lQQAAhQMgMVQnAAFw5kxAyBAwQBYDMUJUDCcGTMAAhQMgMVQnAAFw5kxAyBAwQBYDMUJUDCcGTMAAhQMgMVQnAAFw5kxAyBAwQBYDMUJUDCcGTMAAhQMgMVQnAAFw5kxAyBAwQBYDMUJUDCcGTMAAhQMgMVQnAAFw5kxAyBAwQBYDMUJUDCcGTMAAhQMgMVQnAAFw5kxAyBAwQBYDMUJUDCcGTMAAhQMgMVQnMBPzkLLXBt4pScAAAAASUVORK5CYII=" alt="RT"
+                            style="border: 0;max-width: 8em;width:100%;height: auto;"/></a></td>
+                    <td valign="center" style="padding-left: 20px;"><a href="https://www.rt.com?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email"
+                                                                       class="bgtitle_block"
+                                                                       style="text-decoration: none;font-size: 30px;color: #FFFFFF;letter-spacing: 0;text-transform: uppercase;">question more</a></td>
+                    <td valign="center" align="right" class="hide"
+                        style="font-size: 16px;color: #FFFFFF;letter-spacing: 0;padding-right: 20px;">21 May</td>
+                </tr>
+
+            </table>
+        </div>
+        
+        <div style="width: 100%;text-align: center;max-width: 800px;margin: 0 auto;">
+            <div style="padding: 20px;font-size: 36px;color: #000000;letter-spacing: 0;line-height: 40px;" class="bgtitle_block">RT News (May 20, 2021)</div>
+        </div>
+        
+        
+            
+                <div style="max-width: 800px;margin: 0 auto;width: 100%;">
+                    
+                        
+                            <div>
+                                <a href="https://www.rt.com/news/524366-israel-hamas-gaza-ceasefire/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;">
+                                    <img style="border: 0;width: 100%;height: auto;" alt="Israel, Hamas agree on Gaza ceasefire proposed by Egypt to end 11-day conflict" src="https://cdni.rt.com/files/2021.05/article/60a6bd8785f5407f370eca59.JPG"/>
+                                </a>
+                            </div>
+                        
+                        <div style="margin-top: 30px;padding-left: 5%;padding-right: 5%;">
+                              <div style="">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr style="">
+                                            <td width="50%">
+                                                <a href="https://www.rt.com/news/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email"
+                                                   style="text-decoration: none;font-size: 24px;color: #000000;letter-spacing: 0;font-weight: bold;">World News</a>
+                                            </td>
+                                            <td width="50%" align="right">
+                                                <span style="padding-left: 10px;font-size: 15px;color: #939598;letter-spacing: 0;">20 May</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                              </div>
+                              <div style="margin-top: 10px">
+                                 <a class="news-item-title" href="https://www.rt.com/news/524366-israel-hamas-gaza-ceasefire/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;margin: 0;font-family: &quot;Arial&quot;, sans-serif;font-size: 30px;line-height: 1.17;color: #000000;text-align: left;">Israel, Hamas agree on Gaza ceasefire proposed by Egypt to end 11-day conflict</a>
+                              </div>
+                              <div style="margin-top: 20px">
+                                   <a href="https://www.rt.com/news/524366-israel-hamas-gaza-ceasefire/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-size: 16px;line-height: 1.5;color: #000000;text-align: left;text-decoration: none;">The Israeli government has agreed to a mutual ceasefire with Hamas and Palestinian Islamic Jihad, proposed by Egypt, that would put an end to 11 days of rocket strikes on Israel and IDF bombardment of Gaza.</a>
+                              </div>
+                              <div style="margin-top: 20px">
+                                    <a class="news-item-link" href="https://www.rt.com/news/524366-israel-hamas-gaza-ceasefire/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;display: block;height: 55px;border: solid 1px #000000;font-size: 16px;line-height: 55px;color: #000000;text-align: center;">Read more on the site</a>
+                              </div>
+                        </div>
+                    
+                </div>
+            
+        
+        
+        
+               <div style="margin-top: 20px;background-color: #FFF;">
+                 
+                    <div style="padding-top: 40px;padding-bottom: 40px;">
+                        <div style="max-width: 800px;margin: 0 auto;">
+
+                             
+                                <div style="margin-bottom: 20px; padding-left: 10px; padding-right: 10px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr style="">
+                                            <td width="50%" valign="center">
+                                                <a href="https://www.rt.com&utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-weight: bold;text-decoration: none;font-size: 24px;color: #000000;letter-spacing: 0;"></a>
+                                            </td>
+                                            <td width="50%" align="right" valign="center">
+                                                <span style="padding-left: 10px;font-size: 15px;color: #939598;letter-spacing: 0;">20 May</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div>
+                                    <a href="https://www.rt.com/op-ed/524356-inside-gaza-al-wehda-street-massacre/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;">
+                                        <img style="border: 0;width: 100%;height: auto;" alt="‘I could hear their screams’: Inside Gaza’s Al-Wehda Street massacre" src="https://cdni.rt.com/files/2021.05/article/60a68b7420302706670815be.jpg"/>
+                                    </a>
+                                </div>
+                            
+                             <div style="margin-top: 30px;padding-left: 5%;padding-right: 5%;">
+                                  <div style="margin-top: 10px">
+                                     <a class="news-item-title" href="https://www.rt.com/op-ed/524356-inside-gaza-al-wehda-street-massacre/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;margin: 0;font-size: 30px;line-height: 1.17;color: #000000;text-align: left;">‘I could hear their screams’: Inside Gaza’s Al-Wehda Street massacre</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                       <a href="https://www.rt.com/op-ed/524356-inside-gaza-al-wehda-street-massacre/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-size: 16px;line-height: 1.5;color: #000000;text-align: left;text-decoration: none;">“My building was bombed and my neighbours have been killed! And I can hear screams from under the rubble!” These were the first words I heard from a friend as she hid in her basement from Israeli airstrikes this weekend.</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                        <a class="news-item-link" href="https://www.rt.com/op-ed/524356-inside-gaza-al-wehda-street-massacre/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;display: block;height: 55px;border: solid 1px #000000;font-size: 16px;line-height: 55px;color: #000000;text-align: center;">Read more on the site</a>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                 
+                    <div style="padding-top: 40px;padding-bottom: 40px;">
+                        <div style="max-width: 800px;margin: 0 auto;">
+
+                             
+                                <div style="margin-bottom: 20px; padding-left: 10px; padding-right: 10px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr style="">
+                                            <td width="50%" valign="center">
+                                                <a href="https://www.rt.com/politics/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-weight: bold;text-decoration: none;font-size: 24px;color: #000000;letter-spacing: 0;">Russia & Former Soviet Union</a>
+                                            </td>
+                                            <td width="50%" align="right" valign="center">
+                                                <span style="padding-left: 10px;font-size: 15px;color: #939598;letter-spacing: 0;">21 May</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div>
+                                    <a href="https://www.rt.com/usa/524383-psaki-admits-no-stopping-nord-stream/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;">
+                                        <img style="border: 0;width: 100%;height: auto;" alt="Psaki raises white flag, admits US had no way of stopping Nord Stream 2 that was ‘95% complete’ already" src="https://cdni.rt.com/files/2021.05/article/60a6e24985f54072362a00a5.JPG"/>
+                                    </a>
+                                </div>
+                            
+                             <div style="margin-top: 30px;padding-left: 5%;padding-right: 5%;">
+                                  <div style="margin-top: 10px">
+                                     <a class="news-item-title" href="https://www.rt.com/usa/524383-psaki-admits-no-stopping-nord-stream/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;margin: 0;font-size: 30px;line-height: 1.17;color: #000000;text-align: left;">Psaki raises white flag, admits US had no way of stopping Nord Stream 2 that was ‘95% complete’ already</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                       <a href="https://www.rt.com/usa/524383-psaki-admits-no-stopping-nord-stream/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-size: 16px;line-height: 1.5;color: #000000;text-align: left;text-decoration: none;">White House press secretary Jen Psaki defended the Biden administration’s decision to waive sanctions against Nord Stream 2 by saying the Russia-Germany pipeline was nearly complete and nothing could be done to stop it.</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                        <a class="news-item-link" href="https://www.rt.com/usa/524383-psaki-admits-no-stopping-nord-stream/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;display: block;height: 55px;border: solid 1px #000000;font-size: 16px;line-height: 55px;color: #000000;text-align: center;">Read more on the site</a>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                 
+                    <div style="padding-top: 40px;padding-bottom: 40px;">
+                        <div style="max-width: 800px;margin: 0 auto;">
+
+                             
+                                <div style="margin-bottom: 20px; padding-left: 10px; padding-right: 10px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr style="">
+                                            <td width="50%" valign="center">
+                                                <a href="https://www.rt.com/politics/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-weight: bold;text-decoration: none;font-size: 24px;color: #000000;letter-spacing: 0;">Russia & Former Soviet Union</a>
+                                            </td>
+                                            <td width="50%" align="right" valign="center">
+                                                <span style="padding-left: 10px;font-size: 15px;color: #939598;letter-spacing: 0;">20 May</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div>
+                                    <a href="https://www.rt.com/russia/524342-arctic-trefoil-base-tour/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;">
+                                        <img style="border: 0;width: 100%;height: auto;" alt="Location: northernmost; mission: top secret. RT visits Russia’s state-of-the-art Arctic military base (VIDEO)" src="https://cdni.rt.com/files/2021.05/article/60a673c585f54008070815ce.png"/>
+                                    </a>
+                                </div>
+                            
+                             <div style="margin-top: 30px;padding-left: 5%;padding-right: 5%;">
+                                  <div style="margin-top: 10px">
+                                     <a class="news-item-title" href="https://www.rt.com/russia/524342-arctic-trefoil-base-tour/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;margin: 0;font-size: 30px;line-height: 1.17;color: #000000;text-align: left;">Location: northernmost; mission: top secret. RT visits Russia’s state-of-the-art Arctic military base (VIDEO)</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                       <a href="https://www.rt.com/russia/524342-arctic-trefoil-base-tour/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-size: 16px;line-height: 1.5;color: #000000;text-align: left;text-decoration: none;">Russia’s ‘Arctic Shamrock’ base is the northernmost publicly known permanent manned facility in the world, projecting Moscow’s military power into the resource-rich region. RT took a tour of the site.</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                        <a class="news-item-link" href="https://www.rt.com/russia/524342-arctic-trefoil-base-tour/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;display: block;height: 55px;border: solid 1px #000000;font-size: 16px;line-height: 55px;color: #000000;text-align: center;">Read more on the site</a>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                 
+                    <div style="padding-top: 40px;padding-bottom: 40px;">
+                        <div style="max-width: 800px;margin: 0 auto;">
+
+                             
+                                <div style="margin-bottom: 20px; padding-left: 10px; padding-right: 10px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr style="">
+                                            <td width="50%" valign="center">
+                                                <a href="https://www.rt.com&utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-weight: bold;text-decoration: none;font-size: 24px;color: #000000;letter-spacing: 0;"></a>
+                                            </td>
+                                            <td width="50%" align="right" valign="center">
+                                                <span style="padding-left: 10px;font-size: 15px;color: #939598;letter-spacing: 0;">20 May</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div>
+                                    <a href="https://www.rt.com/op-ed/524364-pelosi-boycott-china-olympics-bds/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;">
+                                        <img style="border: 0;width: 100%;height: auto;" alt="Pelosi wants to boycott China Olympics over ‘human rights violations’ – but there’s an Israel-shaped log in her eye" src="https://cdni.rt.com/files/2021.05/article/60a6ad3c203027121029b7ed.JPG"/>
+                                    </a>
+                                </div>
+                            
+                             <div style="margin-top: 30px;padding-left: 5%;padding-right: 5%;">
+                                  <div style="margin-top: 10px">
+                                     <a class="news-item-title" href="https://www.rt.com/op-ed/524364-pelosi-boycott-china-olympics-bds/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;margin: 0;font-size: 30px;line-height: 1.17;color: #000000;text-align: left;">Pelosi wants to boycott China Olympics over ‘human rights violations’ – but there’s an Israel-shaped log in her eye</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                       <a href="https://www.rt.com/op-ed/524364-pelosi-boycott-china-olympics-bds/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-size: 16px;line-height: 1.5;color: #000000;text-align: left;text-decoration: none;">As US Speaker Nancy Pelosi calls to boycott China’s 2022 Olympics over supposed ‘human rights violations’, she and others like her must confront their own hypocrisy toward Israel and others violating human rights on the US dime.</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                        <a class="news-item-link" href="https://www.rt.com/op-ed/524364-pelosi-boycott-china-olympics-bds/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;display: block;height: 55px;border: solid 1px #000000;font-size: 16px;line-height: 55px;color: #000000;text-align: center;">Read more on the site</a>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                 
+                    <div style="padding-top: 40px;padding-bottom: 40px;">
+                        <div style="max-width: 800px;margin: 0 auto;">
+
+                             
+                                <div style="margin-bottom: 20px; padding-left: 10px; padding-right: 10px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr style="">
+                                            <td width="50%" valign="center">
+                                                <a href="https://www.rt.com&utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-weight: bold;text-decoration: none;font-size: 24px;color: #000000;letter-spacing: 0;"></a>
+                                            </td>
+                                            <td width="50%" align="right" valign="center">
+                                                <span style="padding-left: 10px;font-size: 15px;color: #939598;letter-spacing: 0;">20 May</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div>
+                                    <a href="https://www.rt.com/op-ed/524357-segregation-chicago-mayor-white/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;">
+                                        <img style="border: 0;width: 100%;height: auto;" alt="War is peace, segregation is ‘diversity’? A Chicago mayor banning white reporters proves the US has entered dangerous territory" src="https://cdni.rt.com/files/2021.05/article/60a68c6a85f540075721640f.JPG"/>
+                                    </a>
+                                </div>
+                            
+                             <div style="margin-top: 30px;padding-left: 5%;padding-right: 5%;">
+                                  <div style="margin-top: 10px">
+                                     <a class="news-item-title" href="https://www.rt.com/op-ed/524357-segregation-chicago-mayor-white/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;margin: 0;font-size: 30px;line-height: 1.17;color: #000000;text-align: left;">War is peace, segregation is ‘diversity’? A Chicago mayor banning white reporters proves the US has entered dangerous territory</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                       <a href="https://www.rt.com/op-ed/524357-segregation-chicago-mayor-white/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-size: 16px;line-height: 1.5;color: #000000;text-align: left;text-decoration: none;">In an effort to ‘break up the status quo’ in the press corps, Mayor Lori Lightfoot banned reporters, based on their skin color, from conducting interviews with her. Lightfoot has abused her powers before the people.</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                        <a class="news-item-link" href="https://www.rt.com/op-ed/524357-segregation-chicago-mayor-white/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;display: block;height: 55px;border: solid 1px #000000;font-size: 16px;line-height: 55px;color: #000000;text-align: center;">Read more on the site</a>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                 
+                    <div style="padding-top: 40px;padding-bottom: 40px;">
+                        <div style="max-width: 800px;margin: 0 auto;">
+
+                             
+                                <div style="margin-bottom: 20px; padding-left: 10px; padding-right: 10px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr style="">
+                                            <td width="50%" valign="center">
+                                                <a href="https://www.rt.com&utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-weight: bold;text-decoration: none;font-size: 24px;color: #000000;letter-spacing: 0;"></a>
+                                            </td>
+                                            <td width="50%" align="right" valign="center">
+                                                <span style="padding-left: 10px;font-size: 15px;color: #939598;letter-spacing: 0;">20 May</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div>
+                                    <a href="https://www.rt.com/op-ed/524376-woke-capital-university-teen-vogue/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;">
+                                        <img style="border: 0;width: 100%;height: auto;" alt="Wait, American universities are ‘right-wing institutions’? Does Teen Vogue publish facts or fairy tales?" src="https://cdni.rt.com/files/2021.05/article/60a6be6d20302706670815f9.jpg"/>
+                                    </a>
+                                </div>
+                            
+                             <div style="margin-top: 30px;padding-left: 5%;padding-right: 5%;">
+                                  <div style="margin-top: 10px">
+                                     <a class="news-item-title" href="https://www.rt.com/op-ed/524376-woke-capital-university-teen-vogue/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;margin: 0;font-size: 30px;line-height: 1.17;color: #000000;text-align: left;">Wait, American universities are ‘right-wing institutions’? Does Teen Vogue publish facts or fairy tales?</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                       <a href="https://www.rt.com/op-ed/524376-woke-capital-university-teen-vogue/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-size: 16px;line-height: 1.5;color: #000000;text-align: left;text-decoration: none;">Teen Vogue magazine is now portraying the US’ universities as right-wing indoctrination centers. If you needed further proof that modern liberalism has completely detached itself from reality, here it is.</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                        <a class="news-item-link" href="https://www.rt.com/op-ed/524376-woke-capital-university-teen-vogue/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;display: block;height: 55px;border: solid 1px #000000;font-size: 16px;line-height: 55px;color: #000000;text-align: center;">Read more on the site</a>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                 
+                    <div style="padding-top: 40px;padding-bottom: 40px;">
+                        <div style="max-width: 800px;margin: 0 auto;">
+
+                             
+                                <div style="margin-bottom: 20px; padding-left: 10px; padding-right: 10px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr style="">
+                                            <td width="50%" valign="center">
+                                                <a href="https://www.rt.com/usa/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-weight: bold;text-decoration: none;font-size: 24px;color: #000000;letter-spacing: 0;">USA News</a>
+                                            </td>
+                                            <td width="50%" align="right" valign="center">
+                                                <span style="padding-left: 10px;font-size: 15px;color: #939598;letter-spacing: 0;">21 May</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div>
+                                    <a href="https://www.rt.com/usa/524388-cruz-russian-ad-army-twitter/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;">
+                                        <img style="border: 0;width: 100%;height: auto;" alt="Ted Cruz bashed for retweeting mashup of Russian & US army recruiting ads and complaining about ‘emasculated’ US military" src="https://cdni.rt.com/files/2021.05/article/60a6f08985f540082e610cda.jpg"/>
+                                    </a>
+                                </div>
+                            
+                             <div style="margin-top: 30px;padding-left: 5%;padding-right: 5%;">
+                                  <div style="margin-top: 10px">
+                                     <a class="news-item-title" href="https://www.rt.com/usa/524388-cruz-russian-ad-army-twitter/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;margin: 0;font-size: 30px;line-height: 1.17;color: #000000;text-align: left;">Ted Cruz bashed for retweeting mashup of Russian & US army recruiting ads and complaining about ‘emasculated’ US military</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                       <a href="https://www.rt.com/usa/524388-cruz-russian-ad-army-twitter/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-size: 16px;line-height: 1.5;color: #000000;text-align: left;text-decoration: none;">Pointing out the difference between a Russian recruiting ad and a “woke” one recently rolled out by the US Army earned Senator Ted Cruz (R-Texas) a torrent of criticism from Democrats, neocons and Twitter’s Russiagate #Resistance.</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                        <a class="news-item-link" href="https://www.rt.com/usa/524388-cruz-russian-ad-army-twitter/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;display: block;height: 55px;border: solid 1px #000000;font-size: 16px;line-height: 55px;color: #000000;text-align: center;">Read more on the site</a>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                 
+                    <div style="padding-top: 40px;padding-bottom: 40px;">
+                        <div style="max-width: 800px;margin: 0 auto;">
+
+                             
+                                <div style="margin-bottom: 20px; padding-left: 10px; padding-right: 10px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr style="">
+                                            <td width="50%" valign="center">
+                                                <a href="https://www.rt.com/news/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-weight: bold;text-decoration: none;font-size: 24px;color: #000000;letter-spacing: 0;">World News</a>
+                                            </td>
+                                            <td width="50%" align="right" valign="center">
+                                                <span style="padding-left: 10px;font-size: 15px;color: #939598;letter-spacing: 0;">21 May</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div>
+                                    <a href="https://www.rt.com/news/524386-austria-ammunition-swords-covid-opponents/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;">
+                                        <img style="border: 0;width: 100%;height: auto;" alt="‘Almost like terrorists’? 3,500 ROUNDS of ammo, guns & SWORDS seized during raids on anti-lockdown activists in Austria" src="https://cdni.rt.com/files/2021.05/article/60a6e9b12030270f7e21ec0f.jpg"/>
+                                    </a>
+                                </div>
+                            
+                             <div style="margin-top: 30px;padding-left: 5%;padding-right: 5%;">
+                                  <div style="margin-top: 10px">
+                                     <a class="news-item-title" href="https://www.rt.com/news/524386-austria-ammunition-swords-covid-opponents/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;margin: 0;font-size: 30px;line-height: 1.17;color: #000000;text-align: left;">‘Almost like terrorists’? 3,500 ROUNDS of ammo, guns & SWORDS seized during raids on anti-lockdown activists in Austria</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                       <a href="https://www.rt.com/news/524386-austria-ammunition-swords-covid-opponents/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-size: 16px;line-height: 1.5;color: #000000;text-align: left;text-decoration: none;">Austrian police have seized thousands of rounds of ammunition as well as guns and swords in a series of raids against those they called “radical” opponents of Covid-19 measures, who were allegedly planning attacks on police.</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                        <a class="news-item-link" href="https://www.rt.com/news/524386-austria-ammunition-swords-covid-opponents/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;display: block;height: 55px;border: solid 1px #000000;font-size: 16px;line-height: 55px;color: #000000;text-align: center;">Read more on the site</a>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                 
+                    <div style="padding-top: 40px;padding-bottom: 40px;">
+                        <div style="max-width: 800px;margin: 0 auto;">
+
+                             
+                                <div style="margin-bottom: 20px; padding-left: 10px; padding-right: 10px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr style="">
+                                            <td width="50%" valign="center">
+                                                <a href="https://www.rt.com/sport/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-weight: bold;text-decoration: none;font-size: 24px;color: #000000;letter-spacing: 0;">Sport News</a>
+                                            </td>
+                                            <td width="50%" align="right" valign="center">
+                                                <span style="padding-left: 10px;font-size: 15px;color: #939598;letter-spacing: 0;">20 May</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div>
+                                    <a href="https://www.rt.com/sport/524316-diego-maradona-death-investigation-charges-doctors/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;">
+                                        <img style="border: 0;width: 100%;height: auto;" alt="Seven doctors who treated Diego Maradona ‘facing up to 25 years in jail after being charged with homicide with eventual intent’" src="https://cdni.rt.com/files/2021.05/article/60a64cd520302726d85bec5e.jpg"/>
+                                    </a>
+                                </div>
+                            
+                             <div style="margin-top: 30px;padding-left: 5%;padding-right: 5%;">
+                                  <div style="margin-top: 10px">
+                                     <a class="news-item-title" href="https://www.rt.com/sport/524316-diego-maradona-death-investigation-charges-doctors/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;margin: 0;font-size: 30px;line-height: 1.17;color: #000000;text-align: left;">Seven doctors who treated Diego Maradona ‘facing up to 25 years in jail after being charged with homicide with eventual intent’</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                       <a href="https://www.rt.com/sport/524316-diego-maradona-death-investigation-charges-doctors/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-size: 16px;line-height: 1.5;color: #000000;text-align: left;text-decoration: none;">Seven professionals involved in the treatment of Diego Maradona before his death are facing a homicide charge and up to 25 years in prison, according to a report that says judges have been asked to ban them from leaving Argentina.</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                        <a class="news-item-link" href="https://www.rt.com/sport/524316-diego-maradona-death-investigation-charges-doctors/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;display: block;height: 55px;border: solid 1px #000000;font-size: 16px;line-height: 55px;color: #000000;text-align: center;">Read more on the site</a>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                 
+               </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+         
+        
+
+        <div style="padding-left: 5%;padding-right: 5%;margin-bottom: 40px;margin-top: 40px;">
+            <div style="max-width: 600px;width: 100%;margin: 0 auto;">
+                <table border="0" cellpadding="0" cellspacing="0" align="center">
+                    <tr>
+                        <td><a href="https://www.facebook.com/RTnews/" style="text-decoration: none;"><img src="https://cdn.rt.com/subscribe/social/fb_black.png" style="border: none;" alt="facebook"/></a></td>
+                        <td style="padding-left: 20px;"><a href="https://twitter.com/RT_com" style="text-decoration: none;"><img src="https://cdn.rt.com/subscribe/social/tw_black.png" style="border: none;" alt="twitter"/></a></td>
+                        <td style="padding-left: 20px;"><a href="https://www.youtube.com/user/RussiaToday" style="text-decoration: none;"><img src="https://cdn.rt.com/subscribe/social/yt_black.png" style="border: none;" alt="youtube"/></a></td>
+                        <td style="padding-left: 20px;"><a href="https://plus.google.com/+RTintl" style="text-decoration: none;"><img src="https://cdn.rt.com/subscribe/social/gp_black.png" style="border: none;" alt="gplus"/></a></td>
+                        <td style="padding-left: 20px;"><a href="https://www.instagram.com/rt/" style="text-decoration: none;"><img src="https://cdn.rt.com/subscribe/social/inst_black.png" style="border: none;" alt="instagram"/></a></td>
+                        <td style="padding-left: 20px;"><a href="https://vk.com/rt_international" style="text-decoration: none;"><img src="https://cdn.rt.com/subscribe/social/vk_black.png" style="border: none;" alt="vk"/></a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div style="max-width: 600px; margin: 0 auto; margin-bottom: 40px;">
+            <p style="margin: 60px 0 0;padding: 0 15px; text-align: center; word-wrap: break-word;">Borovaya 3/1, Moscow, Russia, 111020</p>
+        </div>
+
+        <div style="background-color: #F6F6F6;padding-top: 10px;padding-bottom: 10px;text-align: center;">
+            <a class="news-item-link cancel" href="https://subscribe.rt.com/unsubscribe/9cbb2d982701f10046f9b5ff881d66fc/c4b8c688-e47c-49f3-86fd-6feb89ca83df" style="text-decoration: none;border: none;font-size: 16px;color: #000000;text-align: center;margin: 0 auto;">Cancel subscription</a>
+        </div>
+
+    </div>
+</body>
+</html>
