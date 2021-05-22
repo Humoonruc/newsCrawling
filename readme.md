@@ -6,7 +6,7 @@
 
 
 
-**平台入口：[国内入口](https://news-crawling-1305177755.cos-website.ap-hongkong.myqcloud.com/)|[海外入口](https://humoonruc.github.io/newsCrawling.github.io/)**
+**平台入口：[国内入口](https://news-crawling-1305177755.cos-website.ap-hongkong.myqcloud.com/)|[海外入口因安全原因暂时关闭](https://humoonruc.github.io/newsCrawling.github.io/)**
 
 欲知每日大事，从此不必在众多新闻源中切换，关注该入口即可。
 
