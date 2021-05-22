@@ -44,7 +44,7 @@ let liStringArray = fs.readdirSync(`../html/`)
   .sort().reverse()
   .map(fileName => {
     const media = fileName.replace(dateString + '-', '').replace('.html', '');
-    const filePath = path.join('.', 'html', fileName);
+    const filePath = path.join('.', fileName);
     return `<li><a href='${filePath}'>${media}</a></li>`;
   });
 let ulString = `<ul>` + liStringArray.join('') + '</ul>';
