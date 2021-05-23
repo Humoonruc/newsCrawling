@@ -44,10 +44,12 @@ let liStringArray = fs.readdirSync(`../html/`)
   .sort().reverse()
   .map(fileName => {
     const media = fileName.replace(dateString + '-', '').replace('.html', '');
-    const filePath = path.join('.', fileName);
+    const filePath = fileName;
     return `<li><a href='${filePath}'>${media}</a></li>`;
   });
 let ulString = `<ul>` + liStringArray.join('') + '</ul>';
+// console.log(ulString);
+// console.log(ulString.replace(/href='/g, "href='/html/"));
 
 const allNews = `
 <!DOCTYPE html>
@@ -106,7 +108,7 @@ const indexString = `
 
 <body>
 
-  <h1>${dateString} 政经要闻</h1>${ulString}
+  <h1>${dateString} 政经要闻</h1>${ulString.replace(/href='/g, "href='html/")}
   <br>
   ${indexUl}
 
