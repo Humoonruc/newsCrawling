@@ -1,12 +1,12 @@
 // @ts-check
 'use strict';
-
-// mail-demo.js
+// receive-email.js
 
 const Imap = require('imap'); // 返回 connection 类
 const MailParser = require("mailparser").MailParser;
 const fs = require("fs");
 const moment = require('moment');
+const config = require('./config');
 
 
 const date = moment().subtract(1, 'days').format('MMM DD, YYYY');
@@ -14,9 +14,9 @@ const dateStandard = moment().subtract(1, 'days').format('YYYY-MM-DD');
 
 
 const imap = new Imap({
-  user: '450466118@qq.com', // 邮箱账号
-  password: 'yoepupiinpvobicc', // 邮箱密码或授权码
-  host: 'imap.qq.com', // IMAP 服务器地址
+  user: config.mailUser, // 邮箱账号
+  password: config.mailPassword, // 邮箱密码或授权码
+  host: config.mailHost, // IMAP 服务器地址
   port: 993, // IMAP 服务器端口号
   tls: true, // 使用安全传输协议
   tlsOptions: { rejectUnauthorized: false } // 禁用对证书有效性的检查
@@ -33,14 +33,13 @@ imap.connect();
 imap.once('ready', () => {
   console.log("Email server connection succeed.");
 
-  imap.openBox('INBOX', true, (err, box) => { // box 对象代表打开的邮箱
+  imap.openBox('INBOX', true, (err, box) => { // box 对象指向打开的邮箱
 
     // 搜索某日期以后（包含）的所有邮件，results为搜索结果
     imap.search(['ALL', ['SINCE', date]], (err, results) => {
 
       // 依次抓取搜索结果中所有的邮件
-      const f = imap.fetch(results, { bodies: '' });
-      // bodies的值：HEADER 为邮件头，TEXT 为正文, '' 为头+正文
+      const f = imap.fetch(results, { bodies: '' }); // bodies的值：HEADER 为邮件头，TEXT 为正文, '' 为全部内容（邮件头+正文）
 
       // 'message'事件：每当抓取一封符合条件的邮件时，启动回调。msg是抓取到的邮件内容，seqno是序号。
       f.on('message', (msg, seqno) => {
@@ -49,7 +48,7 @@ imap.once('ready', () => {
 
         msg.on('body', (stream, info) => {
 
-          // 将解析msg的数据流pipe到mailParser
+          // 将msg这个stream pipe到mailParser
           stream.pipe(mailParser);
 
           //邮件头
@@ -69,7 +68,7 @@ imap.once('ready', () => {
           });
 
           //邮件主体
-          mailParser.on("data", data => {
+          mailParser.on("data", data => { // data 是一个对象
             if (data.type === 'text') { //邮件正文
               // console.log("邮件内容信息>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
               // console.log("邮件内容: " + data.html);
@@ -99,6 +98,8 @@ imap.once('ready', () => {
 
 imap.once('error', console.log);
 
+
+// 将读取并保存的文件按照邮件名重命名
 imap.once('end', () => {
   console.log('Email server connection ended.');
 
