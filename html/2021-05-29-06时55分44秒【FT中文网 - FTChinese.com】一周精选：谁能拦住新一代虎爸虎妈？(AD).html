@@ -1,0 +1,485 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<style>
+* {padding:0;margin:0;border:0;}
+ .lineH, p{line-height: 1.618 !important;}
+ .lineH1{line-height: 1 !important;}
+ .lineH1_2{line-height: 1.2 !important;}
+ .lineH1_4{line-height: 1.4 !important;}
+html{-webkit-text-size-adjust: none;}
+ .videosubhead p {padding-top: 10px;}
+img,div,p,table,td,tr{max-width:100%;}
+ .mainTD{width:100%;max-width:100%;}
+@media all and (max-width: 500px) {
+ .coverImgLinkContain{float:none !important;margin:5px auto !important;}
+}
+@media all and (max-width: 450px) {
+ .mainTD{width:100%;max-width:450px;}
+#wrapperInner,
+#containerTable {
+*width: 400px !important;
+_width: 400px !important;
+width: 100% !important;
+}
+ .whiteBorder {
+width: 0 !important;
+font-size: 0 !important;
+}
+ .otherHeadlines {
+font-size:17px !important;line-height:1.2 !important;color:#505050 !important;
+}
+ .otherHeadlines a,
+ .otherHeadlinesLink {
+color:#505050 !important;text-decoration:none !important;display:block !important;
+}
+ .ft-logo {
+font-size:26px !important;line-height:1.2 !important;height:26px !important;text-align:center !important;
+}
+ .ft-logo-briefing {
+font-size:5px !important;line-height:1 !important;height:5px !important;
+}
+ .ft-desc {
+font-size:13px !important;line-height:1.2 !important;color:#505050 !important;text-align:center !important;font-weight:bold !important;
+}
+ .ft-header-bar {
+border: solid 1px #A7A59B !important;
+border-width: 1px 0 !important;
+font-weight:normal !important;
+padding: 7px 14px !important;
+color:#000 !important;background-color:#E9DECE !important;font-size:19px !important; line-height:1.4 !important; font-weight:normal !important;width:100% !important;
+}
+ .topHeadline {
+font-size:21px !important;line-height:1.1 !important;color:#333 !important;
+}
+ .topHeadline a {
+color:#333 !important;text-decoration:none !important;display:block !important;
+}
+ .subhead {
+font-size:18px !important;line-height:1.4 !important;color:#505050 !important;
+}
+ .hotArticleList{font-size:20px !important;}
+ .dotsSeparator {
+margin-left: 10px !important;
+margin-right: 10px !important;
+}
+ .textPadding {
+padding-left:10px !important;padding-right:10px !important;
+}
+ .videoImageLink {
+color:#505050 !important;text-decoration:none !important;display:block !important;
+}
+ .headLine{font-size:19px !important;line-height:1.618 !important; color: #000;}
+ .cover .headLine{font-size:26px !important;line-height:1.618 !important;}
+ .SContent{font-size:16px !important;line-height:1.618 !important; color: #777;}
+ .cover{font-size:16px !important;line-height:1.618 !important;}
+ .imgSpace{height:6px !important;font-size: 0 !important;}
+ .largeViewBar,.HSpace{display: none !important;}
+ .tableBorder{border:0 !important;}
+}
+@media all and (min-width: 451px) {
+ .mainTD{width:100%;max-width:450px;}
+#wrapperInner,#containerTable {
+*width: 400px !important;
+_width: 400px !important;
+width: 100% !important;
+}
+ .whiteBorder {
+width: 0 !important;
+font-size: 0 !important;
+}
+ .openInBrowserGap {
+height: 10px !important; font-size: 8px !important; line-height: 1.2 !important; padding: 0 !important;
+}
+ .contentPadding {
+width: 45px !important;
+}
+ .bottomContentPadding {
+height: 43px !important; font-size: 43px !important; line-height: 1 !important; padding: 0 !important;
+}
+ .otherHeadlines {
+font-size:21px !important;line-height:1.1 !important;color:#505050 !important;
+}
+ .otherHeadlines a,.otherHeadlinesLink {
+color:#505050 !important;text-decoration:none !important;
+}
+ .ft-logo {
+font-size:53px !important;line-height:1 !important;height:53px !important;text-align:center !important;
+}
+ .ft-logo-briefing {
+font-size:2px !important;line-height:1 !important;height:2px !important;
+}
+ .ft-desc {
+font-size:13px !important;line-height:1.2 !important;color:#505050 !important;text-align:center !important;font-weight:bold !important;
+}
+ .ft-header-bar {
+color:#000 !important;
+background: #E9DECF !important;
+border: solid 1px #A7A59B !important;
+border-width: 1px 0 !important;
+line-height:1.4 !important;
+font-size:19px !important;
+font-weight:normal !important;
+padding: 7px 14px !important;
+width:100% !important;
+}
+ .topHeadline {
+font-size:28px !important;line-height:1.1 !important;color:#333 !important;
+}
+ .topHeadline a {
+color:#333 !important;text-decoration:none !important;
+}
+ .subhead {
+font-size:14px !important;line-height:1.4 !important;color:#505050 !important;
+}
+ .dotsSeparator {
+margin-left: 17px !important;
+margin-right: 17px !important;
+}
+ .textPadding {
+padding-left:17px !important;padding-right:17px !important;
+}
+ .videoImageLink {
+color:#505050 !important;text-decoration:none !important;
+}
+}
+@media all and (min-width: 720px) {
+ .mainTD{width:100%;max-width:720px;}
+#wrapperInner,
+#containerTable {
+width: 720px !important;
+}
+}
+@media only screen and (max-width: 720px) and (min-width: 501px){
+ .coverImgLinkContain{max-width: 50% !important;}
+}</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<!-- htmlmin:ignore -->
+<body class="is-html-email" style="width:100%;color:#111111;background-color:#FFFFFF;font-family:"Hiragino Sans GB","WenQuanYi Micro Hei","Heiti SC",STHeiti,SimSun,sans-serif;font-size:14px;">
+<img src=http://newsletters.ftimg.online/s.html?stime=1622242604&uid=ft_news&eid=4082127&email=humoonruc@126.com&tlid=9075&stid=118980 border=0 width=0><div id="wrapper" style="margin: 0 auto; text-align: center;">
+<table border="0" cellspacing="0" cellpadding="0" id="containerTable" style="background-color:#ffffff; display: table; margin: 0 auto; text-align: center; width: 720px; *width: 720px; _width: 720px;" align="center">
+<tr>
+<td class="mainTD" style="width: 720px;">
+<table border="0" cellspacing="0" cellpadding="0" align="left" style="text-align: left;">
+<tr>
+<td style="width:1%;" class="whiteBorder">&nbsp;</td>
+<td class="mainCol">
+<table class="tableBorder" border="0" cellspacing="0" cellpadding="0" style="background-color: #FFF1E0; border: 2px solid #f7f7f7; text-align: left;" align="left">
+<tr><td class="lineH1 openInBrowserGap" style="height: 10px; font-size: 10px; line-height: 10px; padding: 0;">&nbsp;</td></tr>
+<tr><td style="padding-left: 10px; padding-right: 10px;">
+<table border="0" cellspacing="0" cellpadding="0" style="width: 100%;">
+<tr><td class="ft-logo lineH1" style="font-size:43px;line-height:43px;height:43px;text-align:center; width: 100%;">
+<a
+href="http://www.ftchinese.com" target="_blank"
+><img id="ft-logo-img" src="https://dhgxl8qk9zgzr.cloudfront.net/img/ftcLogoHD.png" width="172" height="36" style="width: 172px;height: 36px; color: #091523; font-size: 25px; border: 0 none;" alt="FT中文网" title="FT中文网" /></a>
+</td></tr>
+<tr><td style="font-size:4px;line-height:4px;height:4px;" class="ft-logo-briefing lineH1">&nbsp;</td></tr>
+<tr><td class="ft-desc lineH1_2" style="font-size:13px;line-height:16px;color:#505050;text-align:center;font-weight:bold;">2021年05月29日</td></tr>
+</table>
+</td></tr>
+<tr><td class="lineH1" style="height: 10px; font-size: 10px; line-height: 10px; padding: 0;">&nbsp;</td></tr>
+<tr><td>
+<table width="100%" cellpadding="0" cellspacing="0">
+<tr>
+<td style="width: 3%;" class="contentPadding largeViewBar">&nbsp;</td>
+<td>
+<table width="100%" cellpadding="0" cellspacing="0">
+<tr><td class="ft-header-bar" style="color:#333333;background-color:#E9DECE;font-size:13px;font-weight:bold;padding:5px 17px 4px 17px;text-transform:uppercase;width:100%;">一周精选</td></tr>
+<tr><td class="lineH1" style="height: 10px; font-size: 10px; line-height: 10px; padding: 0;">&nbsp;</td></tr>
+<tr><td style="font-size:14px;line-height:25px;color:#505050;padding-left:17px;padding-right:17px;" class="subhead textPadding lineH">
+<div style="line-height:1.618; " class="item-container">
+<table width="100%" cellpadding="0" cellspacing="0" style="border-bottom:1px solid #E9DECF; line-height:1.618;">
+<tr><td class="lineH1" style="height: 5px; font-size: 5px; line-height: 5px; padding: 0;"> </td></tr>
+<tr>
+<td class="SContent cover" style="font-size:14px;line-height:23px;color:#505050;">
+<div class="lineH1_4" style="line-height:40px;font-size:25px;">
+<a class="headLine" style="font-weight:bold; text-decoration:none; color:#111;"  href="http://newsletters.ftimg.online/u.html?stime=1622242604&uid=ft_news&eid=4082127&email=humoonruc@126.com&tlid=9075&stid=118980&thid=9075&url=~0">谁能拦住新一代虎爸虎妈？</a>
+</div>
+<table cellpadding="0" cellspacing="0" align="left" class="coverImgLinkContain">
+<tr><td class="lineH1 imgSpace" style="height: 6px; font-size: 0px; line-height: 5px; padding: 0;"> </td></tr>
+<tr>
+<td>
+<a class="coverImgLink"  href="http://newsletters.ftimg.online/u.html?stime=1622242604&uid=ft_news&eid=4082127&email=humoonruc@126.com&tlid=9075&stid=118980&thid=9075&url=~0">
+<img src="https://thumbor.ftacademy.cn/unsafe/414x233/https://thumbor.ftacademy.cn/unsafe/picture/5/000118035_piclink.jpg" border="0" style="width:414px;" align="left" width="414"/>
+</a>
+</td>
+<td style="width:10px"> </td>
+</tr>
+<tr><td class="lineH1 imgSpace" style="height: 5px; font-size: 0px; line-height: 5px; padding: 0;"> </td></tr>
+</table>
+刘易斯：中国政府正在整顿教培行业，希望通过减轻课外辅导的经济负担来提振出生率。但中国的家长们可能不会买账。</td>
+</tr>
+<tr><td class="lineH1" style="height: 10px; font-size: 10px; line-height: 10px; padding: 0;"> </td></tr>
+</table>
+</div>
+<div style="line-height:1.618; " class="item-container">
+<table width="100%" cellpadding="0" cellspacing="0" style="border-bottom:1px solid #E9DECF; line-height:1.618;">
+<tr><td class="lineH1" style="height: 5px; font-size: 5px; line-height: 5px; padding: 0;"> </td></tr>
+<tr>
+<td class="SContent cover" style="font-size:14px;line-height:23px;color:#505050;">
+<div class="lineH1_4" style="line-height:40px;font-size:25px;">
+<a class="headLine" style="font-weight:bold; text-decoration:none; color:#111;"  href="http://newsletters.ftimg.online/u.html?stime=1622242604&uid=ft_news&eid=4082127&email=humoonruc@126.com&tlid=9075&stid=118980&thid=9075&url=~1">世界能在未来一年扑灭新冠疫情</a>
+</div>
+<table cellpadding="0" cellspacing="0" align="left">
+<tr><td class="lineH1 imgSpace" style="height: 6px; font-size: 0px; line-height: 5px; padding: 0;"> </td></tr>
+<tr>
+<td>
+<a class="coverImgLink"  href="http://newsletters.ftimg.online/u.html?stime=1622242604&uid=ft_news&eid=4082127&email=humoonruc@126.com&tlid=9075&stid=118980&thid=9075&url=~1">
+<img src="https://thumbor.ftacademy.cn/unsafe/167x96/https://thumbor.ftacademy.cn/unsafe/picture/4/000118034_piclink.jpg" border="0" style="width:167px;" align="left" width="167"/>
+</a>
+</td>
+<td style="width:10px"> </td>
+</tr>
+<tr><td class="lineH1 imgSpace" style="height: 5px; font-size: 0px; line-height: 5px; padding: 0;"> </td></tr>
+</table>
+沃尔夫：有人认为各国各自为政的疫苗接种工作将会战胜全球疫情。这种想法是愚蠢的。抗疫是一场全球战争，富国应抓住机会打赢这场战争。</td>
+</tr>
+<tr><td class="lineH1" style="height: 10px; font-size: 10px; line-height: 10px; padding: 0;"> </td></tr>
+</table>
+</div>
+<div style="line-height:1.618; " class="item-container">
+<table width="100%" cellpadding="0" cellspacing="0" style="border-bottom:1px solid #E9DECF; line-height:1.618;">
+<tr><td class="lineH1" style="height: 5px; font-size: 5px; line-height: 5px; padding: 0;"> </td></tr>
+<tr>
+<td class="SContent cover" style="font-size:14px;line-height:23px;color:#505050;">
+<div class="lineH1_4" style="line-height:40px;font-size:25px;">
+<a class="headLine" style="font-weight:bold; text-decoration:none; color:#111;"  href="http://newsletters.ftimg.online/u.html?stime=1622242604&uid=ft_news&eid=4082127&email=humoonruc@126.com&tlid=9075&stid=118980&thid=9075&url=~2">德国科学家：已破解阿斯利康疫苗血栓问题的致因</a>
+</div>
+<table cellpadding="0" cellspacing="0" align="left">
+<tr><td class="lineH1 imgSpace" style="height: 6px; font-size: 0px; line-height: 5px; padding: 0;"> </td></tr>
+<tr>
+<td>
+<a class="coverImgLink"  href="http://newsletters.ftimg.online/u.html?stime=1622242604&uid=ft_news&eid=4082127&email=humoonruc@126.com&tlid=9075&stid=118980&thid=9075&url=~2">
+<img src="https://thumbor.ftacademy.cn/unsafe/167x96/https://thumbor.ftacademy.cn/unsafe/picture/2/000118032_piclink.jpg" border="0" style="width:167px;" align="left" width="167"/>
+</a>
+</td>
+<td style="width:10px"> </td>
+</tr>
+<tr><td class="lineH1 imgSpace" style="height: 5px; font-size: 0px; line-height: 5px; padding: 0;"> </td></tr>
+</table>
+德国研究者表示，阿斯利康疫苗和强生疫苗使用的腺病毒载体造成了血栓反应。这一问题可以通过调整疫苗来杜绝。</td>
+</tr>
+<tr><td class="lineH1" style="height: 10px; font-size: 10px; line-height: 10px; padding: 0;"> </td></tr>
+</table>
+</div>
+<div style="line-height:1.618; " class="item-container">
+<table width="100%" cellpadding="0" cellspacing="0" style="border-bottom:1px solid #E9DECF; line-height:1.618;">
+<tr><td class="lineH1" style="height: 5px; font-size: 5px; line-height: 5px; padding: 0;"> </td></tr>
+<tr>
+<td class="SContent cover" style="font-size:14px;line-height:23px;color:#505050;">
+<div class="lineH1_4" style="line-height:40px;font-size:25px;">
+<a class="headLine" style="font-weight:bold; text-decoration:none; color:#111;"  href="http://newsletters.ftimg.online/u.html?stime=1622242604&uid=ft_news&eid=4082127&email=humoonruc@126.com&tlid=9075&stid=118980&thid=9075&url=~3">澳大利亚出口商在中国以外地区找到新市场</a>
+</div>
+<table cellpadding="0" cellspacing="0" align="left">
+<tr><td class="lineH1 imgSpace" style="height: 6px; font-size: 0px; line-height: 5px; padding: 0;"> </td></tr>
+<tr>
+<td>
+<a class="coverImgLink"  href="http://newsletters.ftimg.online/u.html?stime=1622242604&uid=ft_news&eid=4082127&email=humoonruc@126.com&tlid=9075&stid=118980&thid=9075&url=~3">
+<img src="https://thumbor.ftacademy.cn/unsafe/167x96/https://thumbor.ftacademy.cn/unsafe/picture/0/000117950_piclink.jpg" border="0" style="width:167px;" align="left" width="167"/>
+</a>
+</td>
+<td style="width:10px"> </td>
+</tr>
+<tr><td class="lineH1 imgSpace" style="height: 5px; font-size: 0px; line-height: 5px; padding: 0;"> </td></tr>
+</table>
+在北京打响中澳贸易争端第一枪的12个月后，澳大利亚大麦种植者开辟了新市场，其他受制裁行业大多也从别的地方弥补了损失。</td>
+</tr>
+<tr><td class="lineH1" style="height: 10px; font-size: 10px; line-height: 10px; padding: 0;"> </td></tr>
+</table>
+</div>
+<div style="line-height:1.618; " class="item-container">
+<table width="100%" cellpadding="0" cellspacing="0" style="border-bottom:1px solid #E9DECF; line-height:1.618;">
+<tr><td class="lineH1" style="height: 5px; font-size: 5px; line-height: 5px; padding: 0;"> </td></tr>
+<tr>
+<td class="SContent cover" style="font-size:14px;line-height:23px;color:#505050;">
+<div class="lineH1_4" style="line-height:40px;font-size:25px;">
+<a class="headLine" style="font-weight:bold; text-decoration:none; color:#111;"  href="http://newsletters.ftimg.online/u.html?stime=1622242604&uid=ft_news&eid=4082127&email=humoonruc@126.com&tlid=9075&stid=118980&thid=9075&url=~4">中国解决芯片短缺需要盟友而非孤立</a>
+</div>
+<table cellpadding="0" cellspacing="0" align="left">
+<tr><td class="lineH1 imgSpace" style="height: 6px; font-size: 0px; line-height: 5px; padding: 0;"> </td></tr>
+<tr>
+<td>
+<a class="coverImgLink"  href="http://newsletters.ftimg.online/u.html?stime=1622242604&uid=ft_news&eid=4082127&email=humoonruc@126.com&tlid=9075&stid=118980&thid=9075&url=~4">
+<img src="https://thumbor.ftacademy.cn/unsafe/167x96/https://thumbor.ftacademy.cn/unsafe/picture/2/000113892_piclink.jpg" border="0" style="width:167px;" align="left" width="167"/>
+</a>
+</td>
+<td style="width:10px"> </td>
+</tr>
+<tr><td class="lineH1 imgSpace" style="height: 5px; font-size: 0px; line-height: 5px; padding: 0;"> </td></tr>
+</table>
+北京方面想要芯片供应链“去美化”，这正是它欢迎竞争者的原因。</td>
+</tr>
+<tr><td class="lineH1" style="height: 10px; font-size: 10px; line-height: 10px; padding: 0;"> </td></tr>
+</table>
+</div>
+<div style="line-height:1.618; " class="item-container">
+<table width="100%" cellpadding="0" cellspacing="0" style="border-bottom:1px solid #E9DECF; line-height:1.618;">
+<tr><td class="lineH1" style="height: 5px; font-size: 5px; line-height: 5px; padding: 0;"> </td></tr>
+<tr>
+<td class="SContent cover" style="font-size:14px;line-height:23px;color:#505050;">
+<div class="lineH1_4" style="line-height:40px;font-size:25px;">
+<a class="headLine" style="font-weight:bold; text-decoration:none; color:#111;"  href="http://newsletters.ftimg.online/u.html?stime=1622242604&uid=ft_news&eid=4082127&email=humoonruc@126.com&tlid=9075&stid=118980&thid=9075&url=~5">富士康变身汽车制造商？</a>
+</div>
+<table cellpadding="0" cellspacing="0" align="left">
+<tr><td class="lineH1 imgSpace" style="height: 6px; font-size: 0px; line-height: 5px; padding: 0;"> </td></tr>
+<tr>
+<td>
+<a class="coverImgLink"  href="http://newsletters.ftimg.online/u.html?stime=1622242604&uid=ft_news&eid=4082127&email=humoonruc@126.com&tlid=9075&stid=118980&thid=9075&url=~5">
+<img src="https://thumbor.ftacademy.cn/unsafe/167x96/https://thumbor.ftacademy.cn/unsafe/picture/8/000117808_piclink.jpg" border="0" style="width:167px;" align="left" width="167"/>
+</a>
+</td>
+<td style="width:10px"> </td>
+</tr>
+<tr><td class="lineH1 imgSpace" style="height: 5px; font-size: 0px; line-height: 5px; padding: 0;"> </td></tr>
+</table>
+苹果最大供应商引领着一大批电子企业进军汽车制造业，它们对电动汽车的兴趣意味着，汽车业和电子行业都将迎来改头换面的巨变。</td>
+</tr>
+<tr><td class="lineH1" style="height: 10px; font-size: 10px; line-height: 10px; padding: 0;"> </td></tr>
+</table>
+</div>
+<div style="line-height:1.618; " class="item-container">
+<table width="100%" cellpadding="0" cellspacing="0" style="border-bottom:1px solid #E9DECF; line-height:1.618;">
+<tr><td class="lineH1" style="height: 5px; font-size: 5px; line-height: 5px; padding: 0;"> </td></tr>
+<tr>
+<td class="SContent cover" style="font-size:14px;line-height:23px;color:#505050;">
+<div class="lineH1_4" style="line-height:40px;font-size:25px;">
+<a class="headLine" style="font-weight:bold; text-decoration:none; color:#111;"  href="http://newsletters.ftimg.online/u.html?stime=1622242604&uid=ft_news&eid=4082127&email=humoonruc@126.com&tlid=9075&stid=118980&thid=9075&url=~6">张一鸣辞职令字节跳动员工及投资者意外</a>
+</div>
+<table cellpadding="0" cellspacing="0" align="left">
+<tr><td class="lineH1 imgSpace" style="height: 6px; font-size: 0px; line-height: 5px; padding: 0;"> </td></tr>
+<tr>
+<td>
+<a class="coverImgLink"  href="http://newsletters.ftimg.online/u.html?stime=1622242604&uid=ft_news&eid=4082127&email=humoonruc@126.com&tlid=9075&stid=118980&thid=9075&url=~6">
+<img src="https://thumbor.ftacademy.cn/unsafe/167x96/https://thumbor.ftacademy.cn/unsafe/picture/4/000117804_piclink.jpg" border="0" style="width:167px;" align="left" width="167"/>
+</a>
+</td>
+<td style="width:10px"> </td>
+</tr>
+<tr><td class="lineH1 imgSpace" style="height: 5px; font-size: 0px; line-height: 5px; padding: 0;"> </td></tr>
+</table>
+张一鸣在上周四的内部全员信中宣布将辞去字节跳动首席执行官一职，令该公司的员工及投资者大为震惊。</td>
+</tr>
+<tr><td class="lineH1" style="height: 10px; font-size: 10px; line-height: 10px; padding: 0;"> </td></tr>
+</table>
+</div>
+<div style="line-height:1.618; " class="item-container">
+<table width="100%" cellpadding="0" cellspacing="0" style="border-bottom:1px solid #E9DECF; line-height:1.618;">
+<tr><td class="lineH1" style="height: 5px; font-size: 5px; line-height: 5px; padding: 0;"> </td></tr>
+<tr>
+<td class="SContent cover" style="font-size:14px;line-height:23px;color:#505050;">
+<div class="lineH1_4" style="line-height:40px;font-size:25px;">
+<a class="headLine" style="font-weight:bold; text-decoration:none; color:#111;"  href="http://newsletters.ftimg.online/u.html?stime=1622242604&uid=ft_news&eid=4082127&email=humoonruc@126.com&tlid=9075&stid=118980&thid=9075&url=~7">美俄关系缓和对中国意味着什么？</a>
+</div>
+<table cellpadding="0" cellspacing="0" align="left">
+<tr><td class="lineH1 imgSpace" style="height: 6px; font-size: 0px; line-height: 5px; padding: 0;"> </td></tr>
+<tr>
+<td>
+<a class="coverImgLink"  href="http://newsletters.ftimg.online/u.html?stime=1622242604&uid=ft_news&eid=4082127&email=humoonruc@126.com&tlid=9075&stid=118980&thid=9075&url=~7">
+<img src="https://thumbor.ftacademy.cn/unsafe/167x96/https://thumbor.ftacademy.cn/unsafe/picture/2/000117812_piclink.jpg" border="0" style="width:167px;" align="left" width="167"/>
+</a>
+</td>
+<td style="width:10px"> </td>
+</tr>
+<tr><td class="lineH1 imgSpace" style="height: 5px; font-size: 0px; line-height: 5px; padding: 0;"> </td></tr>
+</table>
+曹辛：在政治、经济和战术性利益上，美俄关系缓和未必有利于中国，但在战略上，这对中美俄大三角的平衡难以产生颠覆性影响。</td>
+</tr>
+<tr><td class="lineH1" style="height: 10px; font-size: 10px; line-height: 10px; padding: 0;"> </td></tr>
+</table>
+</div>
+<div style="line-height:1.618; " class="item-container">
+<table width="100%" cellpadding="0" cellspacing="0" style="border-bottom:1px solid #E9DECF; line-height:1.618;">
+<tr><td class="lineH1" style="height: 5px; font-size: 5px; line-height: 5px; padding: 0;"> </td></tr>
+<tr>
+<td class="SContent cover" style="font-size:14px;line-height:23px;color:#505050;">
+<div class="lineH1_4" style="line-height:40px;font-size:25px;">
+<a class="headLine" style="font-weight:bold; text-decoration:none; color:#111;"  href="http://newsletters.ftimg.online/u.html?stime=1622242604&uid=ft_news&eid=4082127&email=humoonruc@126.com&tlid=9075&stid=118980&thid=9075&url=~8">大国在北极地区的竞争升温</a>
+</div>
+<table cellpadding="0" cellspacing="0" align="left">
+<tr><td class="lineH1 imgSpace" style="height: 6px; font-size: 0px; line-height: 5px; padding: 0;"> </td></tr>
+<tr>
+<td>
+<a class="coverImgLink"  href="http://newsletters.ftimg.online/u.html?stime=1622242604&uid=ft_news&eid=4082127&email=humoonruc@126.com&tlid=9075&stid=118980&thid=9075&url=~8">
+<img src="https://thumbor.ftacademy.cn/unsafe/167x96/https://thumbor.ftacademy.cn/unsafe/picture/6/000117806_piclink.jpg" border="0" style="width:167px;" align="left" width="167"/>
+</a>
+</td>
+<td style="width:10px"> </td>
+</tr>
+<tr><td class="lineH1 imgSpace" style="height: 5px; font-size: 0px; line-height: 5px; padding: 0;"> </td></tr>
+</table>
+随着气候变暖以及中国、俄罗斯、美国在其他地区和政策领域的紧张加剧，它们在北极地区的竞争呈现升温之势。</td>
+</tr>
+<tr><td class="lineH1" style="height: 10px; font-size: 10px; line-height: 10px; padding: 0;"> </td></tr>
+</table>
+</div>
+<div style="line-height:1.618; " class="item-container">
+<table width="100%" cellpadding="0" cellspacing="0" style="border-bottom:1px solid #E9DECF; line-height:1.618;">
+<tr><td class="lineH1" style="height: 5px; font-size: 5px; line-height: 5px; padding: 0;"> </td></tr>
+<tr>
+<td class="SContent cover" style="font-size:14px;line-height:23px;color:#505050;">
+<div class="lineH1_4" style="line-height:40px;font-size:25px;">
+<a class="headLine" style="font-weight:bold; text-decoration:none; color:#111;"  href="http://newsletters.ftimg.online/u.html?stime=1622242604&uid=ft_news&eid=4082127&email=humoonruc@126.com&tlid=9075&stid=118980&thid=9075&url=~9">碳中和，石油美元的终结？</a>
+</div>
+<table cellpadding="0" cellspacing="0" align="left">
+<tr><td class="lineH1 imgSpace" style="height: 6px; font-size: 0px; line-height: 5px; padding: 0;"> </td></tr>
+<tr>
+<td>
+<a class="coverImgLink"  href="http://newsletters.ftimg.online/u.html?stime=1622242604&uid=ft_news&eid=4082127&email=humoonruc@126.com&tlid=9075&stid=118980&thid=9075&url=~9">
+<img src="https://thumbor.ftacademy.cn/unsafe/167x96/https://thumbor.ftacademy.cn/unsafe/picture/7/000113047_piclink.jpg" border="0" style="width:167px;" align="left" width="167"/>
+</a>
+</td>
+<td style="width:10px"> </td>
+</tr>
+<tr><td class="lineH1 imgSpace" style="height: 5px; font-size: 0px; line-height: 5px; padding: 0;"> </td></tr>
+</table>
+吴金铎：当石油不再是“工业血液”，其金融属性脱离商品属性，会如何影响石油美元？碳中和加速去化石能源趋势，将如何影响世界货币体系？</td>
+</tr>
+<tr><td class="lineH1" style="height: 10px; font-size: 10px; line-height: 10px; padding: 0;"> </td></tr>
+</table>
+</div>
+</td></tr>
+</table>
+</td>
+<td style="width: 3%;" class="contentPadding largeViewBar">&nbsp;</td>
+</tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+<tr><td class="lineH1" style="height: 22px; font-size: 22px; line-height: 22px; padding: 0;">&nbsp;</td></tr>
+<tr>
+<td style="width: 3%;" class="contentPadding">&nbsp;</td>
+<td style="font-size:14px;line-height:25px;color:#505050;padding-left:17px;padding-right:17px;" class="subhead textPadding lineH">
+</td>
+<td style="width: 3%;" class="contentPadding">&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 3%;" class="contentPadding">&nbsp;</td>
+<td>
+<table width="100%" cellpadding="0" cellspacing="0">
+<tr><td class="lineH1" style="height: 34px; font-size: 34px; line-height: 34px; padding: 0;">&nbsp;</td></tr>
+<tr><td class="ft-copyright lineH1_4" style="font-size: 12px;line-height: 17px;padding: 5px 5px 0 5px;text-align: center;color: #505050;">
+&copy; THE FINANCIAL TIMES LTD 2021</td></tr>
+</table>
+</td>
+<td style="width: 3%;" class="contentPadding largeViewBar">&nbsp;</td>
+</tr>
+</table>
+</td></tr>
+<tr><td style="height: 28px; font-size: 28px; line-height: 28px; padding: 0;" class="bottomContentPadding lineH1">&nbsp;</td></tr>
+</table>
+</td>
+<td style="width:1%;" class="whiteBorder">&nbsp;</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<img src="http://m.ftchinese.com/track/ga.php?utmac=MO-1608715-1&utmn=2021052822&utmr=-&utmp=%2Fm%2Femail%2Fweekly.html%3Fto%3Dvip&utmdt=一周精选&guid=ON" />
+<img src="http://fa.ftchinese.com/log/collect.php?tid=UA-XXXX-Y&t=pageview&dl=%2Fm%2Femail%2Fweekly.html%3Fto%3Dvip&dr=&un=" />
+<img src="http://www1.ftchinese.com/log/new_log.php?id=&adch=&tpages=1&refer=&vpage=%2Fm%2Femail%2Fweekly.html%3Fto%3Dvip&utmn=2021052822" />
+<img src="https://pubads.g.doubleclick.net/activity;dc_iu=/5887/ftchinese/email/weekly;ord=1?" width=1 height=1 border=0/>
+</body>
+</html>
+
