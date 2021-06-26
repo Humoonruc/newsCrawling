@@ -1,0 +1,485 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<style>
+* {padding:0;margin:0;border:0;}
+ .lineH, p{line-height: 1.618 !important;}
+ .lineH1{line-height: 1 !important;}
+ .lineH1_2{line-height: 1.2 !important;}
+ .lineH1_4{line-height: 1.4 !important;}
+html{-webkit-text-size-adjust: none;}
+ .videosubhead p {padding-top: 10px;}
+img,div,p,table,td,tr{max-width:100%;}
+ .mainTD{width:100%;max-width:100%;}
+@media all and (max-width: 500px) {
+ .coverImgLinkContain{float:none !important;margin:5px auto !important;}
+}
+@media all and (max-width: 450px) {
+ .mainTD{width:100%;max-width:450px;}
+#wrapperInner,
+#containerTable {
+*width: 400px !important;
+_width: 400px !important;
+width: 100% !important;
+}
+ .whiteBorder {
+width: 0 !important;
+font-size: 0 !important;
+}
+ .otherHeadlines {
+font-size:17px !important;line-height:1.2 !important;color:#505050 !important;
+}
+ .otherHeadlines a,
+ .otherHeadlinesLink {
+color:#505050 !important;text-decoration:none !important;display:block !important;
+}
+ .ft-logo {
+font-size:26px !important;line-height:1.2 !important;height:26px !important;text-align:center !important;
+}
+ .ft-logo-briefing {
+font-size:5px !important;line-height:1 !important;height:5px !important;
+}
+ .ft-desc {
+font-size:13px !important;line-height:1.2 !important;color:#505050 !important;text-align:center !important;font-weight:bold !important;
+}
+ .ft-header-bar {
+border: solid 1px #A7A59B !important;
+border-width: 1px 0 !important;
+font-weight:normal !important;
+padding: 7px 14px !important;
+color:#000 !important;background-color:#E9DECE !important;font-size:19px !important; line-height:1.4 !important; font-weight:normal !important;width:100% !important;
+}
+ .topHeadline {
+font-size:21px !important;line-height:1.1 !important;color:#333 !important;
+}
+ .topHeadline a {
+color:#333 !important;text-decoration:none !important;display:block !important;
+}
+ .subhead {
+font-size:18px !important;line-height:1.4 !important;color:#505050 !important;
+}
+ .hotArticleList{font-size:20px !important;}
+ .dotsSeparator {
+margin-left: 10px !important;
+margin-right: 10px !important;
+}
+ .textPadding {
+padding-left:10px !important;padding-right:10px !important;
+}
+ .videoImageLink {
+color:#505050 !important;text-decoration:none !important;display:block !important;
+}
+ .headLine{font-size:19px !important;line-height:1.618 !important; color: #000;}
+ .cover .headLine{font-size:26px !important;line-height:1.618 !important;}
+ .SContent{font-size:16px !important;line-height:1.618 !important; color: #777;}
+ .cover{font-size:16px !important;line-height:1.618 !important;}
+ .imgSpace{height:6px !important;font-size: 0 !important;}
+ .largeViewBar,.HSpace{display: none !important;}
+ .tableBorder{border:0 !important;}
+}
+@media all and (min-width: 451px) {
+ .mainTD{width:100%;max-width:450px;}
+#wrapperInner,#containerTable {
+*width: 400px !important;
+_width: 400px !important;
+width: 100% !important;
+}
+ .whiteBorder {
+width: 0 !important;
+font-size: 0 !important;
+}
+ .openInBrowserGap {
+height: 10px !important; font-size: 8px !important; line-height: 1.2 !important; padding: 0 !important;
+}
+ .contentPadding {
+width: 45px !important;
+}
+ .bottomContentPadding {
+height: 43px !important; font-size: 43px !important; line-height: 1 !important; padding: 0 !important;
+}
+ .otherHeadlines {
+font-size:21px !important;line-height:1.1 !important;color:#505050 !important;
+}
+ .otherHeadlines a,.otherHeadlinesLink {
+color:#505050 !important;text-decoration:none !important;
+}
+ .ft-logo {
+font-size:53px !important;line-height:1 !important;height:53px !important;text-align:center !important;
+}
+ .ft-logo-briefing {
+font-size:2px !important;line-height:1 !important;height:2px !important;
+}
+ .ft-desc {
+font-size:13px !important;line-height:1.2 !important;color:#505050 !important;text-align:center !important;font-weight:bold !important;
+}
+ .ft-header-bar {
+color:#000 !important;
+background: #E9DECF !important;
+border: solid 1px #A7A59B !important;
+border-width: 1px 0 !important;
+line-height:1.4 !important;
+font-size:19px !important;
+font-weight:normal !important;
+padding: 7px 14px !important;
+width:100% !important;
+}
+ .topHeadline {
+font-size:28px !important;line-height:1.1 !important;color:#333 !important;
+}
+ .topHeadline a {
+color:#333 !important;text-decoration:none !important;
+}
+ .subhead {
+font-size:14px !important;line-height:1.4 !important;color:#505050 !important;
+}
+ .dotsSeparator {
+margin-left: 17px !important;
+margin-right: 17px !important;
+}
+ .textPadding {
+padding-left:17px !important;padding-right:17px !important;
+}
+ .videoImageLink {
+color:#505050 !important;text-decoration:none !important;
+}
+}
+@media all and (min-width: 720px) {
+ .mainTD{width:100%;max-width:720px;}
+#wrapperInner,
+#containerTable {
+width: 720px !important;
+}
+}
+@media only screen and (max-width: 720px) and (min-width: 501px){
+ .coverImgLinkContain{max-width: 50% !important;}
+}</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<!-- htmlmin:ignore -->
+<body class="is-html-email" style="width:100%;color:#111111;background-color:#FFFFFF;font-family:"Hiragino Sans GB","WenQuanYi Micro Hei","Heiti SC",STHeiti,SimSun,sans-serif;font-size:14px;">
+<img src=http://newsletters.ftimg.online/s.html?stime=1624661806&uid=ft_news&eid=4082127&email=humoonruc@126.com&tlid=9157&stid=120146 border=0 width=0><div id="wrapper" style="margin: 0 auto; text-align: center;">
+<table border="0" cellspacing="0" cellpadding="0" id="containerTable" style="background-color:#ffffff; display: table; margin: 0 auto; text-align: center; width: 720px; *width: 720px; _width: 720px;" align="center">
+<tr>
+<td class="mainTD" style="width: 720px;">
+<table border="0" cellspacing="0" cellpadding="0" align="left" style="text-align: left;">
+<tr>
+<td style="width:1%;" class="whiteBorder">&nbsp;</td>
+<td class="mainCol">
+<table class="tableBorder" border="0" cellspacing="0" cellpadding="0" style="background-color: #FFF1E0; border: 2px solid #f7f7f7; text-align: left;" align="left">
+<tr><td class="lineH1 openInBrowserGap" style="height: 10px; font-size: 10px; line-height: 10px; padding: 0;">&nbsp;</td></tr>
+<tr><td style="padding-left: 10px; padding-right: 10px;">
+<table border="0" cellspacing="0" cellpadding="0" style="width: 100%;">
+<tr><td class="ft-logo lineH1" style="font-size:43px;line-height:43px;height:43px;text-align:center; width: 100%;">
+<a
+href="http://www.ftchinese.com" target="_blank"
+><img id="ft-logo-img" src="https://dhgxl8qk9zgzr.cloudfront.net/img/ftcLogoHD.png" width="172" height="36" style="width: 172px;height: 36px; color: #091523; font-size: 25px; border: 0 none;" alt="FT中文网" title="FT中文网" /></a>
+</td></tr>
+<tr><td style="font-size:4px;line-height:4px;height:4px;" class="ft-logo-briefing lineH1">&nbsp;</td></tr>
+<tr><td class="ft-desc lineH1_2" style="font-size:13px;line-height:16px;color:#505050;text-align:center;font-weight:bold;">2021年06月26日</td></tr>
+</table>
+</td></tr>
+<tr><td class="lineH1" style="height: 10px; font-size: 10px; line-height: 10px; padding: 0;">&nbsp;</td></tr>
+<tr><td>
+<table width="100%" cellpadding="0" cellspacing="0">
+<tr>
+<td style="width: 3%;" class="contentPadding largeViewBar">&nbsp;</td>
+<td>
+<table width="100%" cellpadding="0" cellspacing="0">
+<tr><td class="ft-header-bar" style="color:#333333;background-color:#E9DECE;font-size:13px;font-weight:bold;padding:5px 17px 4px 17px;text-transform:uppercase;width:100%;">一周精选</td></tr>
+<tr><td class="lineH1" style="height: 10px; font-size: 10px; line-height: 10px; padding: 0;">&nbsp;</td></tr>
+<tr><td style="font-size:14px;line-height:25px;color:#505050;padding-left:17px;padding-right:17px;" class="subhead textPadding lineH">
+<div style="line-height:1.618; " class="item-container">
+<table width="100%" cellpadding="0" cellspacing="0" style="border-bottom:1px solid #E9DECF; line-height:1.618;">
+<tr><td class="lineH1" style="height: 5px; font-size: 5px; line-height: 5px; padding: 0;"> </td></tr>
+<tr>
+<td class="SContent cover" style="font-size:14px;line-height:23px;color:#505050;">
+<div class="lineH1_4" style="line-height:40px;font-size:25px;">
+<a class="headLine" style="font-weight:bold; text-decoration:none; color:#111;"  href="http://newsletters.ftimg.online/u.html?stime=1624661806&uid=ft_news&eid=4082127&email=humoonruc@126.com&tlid=9157&stid=120146&thid=9157&url=~0">中国家长对英国私校失去信心</a>
+</div>
+<table cellpadding="0" cellspacing="0" align="left" class="coverImgLinkContain">
+<tr><td class="lineH1 imgSpace" style="height: 6px; font-size: 0px; line-height: 5px; padding: 0;"> </td></tr>
+<tr>
+<td>
+<a class="coverImgLink"  href="http://newsletters.ftimg.online/u.html?stime=1624661806&uid=ft_news&eid=4082127&email=humoonruc@126.com&tlid=9157&stid=120146&thid=9157&url=~0">
+<img src="https://thumbor.ftacademy.cn/unsafe/414x233/https://thumbor.ftacademy.cn/unsafe/picture/6/000119566_piclink.jpg" border="0" style="width:414px;" align="left" width="414"/>
+</a>
+</td>
+<td style="width:10px"> </td>
+</tr>
+<tr><td class="lineH1 imgSpace" style="height: 5px; font-size: 0px; line-height: 5px; padding: 0;"> </td></tr>
+</table>
+新冠疫情颠覆了英国对中国中产阶级稳步增长的吸引力。疫情导致入学英国私立学校的中国学生大幅减少，影响了这些学校的学费收入。</td>
+</tr>
+<tr><td class="lineH1" style="height: 10px; font-size: 10px; line-height: 10px; padding: 0;"> </td></tr>
+</table>
+</div>
+<div style="line-height:1.618; " class="item-container">
+<table width="100%" cellpadding="0" cellspacing="0" style="border-bottom:1px solid #E9DECF; line-height:1.618;">
+<tr><td class="lineH1" style="height: 5px; font-size: 5px; line-height: 5px; padding: 0;"> </td></tr>
+<tr>
+<td class="SContent cover" style="font-size:14px;line-height:23px;color:#505050;">
+<div class="lineH1_4" style="line-height:40px;font-size:25px;">
+<a class="headLine" style="font-weight:bold; text-decoration:none; color:#111;"  href="http://newsletters.ftimg.online/u.html?stime=1624661806&uid=ft_news&eid=4082127&email=humoonruc@126.com&tlid=9157&stid=120146&thid=9157&url=~1">西方国家的疫情困境</a>
+</div>
+<table cellpadding="0" cellspacing="0" align="left">
+<tr><td class="lineH1 imgSpace" style="height: 6px; font-size: 0px; line-height: 5px; padding: 0;"> </td></tr>
+<tr>
+<td>
+<a class="coverImgLink"  href="http://newsletters.ftimg.online/u.html?stime=1624661806&uid=ft_news&eid=4082127&email=humoonruc@126.com&tlid=9157&stid=120146&thid=9157&url=~1">
+<img src="https://thumbor.ftacademy.cn/unsafe/167x96/https://thumbor.ftacademy.cn/unsafe/picture/1/000119801_piclink.jpg" border="0" style="width:167px;" align="left" width="167"/>
+</a>
+</td>
+<td style="width:10px"> </td>
+</tr>
+<tr><td class="lineH1 imgSpace" style="height: 5px; font-size: 0px; line-height: 5px; padding: 0;"> </td></tr>
+</table>
+卢斯：新冠疫情爆发后头18个月有一个明显的模式：每一件表面上确定的事都会被事实推翻。每当我们前进两步，就会退后一步。</td>
+</tr>
+<tr><td class="lineH1" style="height: 10px; font-size: 10px; line-height: 10px; padding: 0;"> </td></tr>
+</table>
+</div>
+<div style="line-height:1.618; " class="item-container">
+<table width="100%" cellpadding="0" cellspacing="0" style="border-bottom:1px solid #E9DECF; line-height:1.618;">
+<tr><td class="lineH1" style="height: 5px; font-size: 5px; line-height: 5px; padding: 0;"> </td></tr>
+<tr>
+<td class="SContent cover" style="font-size:14px;line-height:23px;color:#505050;">
+<div class="lineH1_4" style="line-height:40px;font-size:25px;">
+<a class="headLine" style="font-weight:bold; text-decoration:none; color:#111;"  href="http://newsletters.ftimg.online/u.html?stime=1624661806&uid=ft_news&eid=4082127&email=humoonruc@126.com&tlid=9157&stid=120146&thid=9157&url=~2">高校“青椒”围城：细观“非升即走”政策</a>
+</div>
+<table cellpadding="0" cellspacing="0" align="left">
+<tr><td class="lineH1 imgSpace" style="height: 6px; font-size: 0px; line-height: 5px; padding: 0;"> </td></tr>
+<tr>
+<td>
+<a class="coverImgLink"  href="http://newsletters.ftimg.online/u.html?stime=1624661806&uid=ft_news&eid=4082127&email=humoonruc@126.com&tlid=9157&stid=120146&thid=9157&url=~2">
+<img src="https://thumbor.ftacademy.cn/unsafe/167x96/https://thumbor.ftacademy.cn/unsafe/picture/6/000119776_piclink.jpg" border="0" style="width:167px;" align="left" width="167"/>
+</a>
+</td>
+<td style="width:10px"> </td>
+</tr>
+<tr><td class="lineH1 imgSpace" style="height: 5px; font-size: 0px; line-height: 5px; padding: 0;"> </td></tr>
+</table>
+贾铭：大学引入非升即走政策时，要考虑是否真的具有实行的条件，否则盲目引进和推行，可能就会产生南橘北枳的结果。</td>
+</tr>
+<tr><td class="lineH1" style="height: 10px; font-size: 10px; line-height: 10px; padding: 0;"> </td></tr>
+</table>
+</div>
+<div style="line-height:1.618; " class="item-container">
+<table width="100%" cellpadding="0" cellspacing="0" style="border-bottom:1px solid #E9DECF; line-height:1.618;">
+<tr><td class="lineH1" style="height: 5px; font-size: 5px; line-height: 5px; padding: 0;"> </td></tr>
+<tr>
+<td class="SContent cover" style="font-size:14px;line-height:23px;color:#505050;">
+<div class="lineH1_4" style="line-height:40px;font-size:25px;">
+<a class="headLine" style="font-weight:bold; text-decoration:none; color:#111;"  href="http://newsletters.ftimg.online/u.html?stime=1624661806&uid=ft_news&eid=4082127&email=humoonruc@126.com&tlid=9157&stid=120146&thid=9157&url=~3">中国楼市：消失的屋顶如何找回？</a>
+</div>
+<table cellpadding="0" cellspacing="0" align="left">
+<tr><td class="lineH1 imgSpace" style="height: 6px; font-size: 0px; line-height: 5px; padding: 0;"> </td></tr>
+<tr>
+<td>
+<a class="coverImgLink"  href="http://newsletters.ftimg.online/u.html?stime=1624661806&uid=ft_news&eid=4082127&email=humoonruc@126.com&tlid=9157&stid=120146&thid=9157&url=~3">
+<img src="https://thumbor.ftacademy.cn/unsafe/167x96/https://thumbor.ftacademy.cn/unsafe/picture/4/000079104_piclink.jpg" border="0" style="width:167px;" align="left" width="167"/>
+</a>
+</td>
+<td style="width:10px"> </td>
+</tr>
+<tr><td class="lineH1 imgSpace" style="height: 5px; font-size: 0px; line-height: 5px; padding: 0;"> </td></tr>
+</table>
+胡月晓：要让尽可能多的人得到他想要的“屋顶”，仅有“天花板”还是不够的；“守夜人”要让更多“屋顶”进入市场，消除楼市的储藏现象。</td>
+</tr>
+<tr><td class="lineH1" style="height: 10px; font-size: 10px; line-height: 10px; padding: 0;"> </td></tr>
+</table>
+</div>
+<div style="line-height:1.618; " class="item-container">
+<table width="100%" cellpadding="0" cellspacing="0" style="border-bottom:1px solid #E9DECF; line-height:1.618;">
+<tr><td class="lineH1" style="height: 5px; font-size: 5px; line-height: 5px; padding: 0;"> </td></tr>
+<tr>
+<td class="SContent cover" style="font-size:14px;line-height:23px;color:#505050;">
+<div class="lineH1_4" style="line-height:40px;font-size:25px;">
+<a class="headLine" style="font-weight:bold; text-decoration:none; color:#111;"  href="http://newsletters.ftimg.online/u.html?stime=1624661806&uid=ft_news&eid=4082127&email=humoonruc@126.com&tlid=9157&stid=120146&thid=9157&url=~4">去年超过500万人在新冠疫情中成为百万富翁</a>
+</div>
+<table cellpadding="0" cellspacing="0" align="left">
+<tr><td class="lineH1 imgSpace" style="height: 6px; font-size: 0px; line-height: 5px; padding: 0;"> </td></tr>
+<tr>
+<td>
+<a class="coverImgLink"  href="http://newsletters.ftimg.online/u.html?stime=1624661806&uid=ft_news&eid=4082127&email=humoonruc@126.com&tlid=9157&stid=120146&thid=9157&url=~4">
+<img src="https://thumbor.ftacademy.cn/unsafe/167x96/https://thumbor.ftacademy.cn/unsafe/picture/4/000119564_piclink.jpg" border="0" style="width:167px;" align="left" width="167"/>
+</a>
+</td>
+<td style="width:10px"> </td>
+</tr>
+<tr><td class="lineH1 imgSpace" style="height: 5px; font-size: 0px; line-height: 5px; padding: 0;"> </td></tr>
+</table>
+对疫情的政策应对推高了资产价格，最富有的人从中受益最大。据估计去年身家不低于5000万美元的富人增加了近四分之一。</td>
+</tr>
+<tr><td class="lineH1" style="height: 10px; font-size: 10px; line-height: 10px; padding: 0;"> </td></tr>
+</table>
+</div>
+<div style="line-height:1.618; " class="item-container">
+<table width="100%" cellpadding="0" cellspacing="0" style="border-bottom:1px solid #E9DECF; line-height:1.618;">
+<tr><td class="lineH1" style="height: 5px; font-size: 5px; line-height: 5px; padding: 0;"> </td></tr>
+<tr>
+<td class="SContent cover" style="font-size:14px;line-height:23px;color:#505050;">
+<div class="lineH1_4" style="line-height:40px;font-size:25px;">
+<a class="headLine" style="font-weight:bold; text-decoration:none; color:#111;"  href="http://newsletters.ftimg.online/u.html?stime=1624661806&uid=ft_news&eid=4082127&email=humoonruc@126.com&tlid=9157&stid=120146&thid=9157&url=~5">全民资本：适合我们时代的再分配方式</a>
+</div>
+<table cellpadding="0" cellspacing="0" align="left">
+<tr><td class="lineH1 imgSpace" style="height: 6px; font-size: 0px; line-height: 5px; padding: 0;"> </td></tr>
+<tr>
+<td>
+<a class="coverImgLink"  href="http://newsletters.ftimg.online/u.html?stime=1624661806&uid=ft_news&eid=4082127&email=humoonruc@126.com&tlid=9157&stid=120146&thid=9157&url=~5">
+<img src="https://thumbor.ftacademy.cn/unsafe/167x96/https://thumbor.ftacademy.cn/unsafe/picture/6/000119546_piclink.jpg" border="0" style="width:167px;" align="left" width="167"/>
+</a>
+</td>
+<td style="width:10px"> </td>
+</tr>
+<tr><td class="lineH1 imgSpace" style="height: 5px; font-size: 0px; line-height: 5px; padding: 0;"> </td></tr>
+</table>
+福鲁哈尔：加州的“预分配”实验如获成功，或许可以在联邦层面推行。这个兼具资本主义和社会主义特点的概念适合我们这个时代。</td>
+</tr>
+<tr><td class="lineH1" style="height: 10px; font-size: 10px; line-height: 10px; padding: 0;"> </td></tr>
+</table>
+</div>
+<div style="line-height:1.618; " class="item-container">
+<table width="100%" cellpadding="0" cellspacing="0" style="border-bottom:1px solid #E9DECF; line-height:1.618;">
+<tr><td class="lineH1" style="height: 5px; font-size: 5px; line-height: 5px; padding: 0;"> </td></tr>
+<tr>
+<td class="SContent cover" style="font-size:14px;line-height:23px;color:#505050;">
+<div class="lineH1_4" style="line-height:40px;font-size:25px;">
+<a class="headLine" style="font-weight:bold; text-decoration:none; color:#111;"  href="http://newsletters.ftimg.online/u.html?stime=1624661806&uid=ft_news&eid=4082127&email=humoonruc@126.com&tlid=9157&stid=120146&thid=9157&url=~6">中国如何整改科技巨头？</a>
+</div>
+<table cellpadding="0" cellspacing="0" align="left">
+<tr><td class="lineH1 imgSpace" style="height: 6px; font-size: 0px; line-height: 5px; padding: 0;"> </td></tr>
+<tr>
+<td>
+<a class="coverImgLink"  href="http://newsletters.ftimg.online/u.html?stime=1624661806&uid=ft_news&eid=4082127&email=humoonruc@126.com&tlid=9157&stid=120146&thid=9157&url=~6">
+<img src="https://thumbor.ftacademy.cn/unsafe/167x96/https://thumbor.ftacademy.cn/unsafe/picture/0/000119480_piclink.jpg" border="0" style="width:167px;" align="left" width="167"/>
+</a>
+</td>
+<td style="width:10px"> </td>
+</tr>
+<tr><td class="lineH1 imgSpace" style="height: 5px; font-size: 0px; line-height: 5px; padding: 0;"> </td></tr>
+</table>
+中国反垄断监管机构一改往日低调，调查阿里巴巴、美团，并要求另外30多家科技公司也进行整改，其突发行动引起了不安。</td>
+</tr>
+<tr><td class="lineH1" style="height: 10px; font-size: 10px; line-height: 10px; padding: 0;"> </td></tr>
+</table>
+</div>
+<div style="line-height:1.618; " class="item-container">
+<table width="100%" cellpadding="0" cellspacing="0" style="border-bottom:1px solid #E9DECF; line-height:1.618;">
+<tr><td class="lineH1" style="height: 5px; font-size: 5px; line-height: 5px; padding: 0;"> </td></tr>
+<tr>
+<td class="SContent cover" style="font-size:14px;line-height:23px;color:#505050;">
+<div class="lineH1_4" style="line-height:40px;font-size:25px;">
+<a class="headLine" style="font-weight:bold; text-decoration:none; color:#111;"  href="http://newsletters.ftimg.online/u.html?stime=1624661806&uid=ft_news&eid=4082127&email=humoonruc@126.com&tlid=9157&stid=120146&thid=9157&url=~7">书评：《创造性破坏的力量》</a>
+</div>
+<table cellpadding="0" cellspacing="0" align="left">
+<tr><td class="lineH1 imgSpace" style="height: 6px; font-size: 0px; line-height: 5px; padding: 0;"> </td></tr>
+<tr>
+<td>
+<a class="coverImgLink"  href="http://newsletters.ftimg.online/u.html?stime=1624661806&uid=ft_news&eid=4082127&email=humoonruc@126.com&tlid=9157&stid=120146&thid=9157&url=~7">
+<img src="https://thumbor.ftacademy.cn/unsafe/167x96/https://thumbor.ftacademy.cn/unsafe/picture/3/000119573_piclink.jpg" border="0" style="width:167px;" align="left" width="167"/>
+</a>
+</td>
+<td style="width:10px"> </td>
+</tr>
+<tr><td class="lineH1 imgSpace" style="height: 5px; font-size: 0px; line-height: 5px; padding: 0;"> </td></tr>
+</table>
+本书作者论述了资本主义如何通过创造性破坏实现增长。在捍卫资本主义的同时，也强调了监管和社会安全保障的必要性。</td>
+</tr>
+<tr><td class="lineH1" style="height: 10px; font-size: 10px; line-height: 10px; padding: 0;"> </td></tr>
+</table>
+</div>
+<div style="line-height:1.618; " class="item-container">
+<table width="100%" cellpadding="0" cellspacing="0" style="border-bottom:1px solid #E9DECF; line-height:1.618;">
+<tr><td class="lineH1" style="height: 5px; font-size: 5px; line-height: 5px; padding: 0;"> </td></tr>
+<tr>
+<td class="SContent cover" style="font-size:14px;line-height:23px;color:#505050;">
+<div class="lineH1_4" style="line-height:40px;font-size:25px;">
+<a class="headLine" style="font-weight:bold; text-decoration:none; color:#111;"  href="http://newsletters.ftimg.online/u.html?stime=1624661806&uid=ft_news&eid=4082127&email=humoonruc@126.com&tlid=9157&stid=120146&thid=9157&url=~8">拉舍特警告不要对中国发起冷战</a>
+</div>
+<table cellpadding="0" cellspacing="0" align="left">
+<tr><td class="lineH1 imgSpace" style="height: 6px; font-size: 0px; line-height: 5px; padding: 0;"> </td></tr>
+<tr>
+<td>
+<a class="coverImgLink"  href="http://newsletters.ftimg.online/u.html?stime=1624661806&uid=ft_news&eid=4082127&email=humoonruc@126.com&tlid=9157&stid=120146&thid=9157&url=~8">
+<img src="https://thumbor.ftacademy.cn/unsafe/167x96/https://thumbor.ftacademy.cn/unsafe/picture/3/000119503_piclink.jpg" border="0" style="width:167px;" align="left" width="167"/>
+</a>
+</td>
+<td style="width:10px"> </td>
+</tr>
+<tr><td class="lineH1 imgSpace" style="height: 5px; font-size: 0px; line-height: 5px; padding: 0;"> </td></tr>
+</table>
+德国下任总理热门人选拉舍特认为，中国既是系统性竞争对手，也是合作伙伴，西方在与中国的地缘政治竞争方面应避免陷入冷战思维。</td>
+</tr>
+<tr><td class="lineH1" style="height: 10px; font-size: 10px; line-height: 10px; padding: 0;"> </td></tr>
+</table>
+</div>
+<div style="line-height:1.618; " class="item-container">
+<table width="100%" cellpadding="0" cellspacing="0" style="border-bottom:1px solid #E9DECF; line-height:1.618;">
+<tr><td class="lineH1" style="height: 5px; font-size: 5px; line-height: 5px; padding: 0;"> </td></tr>
+<tr>
+<td class="SContent cover" style="font-size:14px;line-height:23px;color:#505050;">
+<div class="lineH1_4" style="line-height:40px;font-size:25px;">
+<a class="headLine" style="font-weight:bold; text-decoration:none; color:#111;"  href="http://newsletters.ftimg.online/u.html?stime=1624661806&uid=ft_news&eid=4082127&email=humoonruc@126.com&tlid=9157&stid=120146&thid=9157&url=~9">与FT共进午餐：弗拉季斯拉夫•苏尔科夫</a>
+</div>
+<table cellpadding="0" cellspacing="0" align="left">
+<tr><td class="lineH1 imgSpace" style="height: 6px; font-size: 0px; line-height: 5px; padding: 0;"> </td></tr>
+<tr>
+<td>
+<a class="coverImgLink"  href="http://newsletters.ftimg.online/u.html?stime=1624661806&uid=ft_news&eid=4082127&email=humoonruc@126.com&tlid=9157&stid=120146&thid=9157&url=~9">
+<img src="https://thumbor.ftacademy.cn/unsafe/167x96/https://thumbor.ftacademy.cn/unsafe/picture/2/000119672_piclink.jpg" border="0" style="width:167px;" align="left" width="167"/>
+</a>
+</td>
+<td style="width:10px"> </td>
+</tr>
+<tr><td class="lineH1 imgSpace" style="height: 5px; font-size: 0px; line-height: 5px; padding: 0;"> </td></tr>
+</table>
+克里姆林宫“灰衣主教”苏尔科夫谈论了俄罗斯的民主、阿列克谢•纳瓦尔尼、以及为什么普京是当代的屋大维。</td>
+</tr>
+<tr><td class="lineH1" style="height: 10px; font-size: 10px; line-height: 10px; padding: 0;"> </td></tr>
+</table>
+</div>
+</td></tr>
+</table>
+</td>
+<td style="width: 3%;" class="contentPadding largeViewBar">&nbsp;</td>
+</tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+<tr><td class="lineH1" style="height: 22px; font-size: 22px; line-height: 22px; padding: 0;">&nbsp;</td></tr>
+<tr>
+<td style="width: 3%;" class="contentPadding">&nbsp;</td>
+<td style="font-size:14px;line-height:25px;color:#505050;padding-left:17px;padding-right:17px;" class="subhead textPadding lineH">
+</td>
+<td style="width: 3%;" class="contentPadding">&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 3%;" class="contentPadding">&nbsp;</td>
+<td>
+<table width="100%" cellpadding="0" cellspacing="0">
+<tr><td class="lineH1" style="height: 34px; font-size: 34px; line-height: 34px; padding: 0;">&nbsp;</td></tr>
+<tr><td class="ft-copyright lineH1_4" style="font-size: 12px;line-height: 17px;padding: 5px 5px 0 5px;text-align: center;color: #505050;">
+&copy; THE FINANCIAL TIMES LTD 2021</td></tr>
+</table>
+</td>
+<td style="width: 3%;" class="contentPadding largeViewBar">&nbsp;</td>
+</tr>
+</table>
+</td></tr>
+<tr><td style="height: 28px; font-size: 28px; line-height: 28px; padding: 0;" class="bottomContentPadding lineH1">&nbsp;</td></tr>
+</table>
+</td>
+<td style="width:1%;" class="whiteBorder">&nbsp;</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<img src="http://m.ftchinese.com/track/ga.php?utmac=MO-1608715-1&utmn=2021062520&utmr=-&utmp=%2Fm%2Femail%2Fweekly.html%3Fto%3Dvip&utmdt=一周精选&guid=ON" />
+<img src="http://fa.ftchinese.com/log/collect.php?tid=UA-XXXX-Y&t=pageview&dl=%2Fm%2Femail%2Fweekly.html%3Fto%3Dvip&dr=&un=" />
+<img src="http://www1.ftchinese.com/log/new_log.php?id=&adch=&tpages=1&refer=&vpage=%2Fm%2Femail%2Fweekly.html%3Fto%3Dvip&utmn=2021062520" />
+<img src="https://pubads.g.doubleclick.net/activity;dc_iu=/5887/ftchinese/email/weekly;ord=1?" width=1 height=1 border=0/>
+</body>
+</html>
+
