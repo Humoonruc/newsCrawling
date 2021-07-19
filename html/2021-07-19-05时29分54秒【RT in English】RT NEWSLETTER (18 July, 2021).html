@@ -1,0 +1,496 @@
+<html style="margin: 0;padding: 0;">
+<head>
+    <meta charset="UTF-8">
+    <title>Mail</title>
+    <META content="text/html; charset=UTF8" http-equiv=Content-Type />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+
+        @media (max-width: 710px) {
+            .hide {
+                display: none;
+            }
+
+            .full_article {
+                max-width: 100% !important;
+                width: 100% !important;
+                display: block;
+                text-align: left !important;
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+            }
+
+            .full_article > a > img {
+                margin-bottom: 20px;
+            }
+        }
+
+        @media (max-width: 660px) {
+            .hide {
+                display: none;
+            }
+
+            .full {
+                width: 100% !important;
+                display: block;
+                text-align: left !important;
+                margin-bottom: 10px;
+            }
+
+            .full_date {
+                width: 100% !important;
+                display: block;
+                text-align: left !important;
+                margin-bottom: 10px;
+                padding-left: 0px !important;
+            }
+
+            .bgtitle {
+                font-size: 20px !important;
+            }
+
+            .bgmiddle {
+                font-size: 14px !important;
+            }
+
+            .bgtitle_block {
+                font-size: 24px !important;
+            }
+        }
+
+
+    </style>
+</head>
+<body style="margin: 0;padding: 0;">
+    <div style="background-color:#FFF; font-family: 'Helvetica','Arial', sans-serif;">
+        <div style="max-width: 800px;margin: 0 auto;text-align: center;padding: 10px 20px;"><a class="header-top-text" href="https://subscribe.rt.com/preview/9VsRGF" style="display: block; margin: 0;font-family: &quot;Arial&quot;, sans-serif;font-size: 14px;line-height: 20px;color: #a3a3a3;text-align: center; text-decoration: underline;">If you do not see images or links do not work, open the message in your browser.</a></div>
+        <div class="header_logo" style="max-width: 800px;margin: 0 auto;background: #000000;padding-top: 10px;padding-bottom: 10px;">
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                    <td valign="center" width="128"><a href="https://www.rt.com"
+                                                       style="text-decoration: none"><img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJgAAABQCAYAAADlebz4AAAAAXNSR0IArs4c6QAABN5JREFUeAHtnc9LFGEYx591/bVq/og1UwlRwwjpEkW/jCK6mHQoqEt0CoIORQX9AxEVFXSILt06FNFBiOhYsXipiIJKSqIfpBum2aasra6r277SD3V2db+jz8yU34Fwffd5nvedz3x8Z+bdMX2H7jcnhRsJKBHIUarLsiQwSYCCUQRVAhRMFS+LUzA6oEqAgqniZXEKRgdUCVAwVbwsTsHogCoBCqaKl8UpGB1QJUDBVPGyOAWjA6oEKJgqXhanYHRAlQAFU8XL4hSMDqgSoGCqeFmcgtEBVQIUTBUvi1MwOqBKgIKp4mVxCkYHVAlQMFW8LE7B6IAqAQqmipfFKRgdUCWQq1p9ERVPjE44ure+1NTgz0s/Pzg9ltl2nILNRgd47/aBtxKLJICM+YeW1uZLsCkgTbvKpXZtyZ+CN/Z2SWLEWeH/dD7jBQWbAeRf+nYoHBfz7/3DQVnVViEbjiyXvED6Wc2t/aJgLpE3p7iK+kJL72YWjH3DZ8KuexExNbccr5GlDQWSGM3uP02KfBiRJDLZ+SRV3zpuy478aqBgmcgot+cV5ciea41pe+nviknoXI8MdsfTvp+p8c3diDTuKJPdVxoyhVjab+7rgoTOLcg8bkvxVIO35tN0I1yEbZWrAtJ2uV7yS/DD8+x6v6eI4XvgqeH/v4MJVOTKmv1BeAd7Xw5LIo6c8+AuoAQKBuFyNriquQjuMDkuEhvAr+HgjrJMoGBZgnIjbDyR3YX6zLGZi32vbB4aileQeGccn59G4cGYZYqiYB6cp5VAwbTIzrOuuZN81T4AV6lrWSI5/tRagkc2LlO4dCDM2lPk44il99Ghcfn8fFhe3Poq5noK2cxd5/rDVUiKeiwFU0ecvoOxHxPSfuhd+jdttm46Wi1FS71zejS7QcFsHkwvpZmZq+VkjdRvK/PSsCbHQsFcPCRmNX/qZj6ghj62SSVXrg5I68W61GeQ/qmlPPOagrl0KMysc/DO6mm9fwgNyoPTPdPa5vqm/3VM+jpjUrvu79MUc+U4+f70HyEne2ZfFgLmFFe/vdTSPldD6HxYYt+9s7g6dbwUbCoND7zefKxaCiuw0515AqPjQtgDo7cOgYJZmbjaUliWKy0nauAxdD+OSqeNdTO4IzCBgoHAnAiv21IqK3fid4RPrn2Rb++sa2tOjDlTHxQsExmX2zeaNa0gdg82MZaUB2e6Uw8b8mkKlw+f97svKPFPrm2hIx38FJdHV3vRNLV4zmBqaOdfeMWGJdLUWg4XMo9Pf+wYgvM0EiiYBtUFrGl+kaN4Gf7xT8elsET7xhZwJPZKUTB73BzLyi/2y9ZT+F1lPDohobM9qU8G7D1TtlA76OPf7F4YlHYurM0vUGS72alvavvzfeLzZX58x05dZNzYbUq2NBZhHALdDh6t+lp1f+9j9j9CvzP4lQQAAhQMgMVQnAAFw5kxAyBAwQBYDMUJUDCcGTMAAhQMgMVQnAAFw5kxAyBAwQBYDMUJUDCcGTMAAhQMgMVQnAAFw5kxAyBAwQBYDMUJUDCcGTMAAhQMgMVQnAAFw5kxAyBAwQBYDMUJUDCcGTMAAhQMgMVQnAAFw5kxAyBAwQBYDMUJUDCcGTMAAhQMgMVQnAAFw5kxAyBAwQBYDMUJUDCcGTMAAhQMgMVQnMBPzkLLXBt4pScAAAAASUVORK5CYII=" alt="RT"
+                            style="border: 0;max-width: 8em;width:100%;height: auto;"/></a></td>
+                    <td valign="center" style="padding-left: 20px;"><a href="https://www.rt.com?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email"
+                                                                       class="bgtitle_block"
+                                                                       style="text-decoration: none;font-size: 30px;color: #FFFFFF;letter-spacing: 0;text-transform: uppercase;">question more</a></td>
+                    <td valign="center" align="right" class="hide"
+                        style="font-size: 16px;color: #FFFFFF;letter-spacing: 0;padding-right: 20px;">19 July</td>
+                </tr>
+
+            </table>
+        </div>
+        
+        <div style="width: 100%;text-align: center;max-width: 800px;margin: 0 auto;">
+            <div style="padding: 20px;font-size: 36px;color: #000000;letter-spacing: 0;line-height: 40px;" class="bgtitle_block">RT NEWSLETTER (18 July, 2021)</div>
+        </div>
+        
+        
+            
+                <div style="max-width: 800px;margin: 0 auto;width: 100%;">
+                    
+                        
+                            <div>
+                                <a href="https://www.rt.com/news/529545-merkel-flooding-climate-focused-policy/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;">
+                                    <img style="border: 0;width: 100%;height: auto;" alt="Merkel visits areas ravaged by floods, says Germany needs more climate-focused policy" src="https://cdni.rt.com/files/2021.07/article/60f46776203027339065e313.JPG"/>
+                                </a>
+                            </div>
+                        
+                        <div style="margin-top: 30px;padding-left: 5%;padding-right: 5%;">
+                              <div style="">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr style="">
+                                            <td width="50%">
+                                                <a href="https://www.rt.com/news/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email"
+                                                   style="text-decoration: none;font-size: 24px;color: #000000;letter-spacing: 0;font-weight: bold;">World News</a>
+                                            </td>
+                                            <td width="50%" align="right">
+                                                <span style="padding-left: 10px;font-size: 15px;color: #939598;letter-spacing: 0;">18 July</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                              </div>
+                              <div style="margin-top: 10px">
+                                 <a class="news-item-title" href="https://www.rt.com/news/529545-merkel-flooding-climate-focused-policy/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;margin: 0;font-family: &quot;Arial&quot;, sans-serif;font-size: 30px;line-height: 1.17;color: #000000;text-align: left;">Merkel visits areas ravaged by floods, says Germany needs more climate-focused policy</a>
+                              </div>
+                              <div style="margin-top: 20px">
+                                   <a href="https://www.rt.com/news/529545-merkel-flooding-climate-focused-policy/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-size: 16px;line-height: 1.5;color: #000000;text-align: left;text-decoration: none;">During a visit to Germany's heavily flooded areas, Chancellor Angela Merkel said the country will continue to “oppose” the destructive forces of nature, but a policy is needed that would focus more on climate than it did before.</a>
+                              </div>
+                              <div style="margin-top: 20px">
+                                    <a class="news-item-link" href="https://www.rt.com/news/529545-merkel-flooding-climate-focused-policy/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;display: block;height: 55px;border: solid 1px #000000;font-size: 16px;line-height: 55px;color: #000000;text-align: center;">Read more on the site</a>
+                              </div>
+                        </div>
+                    
+                </div>
+            
+        
+        
+        
+               <div style="margin-top: 20px;background-color: #FFF;">
+                 
+                    <div style="padding-top: 40px;padding-bottom: 40px;">
+                        <div style="max-width: 800px;margin: 0 auto;">
+
+                             
+                                <div style="margin-bottom: 20px; padding-left: 10px; padding-right: 10px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr style="">
+                                            <td width="50%" valign="center">
+                                                <a href="https://www.rt.com/news/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-weight: bold;text-decoration: none;font-size: 24px;color: #000000;letter-spacing: 0;">World News</a>
+                                            </td>
+                                            <td width="50%" align="right" valign="center">
+                                                <span style="padding-left: 10px;font-size: 15px;color: #939598;letter-spacing: 0;">18 July</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div>
+                                    <a href="https://www.rt.com/news/529516-france-covid-passport-protests/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;">
+                                        <img style="border: 0;width: 100%;height: auto;" alt="Over ONE HUNDRED THOUSAND rally against ‘Covid-19 tyranny’ in France, protesting immunity passports & vaccination mandate (VIDEO)" src="https://cdni.rt.com/files/2021.07/article/60f3d6c385f54025de72c659.png"/>
+                                    </a>
+                                </div>
+                            
+                             <div style="margin-top: 30px;padding-left: 5%;padding-right: 5%;">
+                                  <div style="margin-top: 10px">
+                                     <a class="news-item-title" href="https://www.rt.com/news/529516-france-covid-passport-protests/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;margin: 0;font-size: 30px;line-height: 1.17;color: #000000;text-align: left;">Over ONE HUNDRED THOUSAND rally against ‘Covid-19 tyranny’ in France, protesting immunity passports & vaccination mandate (VIDEO)</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                       <a href="https://www.rt.com/news/529516-france-covid-passport-protests/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-size: 16px;line-height: 1.5;color: #000000;text-align: left;text-decoration: none;">Some 114,000 people have rallied across France to denounce what they see as government intrusion into their private lives. The protests were in response to the rollout of Covid-19 certificates and mandatory vaccination plans.</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                        <a class="news-item-link" href="https://www.rt.com/news/529516-france-covid-passport-protests/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;display: block;height: 55px;border: solid 1px #000000;font-size: 16px;line-height: 55px;color: #000000;text-align: center;">Read more on the site</a>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                 
+                    <div style="padding-top: 40px;padding-bottom: 40px;">
+                        <div style="max-width: 800px;margin: 0 auto;">
+
+                             
+                                <div style="margin-bottom: 20px; padding-left: 10px; padding-right: 10px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr style="">
+                                            <td width="50%" valign="center">
+                                                <a href="https://www.rt.com/news/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-weight: bold;text-decoration: none;font-size: 24px;color: #000000;letter-spacing: 0;">World News</a>
+                                            </td>
+                                            <td width="50%" align="right" valign="center">
+                                                <span style="padding-left: 10px;font-size: 15px;color: #939598;letter-spacing: 0;">18 July</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div>
+                                    <a href="https://www.rt.com/news/529520-india-mumbai-floods-landslides/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;">
+                                        <img style="border: 0;width: 100%;height: auto;" alt="20+ killed in house collapses in Mumbai as city hit by heavy rain during monsoon season (PHOTOS, VIDEOS)" src="https://cdni.rt.com/files/2021.07/article/60f3ef2c203027339065e295.JPG"/>
+                                    </a>
+                                </div>
+                            
+                             <div style="margin-top: 30px;padding-left: 5%;padding-right: 5%;">
+                                  <div style="margin-top: 10px">
+                                     <a class="news-item-title" href="https://www.rt.com/news/529520-india-mumbai-floods-landslides/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;margin: 0;font-size: 30px;line-height: 1.17;color: #000000;text-align: left;">20+ killed in house collapses in Mumbai as city hit by heavy rain during monsoon season (PHOTOS, VIDEOS)</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                       <a href="https://www.rt.com/news/529520-india-mumbai-floods-landslides/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-size: 16px;line-height: 1.5;color: #000000;text-align: left;text-decoration: none;">More than 20 people died when houses were destroyed amid floods caused by the heavy downpour in the Mumbai suburbs in India. More are feared to be trapped under the rubble.</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                        <a class="news-item-link" href="https://www.rt.com/news/529520-india-mumbai-floods-landslides/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;display: block;height: 55px;border: solid 1px #000000;font-size: 16px;line-height: 55px;color: #000000;text-align: center;">Read more on the site</a>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                 
+                    <div style="padding-top: 40px;padding-bottom: 40px;">
+                        <div style="max-width: 800px;margin: 0 auto;">
+
+                             
+                                <div style="margin-bottom: 20px; padding-left: 10px; padding-right: 10px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr style="">
+                                            <td width="50%" valign="center">
+                                                <a href="https://www.rt.com&utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-weight: bold;text-decoration: none;font-size: 24px;color: #000000;letter-spacing: 0;"></a>
+                                            </td>
+                                            <td width="50%" align="right" valign="center">
+                                                <span style="padding-left: 10px;font-size: 15px;color: #939598;letter-spacing: 0;">18 July</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div>
+                                    <a href="https://www.rt.com/op-ed/529539-johnson-sunak-covid-self-isolation/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;">
+                                        <img style="border: 0;width: 100%;height: auto;" alt="Attempt to wiggle free from Covid self-isolation ends in warp-speed U-turn as BoJo and Rishi Sunak realise just how bad this looks" src="https://cdni.rt.com/files/2021.07/article/60f44d2185f5407a0a13ef74.JPG"/>
+                                    </a>
+                                </div>
+                            
+                             <div style="margin-top: 30px;padding-left: 5%;padding-right: 5%;">
+                                  <div style="margin-top: 10px">
+                                     <a class="news-item-title" href="https://www.rt.com/op-ed/529539-johnson-sunak-covid-self-isolation/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;margin: 0;font-size: 30px;line-height: 1.17;color: #000000;text-align: left;">Attempt to wiggle free from Covid self-isolation ends in warp-speed U-turn as BoJo and Rishi Sunak realise just how bad this looks</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                       <a href="https://www.rt.com/op-ed/529539-johnson-sunak-covid-self-isolation/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-size: 16px;line-height: 1.5;color: #000000;text-align: left;text-decoration: none;">The bid by the PM and chancellor to use a pilot scheme exemption to avoid self-isolation after coming into contact with Covid-19 lasted 180 minutes – when it dawned on them how it looks if the rules “aren’t the same...</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                        <a class="news-item-link" href="https://www.rt.com/op-ed/529539-johnson-sunak-covid-self-isolation/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;display: block;height: 55px;border: solid 1px #000000;font-size: 16px;line-height: 55px;color: #000000;text-align: center;">Read more on the site</a>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                 
+                    <div style="padding-top: 40px;padding-bottom: 40px;">
+                        <div style="max-width: 800px;margin: 0 auto;">
+
+                             
+                                <div style="margin-bottom: 20px; padding-left: 10px; padding-right: 10px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr style="">
+                                            <td width="50%" valign="center">
+                                                <a href="https://www.rt.com/usa/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-weight: bold;text-decoration: none;font-size: 24px;color: #000000;letter-spacing: 0;">USA News</a>
+                                            </td>
+                                            <td width="50%" align="right" valign="center">
+                                                <span style="padding-left: 10px;font-size: 15px;color: #939598;letter-spacing: 0;">19 July</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div>
+                                    <a href="https://www.rt.com/usa/529551-donald-trump-covid19-vaccine/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;">
+                                        <img style="border: 0;width: 100%;height: auto;" alt="Trump says Americans refuse to get vaccinated because they ‘don’t trust’ Biden and ‘fake news’ media" src="https://cdni.rt.com/files/2021.07/article/60f4989285f5401d1f5cb640.JPG"/>
+                                    </a>
+                                </div>
+                            
+                             <div style="margin-top: 30px;padding-left: 5%;padding-right: 5%;">
+                                  <div style="margin-top: 10px">
+                                     <a class="news-item-title" href="https://www.rt.com/usa/529551-donald-trump-covid19-vaccine/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;margin: 0;font-size: 30px;line-height: 1.17;color: #000000;text-align: left;">Trump says Americans refuse to get vaccinated because they ‘don’t trust’ Biden and ‘fake news’ media</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                       <a href="https://www.rt.com/usa/529551-donald-trump-covid19-vaccine/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-size: 16px;line-height: 1.5;color: #000000;text-align: left;text-decoration: none;">Donald Trump has been accused by critics of embracing the anti-Covid-19 vaccine movement with a statement claiming Americans’ refusal to get inoculated comes down to a lack of trust in the White House.</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                        <a class="news-item-link" href="https://www.rt.com/usa/529551-donald-trump-covid19-vaccine/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;display: block;height: 55px;border: solid 1px #000000;font-size: 16px;line-height: 55px;color: #000000;text-align: center;">Read more on the site</a>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                 
+                    <div style="padding-top: 40px;padding-bottom: 40px;">
+                        <div style="max-width: 800px;margin: 0 auto;">
+
+                             
+                                <div style="margin-bottom: 20px; padding-left: 10px; padding-right: 10px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr style="">
+                                            <td width="50%" valign="center">
+                                                <a href="https://www.rt.com/usa/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-weight: bold;text-decoration: none;font-size: 24px;color: #000000;letter-spacing: 0;">USA News</a>
+                                            </td>
+                                            <td width="50%" align="right" valign="center">
+                                                <span style="padding-left: 10px;font-size: 15px;color: #939598;letter-spacing: 0;">18 July</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div>
+                                    <a href="https://www.rt.com/usa/529548-sosusa-plea-freedom-social-media/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;">
+                                        <img style="border: 0;width: 100%;height: auto;" alt="#SOSUSA: American plea to international community for help achieving freedom becomes top political social media trend" src="https://cdni.rt.com/files/2021.07/article/60f471ef85f5401d1f5cb629.jpg"/>
+                                    </a>
+                                </div>
+                            
+                             <div style="margin-top: 30px;padding-left: 5%;padding-right: 5%;">
+                                  <div style="margin-top: 10px">
+                                     <a class="news-item-title" href="https://www.rt.com/usa/529548-sosusa-plea-freedom-social-media/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;margin: 0;font-size: 30px;line-height: 1.17;color: #000000;text-align: left;">#SOSUSA: American plea to international community for help achieving freedom becomes top political social media trend</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                       <a href="https://www.rt.com/usa/529548-sosusa-plea-freedom-social-media/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-size: 16px;line-height: 1.5;color: #000000;text-align: left;text-decoration: none;">The hashtag #SOSUSA became one of Twitter’s top political trends this weekend, as thousands of Americans posted calling for freedom in the United States and protesting poverty, police brutality, and a lack of free healthcare.</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                        <a class="news-item-link" href="https://www.rt.com/usa/529548-sosusa-plea-freedom-social-media/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;display: block;height: 55px;border: solid 1px #000000;font-size: 16px;line-height: 55px;color: #000000;text-align: center;">Read more on the site</a>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                 
+                    <div style="padding-top: 40px;padding-bottom: 40px;">
+                        <div style="max-width: 800px;margin: 0 auto;">
+
+                             
+                                <div style="margin-bottom: 20px; padding-left: 10px; padding-right: 10px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr style="">
+                                            <td width="50%" valign="center">
+                                                <a href="https://www.rt.com/business/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-weight: bold;text-decoration: none;font-size: 24px;color: #000000;letter-spacing: 0;">Business News</a>
+                                            </td>
+                                            <td width="50%" align="right" valign="center">
+                                                <span style="padding-left: 10px;font-size: 15px;color: #939598;letter-spacing: 0;">18 July</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div>
+                                    <a href="https://www.rt.com/business/529537-opec-increase-oil-output-deal/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;">
+                                        <img style="border: 0;width: 100%;height: auto;" alt="OPEC+ members agree to ramp up output by 400,000 barrels per day amid soaring oil prices" src="https://cdni.rt.com/files/2021.07/article/60f442a120302728805acf8d.JPG"/>
+                                    </a>
+                                </div>
+                            
+                             <div style="margin-top: 30px;padding-left: 5%;padding-right: 5%;">
+                                  <div style="margin-top: 10px">
+                                     <a class="news-item-title" href="https://www.rt.com/business/529537-opec-increase-oil-output-deal/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;margin: 0;font-size: 30px;line-height: 1.17;color: #000000;text-align: left;">OPEC+ members agree to ramp up output by 400,000 barrels per day amid soaring oil prices</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                       <a href="https://www.rt.com/business/529537-opec-increase-oil-output-deal/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-size: 16px;line-height: 1.5;color: #000000;text-align: left;text-decoration: none;">The Organization of the Petroleum Exporting Countries (OPEC) and its allies have agreed to boost oil supply starting in August, since prices have reached a three-year high as economies recover from the Covid-19 pandemic.</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                        <a class="news-item-link" href="https://www.rt.com/business/529537-opec-increase-oil-output-deal/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;display: block;height: 55px;border: solid 1px #000000;font-size: 16px;line-height: 55px;color: #000000;text-align: center;">Read more on the site</a>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                 
+                    <div style="padding-top: 40px;padding-bottom: 40px;">
+                        <div style="max-width: 800px;margin: 0 auto;">
+
+                             
+                                <div style="margin-bottom: 20px; padding-left: 10px; padding-right: 10px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr style="">
+                                            <td width="50%" valign="center">
+                                                <a href="https://www.rt.com/usa/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-weight: bold;text-decoration: none;font-size: 24px;color: #000000;letter-spacing: 0;">USA News</a>
+                                            </td>
+                                            <td width="50%" align="right" valign="center">
+                                                <span style="padding-left: 10px;font-size: 15px;color: #939598;letter-spacing: 0;">18 July</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div>
+                                    <a href="https://www.rt.com/usa/529531-fox-mocked-blurring-cuba/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;">
+                                        <img style="border: 0;width: 100%;height: auto;" alt="Fox News mocked for blurring pro-government slogans in footage of Havana rally shown alongside fiery Ted Cruz tirade" src="https://cdni.rt.com/files/2021.07/article/60f41e70203027339065e2bd.jpg"/>
+                                    </a>
+                                </div>
+                            
+                             <div style="margin-top: 30px;padding-left: 5%;padding-right: 5%;">
+                                  <div style="margin-top: 10px">
+                                     <a class="news-item-title" href="https://www.rt.com/usa/529531-fox-mocked-blurring-cuba/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;margin: 0;font-size: 30px;line-height: 1.17;color: #000000;text-align: left;">Fox News mocked for blurring pro-government slogans in footage of Havana rally shown alongside fiery Ted Cruz tirade</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                       <a href="https://www.rt.com/usa/529531-fox-mocked-blurring-cuba/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-size: 16px;line-height: 1.5;color: #000000;text-align: left;text-decoration: none;">As Ted Cruz praised the bravery of anti-government protesters in Cuba on Fox News on Tuesday, little did he know that the channel was showing footage from a pro-government rally in Havana alongside his remarks.</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                        <a class="news-item-link" href="https://www.rt.com/usa/529531-fox-mocked-blurring-cuba/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;display: block;height: 55px;border: solid 1px #000000;font-size: 16px;line-height: 55px;color: #000000;text-align: center;">Read more on the site</a>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                 
+                    <div style="padding-top: 40px;padding-bottom: 40px;">
+                        <div style="max-width: 800px;margin: 0 auto;">
+
+                             
+                                <div style="margin-bottom: 20px; padding-left: 10px; padding-right: 10px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr style="">
+                                            <td width="50%" valign="center">
+                                                <a href="https://www.rt.com/usa/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-weight: bold;text-decoration: none;font-size: 24px;color: #000000;letter-spacing: 0;">USA News</a>
+                                            </td>
+                                            <td width="50%" align="right" valign="center">
+                                                <span style="padding-left: 10px;font-size: 15px;color: #939598;letter-spacing: 0;">18 July</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div>
+                                    <a href="https://www.rt.com/usa/529543-conservative-pornstar-tpusa-conference/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;">
+                                        <img style="border: 0;width: 100%;height: auto;" alt="'Conservative pornstar' kicked out of Turning Point USA conference despite support from Meghan McCain's husband" src="https://cdni.rt.com/files/2021.07/article/60f45d6285f5401539248b17.jpg"/>
+                                    </a>
+                                </div>
+                            
+                             <div style="margin-top: 30px;padding-left: 5%;padding-right: 5%;">
+                                  <div style="margin-top: 10px">
+                                     <a class="news-item-title" href="https://www.rt.com/usa/529543-conservative-pornstar-tpusa-conference/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;margin: 0;font-size: 30px;line-height: 1.17;color: #000000;text-align: left;">'Conservative pornstar' kicked out of Turning Point USA conference despite support from Meghan McCain's husband</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                       <a href="https://www.rt.com/usa/529543-conservative-pornstar-tpusa-conference/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-size: 16px;line-height: 1.5;color: #000000;text-align: left;text-decoration: none;">Self-proclaimed “conservative pornstar” Brandi Love was kicked out of Turning Point USA’s Student Action Summit this weekend, after her attendance led to protests by some Republicans.</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                        <a class="news-item-link" href="https://www.rt.com/usa/529543-conservative-pornstar-tpusa-conference/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;display: block;height: 55px;border: solid 1px #000000;font-size: 16px;line-height: 55px;color: #000000;text-align: center;">Read more on the site</a>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                 
+                    <div style="padding-top: 40px;padding-bottom: 40px;">
+                        <div style="max-width: 800px;margin: 0 auto;">
+
+                             
+                                <div style="margin-bottom: 20px; padding-left: 10px; padding-right: 10px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr style="">
+                                            <td width="50%" valign="center">
+                                                <a href="https://www.rt.com/sport/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-weight: bold;text-decoration: none;font-size: 24px;color: #000000;letter-spacing: 0;">Sport News</a>
+                                            </td>
+                                            <td width="50%" align="right" valign="center">
+                                                <span style="padding-left: 10px;font-size: 15px;color: #939598;letter-spacing: 0;">18 July</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div>
+                                    <a href="https://www.rt.com/sport/529528-olympic-village-beds-sex-tweet-photos/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;">
+                                        <img style="border: 0;width: 100%;height: auto;" alt="Olympic star claims cardboard beds aim to stop athletes romping as ex-medalist and Playboy model claims sex is ‘always a problem’" src="https://cdni.rt.com/files/2021.07/article/60f4321a85f540150a11b6bc.jpg"/>
+                                    </a>
+                                </div>
+                            
+                             <div style="margin-top: 30px;padding-left: 5%;padding-right: 5%;">
+                                  <div style="margin-top: 10px">
+                                     <a class="news-item-title" href="https://www.rt.com/sport/529528-olympic-village-beds-sex-tweet-photos/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;margin: 0;font-size: 30px;line-height: 1.17;color: #000000;text-align: left;">Olympic star claims cardboard beds aim to stop athletes romping as ex-medalist and Playboy model claims sex is ‘always a problem’</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                       <a href="https://www.rt.com/sport/529528-olympic-village-beds-sex-tweet-photos/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-size: 16px;line-height: 1.5;color: #000000;text-align: left;text-decoration: none;">An Olympics star has claimed that cardboard beds only capable of holding one person will be installed in the Olympic Village at Tokyo 2020 as a means of discouraging athletes from taking part in sexual activities at the Games.</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                        <a class="news-item-link" href="https://www.rt.com/sport/529528-olympic-village-beds-sex-tweet-photos/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;display: block;height: 55px;border: solid 1px #000000;font-size: 16px;line-height: 55px;color: #000000;text-align: center;">Read more on the site</a>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                 
+               </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+         
+        
+
+        <div style="padding-left: 5%;padding-right: 5%;margin-bottom: 40px;margin-top: 40px;">
+            <div style="max-width: 600px;width: 100%;margin: 0 auto;">
+                <table border="0" cellpadding="0" cellspacing="0" align="center">
+                    <tr>
+                        <td><a href="https://www.facebook.com/RTnews/" style="text-decoration: none;"><img src="https://cdn.rt.com/subscribe/social/fb_black.png" style="border: none;" alt="facebook"/></a></td>
+                        <td style="padding-left: 20px;"><a href="https://twitter.com/RT_com" style="text-decoration: none;"><img src="https://cdn.rt.com/subscribe/social/tw_black.png" style="border: none;" alt="twitter"/></a></td>
+                        <td style="padding-left: 20px;"><a href="https://www.youtube.com/user/RussiaToday" style="text-decoration: none;"><img src="https://cdn.rt.com/subscribe/social/yt_black.png" style="border: none;" alt="youtube"/></a></td>
+                        <td style="padding-left: 20px;"><a href="https://plus.google.com/+RTintl" style="text-decoration: none;"><img src="https://cdn.rt.com/subscribe/social/gp_black.png" style="border: none;" alt="gplus"/></a></td>
+                        <td style="padding-left: 20px;"><a href="https://www.instagram.com/rt/" style="text-decoration: none;"><img src="https://cdn.rt.com/subscribe/social/inst_black.png" style="border: none;" alt="instagram"/></a></td>
+                        <td style="padding-left: 20px;"><a href="https://vk.com/rt_international" style="text-decoration: none;"><img src="https://cdn.rt.com/subscribe/social/vk_black.png" style="border: none;" alt="vk"/></a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div style="max-width: 600px; margin: 0 auto; margin-bottom: 40px;">
+            <p style="margin: 60px 0 0;padding: 0 15px; text-align: center; word-wrap: break-word;">Borovaya 3/1, Moscow, Russia, 111020</p>
+        </div>
+
+        <div style="background-color: #F6F6F6;padding-top: 10px;padding-bottom: 10px;text-align: center;">
+            <a class="news-item-link cancel" href="https://subscribe.rt.com/unsubscribe/9cbb2d982701f10046f9b5ff881d66fc/c4b8c688-e47c-49f3-86fd-6feb89ca83df" style="text-decoration: none;border: none;font-size: 16px;color: #000000;text-align: center;margin: 0 auto;">Cancel subscription</a>
+        </div>
+
+    </div>
+</body>
+</html>
