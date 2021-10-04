@@ -1,0 +1,496 @@
+<html style="margin: 0;padding: 0;">
+<head>
+    <meta charset="UTF-8">
+    <title>Mail</title>
+    <META content="text/html; charset=UTF8" http-equiv=Content-Type />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+
+        @media (max-width: 710px) {
+            .hide {
+                display: none;
+            }
+
+            .full_article {
+                max-width: 100% !important;
+                width: 100% !important;
+                display: block;
+                text-align: left !important;
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+            }
+
+            .full_article > a > img {
+                margin-bottom: 20px;
+            }
+        }
+
+        @media (max-width: 660px) {
+            .hide {
+                display: none;
+            }
+
+            .full {
+                width: 100% !important;
+                display: block;
+                text-align: left !important;
+                margin-bottom: 10px;
+            }
+
+            .full_date {
+                width: 100% !important;
+                display: block;
+                text-align: left !important;
+                margin-bottom: 10px;
+                padding-left: 0px !important;
+            }
+
+            .bgtitle {
+                font-size: 20px !important;
+            }
+
+            .bgmiddle {
+                font-size: 14px !important;
+            }
+
+            .bgtitle_block {
+                font-size: 24px !important;
+            }
+        }
+
+
+    </style>
+</head>
+<body style="margin: 0;padding: 0;">
+    <div style="background-color:#FFF; font-family: 'Helvetica','Arial', sans-serif;">
+        <div style="max-width: 800px;margin: 0 auto;text-align: center;padding: 10px 20px;"><a class="header-top-text" href="https://subscribe.rt.com/preview/q9bLJB" style="display: block; margin: 0;font-family: &quot;Arial&quot;, sans-serif;font-size: 14px;line-height: 20px;color: #a3a3a3;text-align: center; text-decoration: underline;">If you do not see images or links do not work, open the message in your browser.</a></div>
+        <div class="header_logo" style="max-width: 800px;margin: 0 auto;background: #000000;padding-top: 10px;padding-bottom: 10px;">
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                    <td valign="center" width="128"><a href="https://www.rt.com"
+                                                       style="text-decoration: none"><img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJgAAABQCAYAAADlebz4AAAAAXNSR0IArs4c6QAABN5JREFUeAHtnc9LFGEYx591/bVq/og1UwlRwwjpEkW/jCK6mHQoqEt0CoIORQX9AxEVFXSILt06FNFBiOhYsXipiIJKSqIfpBum2aasra6r277SD3V2db+jz8yU34Fwffd5nvedz3x8Z+bdMX2H7jcnhRsJKBHIUarLsiQwSYCCUQRVAhRMFS+LUzA6oEqAgqniZXEKRgdUCVAwVbwsTsHogCoBCqaKl8UpGB1QJUDBVPGyOAWjA6oEKJgqXhanYHRAlQAFU8XL4hSMDqgSoGCqeFmcgtEBVQIUTBUvi1MwOqBKgIKp4mVxCkYHVAlQMFW8LE7B6IAqAQqmipfFKRgdUCWQq1p9ERVPjE44ure+1NTgz0s/Pzg9ltl2nILNRgd47/aBtxKLJICM+YeW1uZLsCkgTbvKpXZtyZ+CN/Z2SWLEWeH/dD7jBQWbAeRf+nYoHBfz7/3DQVnVViEbjiyXvED6Wc2t/aJgLpE3p7iK+kJL72YWjH3DZ8KuexExNbccr5GlDQWSGM3uP02KfBiRJDLZ+SRV3zpuy478aqBgmcgot+cV5ciea41pe+nviknoXI8MdsfTvp+p8c3diDTuKJPdVxoyhVjab+7rgoTOLcg8bkvxVIO35tN0I1yEbZWrAtJ2uV7yS/DD8+x6v6eI4XvgqeH/v4MJVOTKmv1BeAd7Xw5LIo6c8+AuoAQKBuFyNriquQjuMDkuEhvAr+HgjrJMoGBZgnIjbDyR3YX6zLGZi32vbB4aileQeGccn59G4cGYZYqiYB6cp5VAwbTIzrOuuZN81T4AV6lrWSI5/tRagkc2LlO4dCDM2lPk44il99Ghcfn8fFhe3Poq5noK2cxd5/rDVUiKeiwFU0ecvoOxHxPSfuhd+jdttm46Wi1FS71zejS7QcFsHkwvpZmZq+VkjdRvK/PSsCbHQsFcPCRmNX/qZj6ghj62SSVXrg5I68W61GeQ/qmlPPOagrl0KMysc/DO6mm9fwgNyoPTPdPa5vqm/3VM+jpjUrvu79MUc+U4+f70HyEne2ZfFgLmFFe/vdTSPldD6HxYYt+9s7g6dbwUbCoND7zefKxaCiuw0515AqPjQtgDo7cOgYJZmbjaUliWKy0nauAxdD+OSqeNdTO4IzCBgoHAnAiv21IqK3fid4RPrn2Rb++sa2tOjDlTHxQsExmX2zeaNa0gdg82MZaUB2e6Uw8b8mkKlw+f97svKPFPrm2hIx38FJdHV3vRNLV4zmBqaOdfeMWGJdLUWg4XMo9Pf+wYgvM0EiiYBtUFrGl+kaN4Gf7xT8elsET7xhZwJPZKUTB73BzLyi/2y9ZT+F1lPDohobM9qU8G7D1TtlA76OPf7F4YlHYurM0vUGS72alvavvzfeLzZX58x05dZNzYbUq2NBZhHALdDh6t+lp1f+9j9j9CvzP4lQQAAhQMgMVQnAAFw5kxAyBAwQBYDMUJUDCcGTMAAhQMgMVQnAAFw5kxAyBAwQBYDMUJUDCcGTMAAhQMgMVQnAAFw5kxAyBAwQBYDMUJUDCcGTMAAhQMgMVQnAAFw5kxAyBAwQBYDMUJUDCcGTMAAhQMgMVQnAAFw5kxAyBAwQBYDMUJUDCcGTMAAhQMgMVQnAAFw5kxAyBAwQBYDMUJUDCcGTMAAhQMgMVQnMBPzkLLXBt4pScAAAAASUVORK5CYII=" alt="RT"
+                            style="border: 0;max-width: 8em;width:100%;height: auto;"/></a></td>
+                    <td valign="center" style="padding-left: 20px;"><a href="https://www.rt.com?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email"
+                                                                       class="bgtitle_block"
+                                                                       style="text-decoration: none;font-size: 30px;color: #FFFFFF;letter-spacing: 0;text-transform: uppercase;">question more</a></td>
+                    <td valign="center" align="right" class="hide"
+                        style="font-size: 16px;color: #FFFFFF;letter-spacing: 0;padding-right: 20px;">04 October</td>
+                </tr>
+
+            </table>
+        </div>
+        
+        <div style="width: 100%;text-align: center;max-width: 800px;margin: 0 auto;">
+            <div style="padding: 20px;font-size: 36px;color: #000000;letter-spacing: 0;line-height: 40px;" class="bgtitle_block">RT News (October 3, 2021)</div>
+        </div>
+        
+        
+            
+                <div style="max-width: 800px;margin: 0 auto;width: 100%;">
+                    
+                        
+                            <div>
+                                <a href="https://www.rt.com/news/536490-pandora-papers-offshore-tax-leaders/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;">
+                                    <img style="border: 0;width: 100%;height: auto;" alt="‘Pandora papers’: New leaks reveal how world leaders use offshore companies to dodge millions of dollars in taxes" src="https://cdni.rt.com/files/2021.10/article/615a0d0620302742962d2553.png"/>
+                                </a>
+                            </div>
+                        
+                        <div style="margin-top: 30px;padding-left: 5%;padding-right: 5%;">
+                              <div style="">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr style="">
+                                            <td width="50%">
+                                                <a href="https://www.rt.com/news/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email"
+                                                   style="text-decoration: none;font-size: 24px;color: #000000;letter-spacing: 0;font-weight: bold;">World News</a>
+                                            </td>
+                                            <td width="50%" align="right">
+                                                <span style="padding-left: 10px;font-size: 15px;color: #939598;letter-spacing: 0;">03 October</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                              </div>
+                              <div style="margin-top: 10px">
+                                 <a class="news-item-title" href="https://www.rt.com/news/536490-pandora-papers-offshore-tax-leaders/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;margin: 0;font-family: &quot;Arial&quot;, sans-serif;font-size: 30px;line-height: 1.17;color: #000000;text-align: left;">‘Pandora papers’: New leaks reveal how world leaders use offshore companies to dodge millions of dollars in taxes</a>
+                              </div>
+                              <div style="margin-top: 20px">
+                                   <a href="https://www.rt.com/news/536490-pandora-papers-offshore-tax-leaders/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-size: 16px;line-height: 1.5;color: #000000;text-align: left;text-decoration: none;">Leaked papers appear to show how some of the world’s elites accumulate property empires while avoiding millions in taxes, with reports focusing on European, Middle Eastern and South American leaders, and world-famous celebrities.</a>
+                              </div>
+                              <div style="margin-top: 20px">
+                                    <a class="news-item-link" href="https://www.rt.com/news/536490-pandora-papers-offshore-tax-leaders/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;display: block;height: 55px;border: solid 1px #000000;font-size: 16px;line-height: 55px;color: #000000;text-align: center;">Read more on the site</a>
+                              </div>
+                        </div>
+                    
+                </div>
+            
+        
+        
+        
+               <div style="margin-top: 20px;background-color: #FFF;">
+                 
+                    <div style="padding-top: 40px;padding-bottom: 40px;">
+                        <div style="max-width: 800px;margin: 0 auto;">
+
+                             
+                                <div style="margin-bottom: 20px; padding-left: 10px; padding-right: 10px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr style="">
+                                            <td width="50%" valign="center">
+                                                <a href="https://www.rt.com/news/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-weight: bold;text-decoration: none;font-size: 24px;color: #000000;letter-spacing: 0;">World News</a>
+                                            </td>
+                                            <td width="50%" align="right" valign="center">
+                                                <span style="padding-left: 10px;font-size: 15px;color: #939598;letter-spacing: 0;">03 October</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div>
+                                    <a href="https://www.rt.com/news/536465-bagram-airfield-lights-photo/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;">
+                                        <img style="border: 0;width: 100%;height: auto;" alt="US-abandoned Bagram base reportedly operational for first time in two months, as rumors swirl of Chinese military presence" src="https://cdni.rt.com/files/2021.10/article/61599c31203027421337490a.JPG"/>
+                                    </a>
+                                </div>
+                            
+                             <div style="margin-top: 30px;padding-left: 5%;padding-right: 5%;">
+                                  <div style="margin-top: 10px">
+                                     <a class="news-item-title" href="https://www.rt.com/news/536465-bagram-airfield-lights-photo/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;margin: 0;font-size: 30px;line-height: 1.17;color: #000000;text-align: left;">US-abandoned Bagram base reportedly operational for first time in two months, as rumors swirl of Chinese military presence</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                       <a href="https://www.rt.com/news/536465-bagram-airfield-lights-photo/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-size: 16px;line-height: 1.5;color: #000000;text-align: left;text-decoration: none;">Bagram Airfield, once the linchpin of the US-led NATO mission in Afghanistan, is said to be powered and serving planes again. A foreign force is rumored to be involved, with fingers pointed at China, which denied eyeing the base.</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                        <a class="news-item-link" href="https://www.rt.com/news/536465-bagram-airfield-lights-photo/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;display: block;height: 55px;border: solid 1px #000000;font-size: 16px;line-height: 55px;color: #000000;text-align: center;">Read more on the site</a>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                 
+                    <div style="padding-top: 40px;padding-bottom: 40px;">
+                        <div style="max-width: 800px;margin: 0 auto;">
+
+                             
+                                <div style="margin-bottom: 20px; padding-left: 10px; padding-right: 10px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr style="">
+                                            <td width="50%" valign="center">
+                                                <a href="https://www.rt.com/russia/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-weight: bold;text-decoration: none;font-size: 24px;color: #000000;letter-spacing: 0;">Russia & Former Soviet Union</a>
+                                            </td>
+                                            <td width="50%" align="right" valign="center">
+                                                <span style="padding-left: 10px;font-size: 15px;color: #939598;letter-spacing: 0;">04 October</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div>
+                                    <a href="https://www.rt.com/russia/536487-saakashvili-georgia-opposition-murder-plot/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;">
+                                        <img style="border: 0;width: 100%;height: auto;" alt="‘He will serve his full term’: Georgian ex-leader Saakashvili plotted to KILL opposition figures to frame government, PM claims" src="https://cdni.rt.com/files/2021.10/article/615a1b9085f54044d856b388.JPG"/>
+                                    </a>
+                                </div>
+                            
+                             <div style="margin-top: 30px;padding-left: 5%;padding-right: 5%;">
+                                  <div style="margin-top: 10px">
+                                     <a class="news-item-title" href="https://www.rt.com/russia/536487-saakashvili-georgia-opposition-murder-plot/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;margin: 0;font-size: 30px;line-height: 1.17;color: #000000;text-align: left;">‘He will serve his full term’: Georgian ex-leader Saakashvili plotted to KILL opposition figures to frame government, PM claims</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                       <a href="https://www.rt.com/russia/536487-saakashvili-georgia-opposition-murder-plot/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-size: 16px;line-height: 1.5;color: #000000;text-align: left;text-decoration: none;">Mikhail Saakashvili had plotted to have Georgian opposition figures killed at mass protests after his return from exile, the prime minister said, vowing that the disgraced ex-president wouldn’t get out of serving his time in jail.</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                        <a class="news-item-link" href="https://www.rt.com/russia/536487-saakashvili-georgia-opposition-murder-plot/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;display: block;height: 55px;border: solid 1px #000000;font-size: 16px;line-height: 55px;color: #000000;text-align: center;">Read more on the site</a>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                 
+                    <div style="padding-top: 40px;padding-bottom: 40px;">
+                        <div style="max-width: 800px;margin: 0 auto;">
+
+                             
+                                <div style="margin-bottom: 20px; padding-left: 10px; padding-right: 10px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr style="">
+                                            <td width="50%" valign="center">
+                                                <a href="https://www.rt.com/usa/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-weight: bold;text-decoration: none;font-size: 24px;color: #000000;letter-spacing: 0;">USA News</a>
+                                            </td>
+                                            <td width="50%" align="right" valign="center">
+                                                <span style="padding-left: 10px;font-size: 15px;color: #939598;letter-spacing: 0;">03 October</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div>
+                                    <a href="https://www.rt.com/usa/536488-fauci-covid-christmas-immigrants/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;">
+                                        <img style="border: 0;width: 100%;height: auto;" alt="‘Not driven by immigrants’: ‘Grinch’ Fauci mulls canceling Christmas due to Covid, rejects accusations of migrants spreading virus" src="https://cdni.rt.com/files/2021.10/article/6159fe8d20302742962d254d.JPG"/>
+                                    </a>
+                                </div>
+                            
+                             <div style="margin-top: 30px;padding-left: 5%;padding-right: 5%;">
+                                  <div style="margin-top: 10px">
+                                     <a class="news-item-title" href="https://www.rt.com/usa/536488-fauci-covid-christmas-immigrants/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;margin: 0;font-size: 30px;line-height: 1.17;color: #000000;text-align: left;">‘Not driven by immigrants’: ‘Grinch’ Fauci mulls canceling Christmas due to Covid, rejects accusations of migrants spreading virus</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                       <a href="https://www.rt.com/usa/536488-fauci-covid-christmas-immigrants/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-size: 16px;line-height: 1.5;color: #000000;text-align: left;text-decoration: none;">White House health adviser Anthony Fauci has insisted that Covid-19 is not being spread by untested immigrants. He also claims the virus remains such a threat that traditional Christmas celebrations might need to be canceled.</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                        <a class="news-item-link" href="https://www.rt.com/usa/536488-fauci-covid-christmas-immigrants/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;display: block;height: 55px;border: solid 1px #000000;font-size: 16px;line-height: 55px;color: #000000;text-align: center;">Read more on the site</a>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                 
+                    <div style="padding-top: 40px;padding-bottom: 40px;">
+                        <div style="max-width: 800px;margin: 0 auto;">
+
+                             
+                                <div style="margin-bottom: 20px; padding-left: 10px; padding-right: 10px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr style="">
+                                            <td width="50%" valign="center">
+                                                <a href="https://www.rt.com/usa/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-weight: bold;text-decoration: none;font-size: 24px;color: #000000;letter-spacing: 0;">USA News</a>
+                                            </td>
+                                            <td width="50%" align="right" valign="center">
+                                                <span style="padding-left: 10px;font-size: 15px;color: #939598;letter-spacing: 0;">04 October</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div>
+                                    <a href="https://www.rt.com/usa/536489-trump-rescind-pulitzer-nyt-wapo/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;">
+                                        <img style="border: 0;width: 100%;height: auto;" alt="Trump calls for Pulitzer Prize Board to revoke award given to NYT & WaPo for reporting on Russiagate ‘hoax’" src="https://cdni.rt.com/files/2021.10/article/615a1e8b2030274213374982.JPG"/>
+                                    </a>
+                                </div>
+                            
+                             <div style="margin-top: 30px;padding-left: 5%;padding-right: 5%;">
+                                  <div style="margin-top: 10px">
+                                     <a class="news-item-title" href="https://www.rt.com/usa/536489-trump-rescind-pulitzer-nyt-wapo/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;margin: 0;font-size: 30px;line-height: 1.17;color: #000000;text-align: left;">Trump calls for Pulitzer Prize Board to revoke award given to NYT & WaPo for reporting on Russiagate ‘hoax’</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                       <a href="https://www.rt.com/usa/536489-trump-rescind-pulitzer-nyt-wapo/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-size: 16px;line-height: 1.5;color: #000000;text-align: left;text-decoration: none;">Former President Donald Trump has demanded the Pulitzer Prize Board rescind a 2018 prize awarded to the New York Times and Washington Post for their coverage on the Russian collusion “farce.”</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                        <a class="news-item-link" href="https://www.rt.com/usa/536489-trump-rescind-pulitzer-nyt-wapo/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;display: block;height: 55px;border: solid 1px #000000;font-size: 16px;line-height: 55px;color: #000000;text-align: center;">Read more on the site</a>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                 
+                    <div style="padding-top: 40px;padding-bottom: 40px;">
+                        <div style="max-width: 800px;margin: 0 auto;">
+
+                             
+                                <div style="margin-bottom: 20px; padding-left: 10px; padding-right: 10px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr style="">
+                                            <td width="50%" valign="center">
+                                                <a href="https://www.rt.com&utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-weight: bold;text-decoration: none;font-size: 24px;color: #000000;letter-spacing: 0;"></a>
+                                            </td>
+                                            <td width="50%" align="right" valign="center">
+                                                <span style="padding-left: 10px;font-size: 15px;color: #939598;letter-spacing: 0;">03 October</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div>
+                                    <a href="https://www.rt.com/op-ed/536483-playboy-gay-man-cover/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;">
+                                        <img style="border: 0;width: 100%;height: auto;" alt="Playboy’s gay male cover star is a sign the magazine should have died with dignity a long time ago" src="https://cdni.rt.com/files/2021.10/article/6159e62a20302740a93c750f.JPG"/>
+                                    </a>
+                                </div>
+                            
+                             <div style="margin-top: 30px;padding-left: 5%;padding-right: 5%;">
+                                  <div style="margin-top: 10px">
+                                     <a class="news-item-title" href="https://www.rt.com/op-ed/536483-playboy-gay-man-cover/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;margin: 0;font-size: 30px;line-height: 1.17;color: #000000;text-align: left;">Playboy’s gay male cover star is a sign the magazine should have died with dignity a long time ago</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                       <a href="https://www.rt.com/op-ed/536483-playboy-gay-man-cover/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-size: 16px;line-height: 1.5;color: #000000;text-align: left;text-decoration: none;">Playboy’s decision to put a gay Filipino influencer on its cover is so peak woke that it’s beyond parody. However, the magazine’s road from icon to laughing stock was set in motion long ago.</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                        <a class="news-item-link" href="https://www.rt.com/op-ed/536483-playboy-gay-man-cover/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;display: block;height: 55px;border: solid 1px #000000;font-size: 16px;line-height: 55px;color: #000000;text-align: center;">Read more on the site</a>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                 
+                    <div style="padding-top: 40px;padding-bottom: 40px;">
+                        <div style="max-width: 800px;margin: 0 auto;">
+
+                             
+                                <div style="margin-bottom: 20px; padding-left: 10px; padding-right: 10px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr style="">
+                                            <td width="50%" valign="center">
+                                                <a href="https://www.rt.com&utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-weight: bold;text-decoration: none;font-size: 24px;color: #000000;letter-spacing: 0;"></a>
+                                            </td>
+                                            <td width="50%" align="right" valign="center">
+                                                <span style="padding-left: 10px;font-size: 15px;color: #939598;letter-spacing: 0;">03 October</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div>
+                                    <a href="https://www.rt.com/op-ed/536480-green-activism-capitalism-germany-threat/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;">
+                                        <img style="border: 0;width: 100%;height: auto;" alt="It’s Greta Thunberg who seems to be at the helm in Germany. But that just signifies utopian promises, not REAL green progress" src="https://cdni.rt.com/files/2021.10/article/6159d22020302740a93c7503.JPG"/>
+                                    </a>
+                                </div>
+                            
+                             <div style="margin-top: 30px;padding-left: 5%;padding-right: 5%;">
+                                  <div style="margin-top: 10px">
+                                     <a class="news-item-title" href="https://www.rt.com/op-ed/536480-green-activism-capitalism-germany-threat/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;margin: 0;font-size: 30px;line-height: 1.17;color: #000000;text-align: left;">It’s Greta Thunberg who seems to be at the helm in Germany. But that just signifies utopian promises, not REAL green progress</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                       <a href="https://www.rt.com/op-ed/536480-green-activism-capitalism-germany-threat/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-size: 16px;line-height: 1.5;color: #000000;text-align: left;text-decoration: none;">German politics, in its entirety, appears to be a kind of frontispiece. A strange and largely nonsensical virtue signal that goes beyond even the normal politicking of other nations.</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                        <a class="news-item-link" href="https://www.rt.com/op-ed/536480-green-activism-capitalism-germany-threat/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;display: block;height: 55px;border: solid 1px #000000;font-size: 16px;line-height: 55px;color: #000000;text-align: center;">Read more on the site</a>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                 
+                    <div style="padding-top: 40px;padding-bottom: 40px;">
+                        <div style="max-width: 800px;margin: 0 auto;">
+
+                             
+                                <div style="margin-bottom: 20px; padding-left: 10px; padding-right: 10px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr style="">
+                                            <td width="50%" valign="center">
+                                                <a href="https://www.rt.com/uk/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-weight: bold;text-decoration: none;font-size: 24px;color: #000000;letter-spacing: 0;">UK News</a>
+                                            </td>
+                                            <td width="50%" align="right" valign="center">
+                                                <span style="padding-left: 10px;font-size: 15px;color: #939598;letter-spacing: 0;">04 October</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div>
+                                    <a href="https://www.rt.com/uk/536492-boris-illegitimate-protesters-crackdown/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;">
+                                        <img style="border: 0;width: 100%;height: auto;" alt="‘Illegitimate protesters?’ Boris Johnson roasted online as he announces crackdown on climate activists over road blockades" src="https://cdni.rt.com/files/2021.10/article/615a246b20302742431c2491.JPG"/>
+                                    </a>
+                                </div>
+                            
+                             <div style="margin-top: 30px;padding-left: 5%;padding-right: 5%;">
+                                  <div style="margin-top: 10px">
+                                     <a class="news-item-title" href="https://www.rt.com/uk/536492-boris-illegitimate-protesters-crackdown/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;margin: 0;font-size: 30px;line-height: 1.17;color: #000000;text-align: left;">‘Illegitimate protesters?’ Boris Johnson roasted online as he announces crackdown on climate activists over road blockades</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                       <a href="https://www.rt.com/uk/536492-boris-illegitimate-protesters-crackdown/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-size: 16px;line-height: 1.5;color: #000000;text-align: left;text-decoration: none;">Prime Minister Boris Johnson has caused quite a stir on British social media as he announced tougher sanctions against activists “unfairly blocking motorways”, and new powers for the police to deal with “illegitimate protesters”.</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                        <a class="news-item-link" href="https://www.rt.com/uk/536492-boris-illegitimate-protesters-crackdown/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;display: block;height: 55px;border: solid 1px #000000;font-size: 16px;line-height: 55px;color: #000000;text-align: center;">Read more on the site</a>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                 
+                    <div style="padding-top: 40px;padding-bottom: 40px;">
+                        <div style="max-width: 800px;margin: 0 auto;">
+
+                             
+                                <div style="margin-bottom: 20px; padding-left: 10px; padding-right: 10px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr style="">
+                                            <td width="50%" valign="center">
+                                                <a href="https://www.rt.com/usa/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-weight: bold;text-decoration: none;font-size: 24px;color: #000000;letter-spacing: 0;">USA News</a>
+                                            </td>
+                                            <td width="50%" align="right" valign="center">
+                                                <span style="padding-left: 10px;font-size: 15px;color: #939598;letter-spacing: 0;">03 October</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div>
+                                    <a href="https://www.rt.com/usa/536449-nascar-go-brandon-biden-chants/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;">
+                                        <img style="border: 0;width: 100%;height: auto;" alt="‘Let’s go Brandon’? NBC reporter ‘mishears’ NASCAR fans chanting ‘F**K JOE BIDEN’ during post-race interview" src="https://cdni.rt.com/files/2021.10/article/61593a712030274213374894.JPG"/>
+                                    </a>
+                                </div>
+                            
+                             <div style="margin-top: 30px;padding-left: 5%;padding-right: 5%;">
+                                  <div style="margin-top: 10px">
+                                     <a class="news-item-title" href="https://www.rt.com/usa/536449-nascar-go-brandon-biden-chants/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;margin: 0;font-size: 30px;line-height: 1.17;color: #000000;text-align: left;">‘Let’s go Brandon’? NBC reporter ‘mishears’ NASCAR fans chanting ‘F**K JOE BIDEN’ during post-race interview</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                       <a href="https://www.rt.com/usa/536449-nascar-go-brandon-biden-chants/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-size: 16px;line-height: 1.5;color: #000000;text-align: left;text-decoration: none;">A snippet of an interview with the winner of the NASCAR Xfinity Series Race at Talladega, Brandon Brown, went viral after an NBC reporter reportedly misheard offensive chants rumbling down from the stands.</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                        <a class="news-item-link" href="https://www.rt.com/usa/536449-nascar-go-brandon-biden-chants/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;display: block;height: 55px;border: solid 1px #000000;font-size: 16px;line-height: 55px;color: #000000;text-align: center;">Read more on the site</a>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                 
+                    <div style="padding-top: 40px;padding-bottom: 40px;">
+                        <div style="max-width: 800px;margin: 0 auto;">
+
+                             
+                                <div style="margin-bottom: 20px; padding-left: 10px; padding-right: 10px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr style="">
+                                            <td width="50%" valign="center">
+                                                <a href="https://www.rt.com/sport/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-weight: bold;text-decoration: none;font-size: 24px;color: #000000;letter-spacing: 0;">Sport News</a>
+                                            </td>
+                                            <td width="50%" align="right" valign="center">
+                                                <span style="padding-left: 10px;font-size: 15px;color: #939598;letter-spacing: 0;">03 October</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div>
+                                    <a href="https://www.rt.com/sport/536484-djokovic-australian-open-covid-vaccine/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;">
+                                        <img style="border: 0;width: 100%;height: auto;" alt="Novak Djokovic warned his ‘Grand Slam titles won’t protect him’ from Covid-19 as vaccine row rages ahead of Australian Open" src="https://cdni.rt.com/files/2021.10/article/6159e39785f5404d86263b0c.jpg"/>
+                                    </a>
+                                </div>
+                            
+                             <div style="margin-top: 30px;padding-left: 5%;padding-right: 5%;">
+                                  <div style="margin-top: 10px">
+                                     <a class="news-item-title" href="https://www.rt.com/sport/536484-djokovic-australian-open-covid-vaccine/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;margin: 0;font-size: 30px;line-height: 1.17;color: #000000;text-align: left;">Novak Djokovic warned his ‘Grand Slam titles won’t protect him’ from Covid-19 as vaccine row rages ahead of Australian Open</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                       <a href="https://www.rt.com/sport/536484-djokovic-australian-open-covid-vaccine/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-size: 16px;line-height: 1.5;color: #000000;text-align: left;text-decoration: none;">Nine-time Australian Open champ Novak Djokovic has been warned that his winner's medals won't protect him from Covid-19 as organizers of the 2022 tournament say there will be 'no exceptions' for vaccine hesitant players.</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                        <a class="news-item-link" href="https://www.rt.com/sport/536484-djokovic-australian-open-covid-vaccine/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;display: block;height: 55px;border: solid 1px #000000;font-size: 16px;line-height: 55px;color: #000000;text-align: center;">Read more on the site</a>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                 
+               </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+         
+        
+
+        <div style="padding-left: 5%;padding-right: 5%;margin-bottom: 40px;margin-top: 40px;">
+            <div style="max-width: 600px;width: 100%;margin: 0 auto;">
+                <table border="0" cellpadding="0" cellspacing="0" align="center">
+                    <tr>
+                        <td><a href="https://www.facebook.com/RTnews/" style="text-decoration: none;"><img src="https://cdn.rt.com/subscribe/social/fb_black.png" style="border: none;" alt="facebook"/></a></td>
+                        <td style="padding-left: 20px;"><a href="https://twitter.com/RT_com" style="text-decoration: none;"><img src="https://cdn.rt.com/subscribe/social/tw_black.png" style="border: none;" alt="twitter"/></a></td>
+                        <td style="padding-left: 20px;"><a href="https://www.youtube.com/user/RussiaToday" style="text-decoration: none;"><img src="https://cdn.rt.com/subscribe/social/yt_black.png" style="border: none;" alt="youtube"/></a></td>
+                        <td style="padding-left: 20px;"><a href="https://plus.google.com/+RTintl" style="text-decoration: none;"><img src="https://cdn.rt.com/subscribe/social/gp_black.png" style="border: none;" alt="gplus"/></a></td>
+                        <td style="padding-left: 20px;"><a href="https://www.instagram.com/rt/" style="text-decoration: none;"><img src="https://cdn.rt.com/subscribe/social/inst_black.png" style="border: none;" alt="instagram"/></a></td>
+                        <td style="padding-left: 20px;"><a href="https://vk.com/rt_international" style="text-decoration: none;"><img src="https://cdn.rt.com/subscribe/social/vk_black.png" style="border: none;" alt="vk"/></a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div style="max-width: 600px; margin: 0 auto; margin-bottom: 40px;">
+            <p style="margin: 60px 0 0;padding: 0 15px; text-align: center; word-wrap: break-word;">Borovaya 3/1, Moscow, Russia, 111020</p>
+        </div>
+
+        <div style="background-color: #F6F6F6;padding-top: 10px;padding-bottom: 10px;text-align: center;">
+            <a class="news-item-link cancel" href="https://subscribe.rt.com/unsubscribe/9cbb2d982701f10046f9b5ff881d66fc/c4b8c688-e47c-49f3-86fd-6feb89ca83df" style="text-decoration: none;border: none;font-size: 16px;color: #000000;text-align: center;margin: 0 auto;">Cancel subscription</a>
+        </div>
+
+    </div>
+</body>
+</html>
