@@ -1,0 +1,496 @@
+<html style="margin: 0;padding: 0;">
+<head>
+    <meta charset="UTF-8">
+    <title>Mail</title>
+    <META content="text/html; charset=UTF8" http-equiv=Content-Type />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+
+        @media (max-width: 710px) {
+            .hide {
+                display: none;
+            }
+
+            .full_article {
+                max-width: 100% !important;
+                width: 100% !important;
+                display: block;
+                text-align: left !important;
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+            }
+
+            .full_article > a > img {
+                margin-bottom: 20px;
+            }
+        }
+
+        @media (max-width: 660px) {
+            .hide {
+                display: none;
+            }
+
+            .full {
+                width: 100% !important;
+                display: block;
+                text-align: left !important;
+                margin-bottom: 10px;
+            }
+
+            .full_date {
+                width: 100% !important;
+                display: block;
+                text-align: left !important;
+                margin-bottom: 10px;
+                padding-left: 0px !important;
+            }
+
+            .bgtitle {
+                font-size: 20px !important;
+            }
+
+            .bgmiddle {
+                font-size: 14px !important;
+            }
+
+            .bgtitle_block {
+                font-size: 24px !important;
+            }
+        }
+
+
+    </style>
+</head>
+<body style="margin: 0;padding: 0;">
+    <div style="background-color:#FFF; font-family: 'Helvetica','Arial', sans-serif;">
+        <div style="max-width: 800px;margin: 0 auto;text-align: center;padding: 10px 20px;"><a class="header-top-text" href="https://subscribe.rt.com/preview/0z7HWJ" style="display: block; margin: 0;font-family: &quot;Arial&quot;, sans-serif;font-size: 14px;line-height: 20px;color: #a3a3a3;text-align: center; text-decoration: underline;">If you do not see images or links do not work, open the message in your browser.</a></div>
+        <div class="header_logo" style="max-width: 800px;margin: 0 auto;background: #000000;padding-top: 10px;padding-bottom: 10px;">
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                    <td valign="center" width="128"><a href="https://www.rt.com"
+                                                       style="text-decoration: none"><img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJgAAABQCAYAAADlebz4AAAAAXNSR0IArs4c6QAABN5JREFUeAHtnc9LFGEYx591/bVq/og1UwlRwwjpEkW/jCK6mHQoqEt0CoIORQX9AxEVFXSILt06FNFBiOhYsXipiIJKSqIfpBum2aasra6r277SD3V2db+jz8yU34Fwffd5nvedz3x8Z+bdMX2H7jcnhRsJKBHIUarLsiQwSYCCUQRVAhRMFS+LUzA6oEqAgqniZXEKRgdUCVAwVbwsTsHogCoBCqaKl8UpGB1QJUDBVPGyOAWjA6oEKJgqXhanYHRAlQAFU8XL4hSMDqgSoGCqeFmcgtEBVQIUTBUvi1MwOqBKgIKp4mVxCkYHVAlQMFW8LE7B6IAqAQqmipfFKRgdUCWQq1p9ERVPjE44ure+1NTgz0s/Pzg9ltl2nILNRgd47/aBtxKLJICM+YeW1uZLsCkgTbvKpXZtyZ+CN/Z2SWLEWeH/dD7jBQWbAeRf+nYoHBfz7/3DQVnVViEbjiyXvED6Wc2t/aJgLpE3p7iK+kJL72YWjH3DZ8KuexExNbccr5GlDQWSGM3uP02KfBiRJDLZ+SRV3zpuy478aqBgmcgot+cV5ciea41pe+nviknoXI8MdsfTvp+p8c3diDTuKJPdVxoyhVjab+7rgoTOLcg8bkvxVIO35tN0I1yEbZWrAtJ2uV7yS/DD8+x6v6eI4XvgqeH/v4MJVOTKmv1BeAd7Xw5LIo6c8+AuoAQKBuFyNriquQjuMDkuEhvAr+HgjrJMoGBZgnIjbDyR3YX6zLGZi32vbB4aileQeGccn59G4cGYZYqiYB6cp5VAwbTIzrOuuZN81T4AV6lrWSI5/tRagkc2LlO4dCDM2lPk44il99Ghcfn8fFhe3Poq5noK2cxd5/rDVUiKeiwFU0ecvoOxHxPSfuhd+jdttm46Wi1FS71zejS7QcFsHkwvpZmZq+VkjdRvK/PSsCbHQsFcPCRmNX/qZj6ghj62SSVXrg5I68W61GeQ/qmlPPOagrl0KMysc/DO6mm9fwgNyoPTPdPa5vqm/3VM+jpjUrvu79MUc+U4+f70HyEne2ZfFgLmFFe/vdTSPldD6HxYYt+9s7g6dbwUbCoND7zefKxaCiuw0515AqPjQtgDo7cOgYJZmbjaUliWKy0nauAxdD+OSqeNdTO4IzCBgoHAnAiv21IqK3fid4RPrn2Rb++sa2tOjDlTHxQsExmX2zeaNa0gdg82MZaUB2e6Uw8b8mkKlw+f97svKPFPrm2hIx38FJdHV3vRNLV4zmBqaOdfeMWGJdLUWg4XMo9Pf+wYgvM0EiiYBtUFrGl+kaN4Gf7xT8elsET7xhZwJPZKUTB73BzLyi/2y9ZT+F1lPDohobM9qU8G7D1TtlA76OPf7F4YlHYurM0vUGS72alvavvzfeLzZX58x05dZNzYbUq2NBZhHALdDh6t+lp1f+9j9j9CvzP4lQQAAhQMgMVQnAAFw5kxAyBAwQBYDMUJUDCcGTMAAhQMgMVQnAAFw5kxAyBAwQBYDMUJUDCcGTMAAhQMgMVQnAAFw5kxAyBAwQBYDMUJUDCcGTMAAhQMgMVQnAAFw5kxAyBAwQBYDMUJUDCcGTMAAhQMgMVQnAAFw5kxAyBAwQBYDMUJUDCcGTMAAhQMgMVQnAAFw5kxAyBAwQBYDMUJUDCcGTMAAhQMgMVQnMBPzkLLXBt4pScAAAAASUVORK5CYII=" alt="RT"
+                            style="border: 0;max-width: 8em;width:100%;height: auto;"/></a></td>
+                    <td valign="center" style="padding-left: 20px;"><a href="https://www.rt.com?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email"
+                                                                       class="bgtitle_block"
+                                                                       style="text-decoration: none;font-size: 30px;color: #FFFFFF;letter-spacing: 0;text-transform: uppercase;">question more</a></td>
+                    <td valign="center" align="right" class="hide"
+                        style="font-size: 16px;color: #FFFFFF;letter-spacing: 0;padding-right: 20px;">09 January</td>
+                </tr>
+
+            </table>
+        </div>
+        
+        <div style="width: 100%;text-align: center;max-width: 800px;margin: 0 auto;">
+            <div style="padding: 20px;font-size: 36px;color: #000000;letter-spacing: 0;line-height: 40px;" class="bgtitle_block">RT News (January 8, 2022)</div>
+        </div>
+        
+        
+            
+                <div style="max-width: 800px;margin: 0 auto;width: 100%;">
+                    
+                        
+                            <div>
+                                <a href="https://www.rt.com/russia/545463-blinken-nato-russia-promise-expand/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;">
+                                    <img style="border: 0;width: 100%;height: auto;" alt="NATO ‘never promised’ not to expand, US claims" src="https://cdni.rt.com/files/2022.01/article/61d9ad8985f54075d34e410a.jpg"/>
+                                </a>
+                            </div>
+                        
+                        <div style="margin-top: 30px;padding-left: 5%;padding-right: 5%;">
+                              <div style="">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr style="">
+                                            <td width="50%">
+                                                <a href="https://www.rt.com/russia/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email"
+                                                   style="text-decoration: none;font-size: 24px;color: #000000;letter-spacing: 0;font-weight: bold;">Russia & Former Soviet Union</a>
+                                            </td>
+                                            <td width="50%" align="right">
+                                                <span style="padding-left: 10px;font-size: 15px;color: #939598;letter-spacing: 0;">08 January</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                              </div>
+                              <div style="margin-top: 10px">
+                                 <a class="news-item-title" href="https://www.rt.com/russia/545463-blinken-nato-russia-promise-expand/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;margin: 0;font-family: &quot;Arial&quot;, sans-serif;font-size: 30px;line-height: 1.17;color: #000000;text-align: left;">NATO ‘never promised’ not to expand, US claims</a>
+                              </div>
+                              <div style="margin-top: 20px">
+                                   <a href="https://www.rt.com/russia/545463-blinken-nato-russia-promise-expand/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-size: 16px;line-height: 1.5;color: #000000;text-align: left;text-decoration: none;">NATO has never promised not to admit new members, US Secretary of State Antony Blinken claimed on Friday, labelling Russia’s demands of the bloc inadmissible. However, long-declassified Western documents suggest otherwise.</a>
+                              </div>
+                              <div style="margin-top: 20px">
+                                    <a class="news-item-link" href="https://www.rt.com/russia/545463-blinken-nato-russia-promise-expand/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;display: block;height: 55px;border: solid 1px #000000;font-size: 16px;line-height: 55px;color: #000000;text-align: center;">Read more on the site</a>
+                              </div>
+                        </div>
+                    
+                </div>
+            
+        
+        
+        
+               <div style="margin-top: 20px;background-color: #FFF;">
+                 
+                    <div style="padding-top: 40px;padding-bottom: 40px;">
+                        <div style="max-width: 800px;margin: 0 auto;">
+
+                             
+                                <div style="margin-bottom: 20px; padding-left: 10px; padding-right: 10px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr style="">
+                                            <td width="50%" valign="center">
+                                                <a href="https://www.rt.com/russia/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-weight: bold;text-decoration: none;font-size: 24px;color: #000000;letter-spacing: 0;">Russia & Former Soviet Union</a>
+                                            </td>
+                                            <td width="50%" align="right" valign="center">
+                                                <span style="padding-left: 10px;font-size: 15px;color: #939598;letter-spacing: 0;">09 January</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div>
+                                    <a href="https://www.rt.com/russia/545416-kazakhstan-media-attacks-osce/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;">
+                                        <img style="border: 0;width: 100%;height: auto;" alt="West silent after media offices raided by ‘well-prepared’ thugs, Moscow says" src="https://cdni.rt.com/files/2022.01/article/61d8b3ea85f5407a6106d7e2.jpg"/>
+                                    </a>
+                                </div>
+                            
+                             <div style="margin-top: 30px;padding-left: 5%;padding-right: 5%;">
+                                  <div style="margin-top: 10px">
+                                     <a class="news-item-title" href="https://www.rt.com/russia/545416-kazakhstan-media-attacks-osce/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;margin: 0;font-size: 30px;line-height: 1.17;color: #000000;text-align: left;">West silent after media offices raided by ‘well-prepared’ thugs, Moscow says</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                       <a href="https://www.rt.com/russia/545416-kazakhstan-media-attacks-osce/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-size: 16px;line-height: 1.5;color: #000000;text-align: left;text-decoration: none;">The Organization for Security and Co-operation in Europe has shown "shameful" lack of reaction to targeted persecution of journalists in Kazakhstan, the Russian Foreign Ministry spokeswoman has said, relating disturbing reports.</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                        <a class="news-item-link" href="https://www.rt.com/russia/545416-kazakhstan-media-attacks-osce/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;display: block;height: 55px;border: solid 1px #000000;font-size: 16px;line-height: 55px;color: #000000;text-align: center;">Read more on the site</a>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                 
+                    <div style="padding-top: 40px;padding-bottom: 40px;">
+                        <div style="max-width: 800px;margin: 0 auto;">
+
+                             
+                                <div style="margin-bottom: 20px; padding-left: 10px; padding-right: 10px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr style="">
+                                            <td width="50%" valign="center">
+                                                <a href="https://www.rt.com/russia/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-weight: bold;text-decoration: none;font-size: 24px;color: #000000;letter-spacing: 0;">Russia & Former Soviet Union</a>
+                                            </td>
+                                            <td width="50%" align="right" valign="center">
+                                                <span style="padding-left: 10px;font-size: 15px;color: #939598;letter-spacing: 0;">08 January</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div>
+                                    <a href="https://www.rt.com/russia/545449-peacekeepers-kazakhstan-riots-csto/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;">
+                                        <img style="border: 0;width: 100%;height: auto;" alt="RT crew joins Russian peacekeepers in Kazakhstan (VIDEO)" src="https://cdni.rt.com/files/2022.01/article/61d976982030272a9713dabf.jpg"/>
+                                    </a>
+                                </div>
+                            
+                             <div style="margin-top: 30px;padding-left: 5%;padding-right: 5%;">
+                                  <div style="margin-top: 10px">
+                                     <a class="news-item-title" href="https://www.rt.com/russia/545449-peacekeepers-kazakhstan-riots-csto/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;margin: 0;font-size: 30px;line-height: 1.17;color: #000000;text-align: left;">RT crew joins Russian peacekeepers in Kazakhstan (VIDEO)</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                       <a href="https://www.rt.com/russia/545449-peacekeepers-kazakhstan-riots-csto/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-size: 16px;line-height: 1.5;color: #000000;text-align: left;text-decoration: none;">Russian peacekeepers have been deployed to Almaty, the focal point of violent protests that have swept through Kazakhstan since a two-fold hike in fuel prices. A team from RT recorded them on their dangerous mission.</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                        <a class="news-item-link" href="https://www.rt.com/russia/545449-peacekeepers-kazakhstan-riots-csto/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;display: block;height: 55px;border: solid 1px #000000;font-size: 16px;line-height: 55px;color: #000000;text-align: center;">Read more on the site</a>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                 
+                    <div style="padding-top: 40px;padding-bottom: 40px;">
+                        <div style="max-width: 800px;margin: 0 auto;">
+
+                             
+                                <div style="margin-bottom: 20px; padding-left: 10px; padding-right: 10px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr style="">
+                                            <td width="50%" valign="center">
+                                                <a href="https://www.rt.com/news/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-weight: bold;text-decoration: none;font-size: 24px;color: #000000;letter-spacing: 0;">World News</a>
+                                            </td>
+                                            <td width="50%" align="right" valign="center">
+                                                <span style="padding-left: 10px;font-size: 15px;color: #939598;letter-spacing: 0;">09 January</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div>
+                                    <a href="https://www.rt.com/news/545474-youtube-biden-afghanistan-video/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;">
+                                        <img style="border: 0;width: 100%;height: auto;" alt="YouTube claims ‘mistake’ in pulling music video critical of Biden" src="https://cdni.rt.com/files/2022.01/article/61da00a02030275d69531f57.jpg"/>
+                                    </a>
+                                </div>
+                            
+                             <div style="margin-top: 30px;padding-left: 5%;padding-right: 5%;">
+                                  <div style="margin-top: 10px">
+                                     <a class="news-item-title" href="https://www.rt.com/news/545474-youtube-biden-afghanistan-video/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;margin: 0;font-size: 30px;line-height: 1.17;color: #000000;text-align: left;">YouTube claims ‘mistake’ in pulling music video critical of Biden</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                       <a href="https://www.rt.com/news/545474-youtube-biden-afghanistan-video/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-size: 16px;line-height: 1.5;color: #000000;text-align: left;text-decoration: none;">YouTube has apologized after causing outrage by removing a music video from singer-songwriter John Ondrasik, better known as Five for Fighting, directly criticizing President Joe Biden and his chaotic exit from Afghanistan.</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                        <a class="news-item-link" href="https://www.rt.com/news/545474-youtube-biden-afghanistan-video/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;display: block;height: 55px;border: solid 1px #000000;font-size: 16px;line-height: 55px;color: #000000;text-align: center;">Read more on the site</a>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                 
+                    <div style="padding-top: 40px;padding-bottom: 40px;">
+                        <div style="max-width: 800px;margin: 0 auto;">
+
+                             
+                                <div style="margin-bottom: 20px; padding-left: 10px; padding-right: 10px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr style="">
+                                            <td width="50%" valign="center">
+                                                <a href="https://www.rt.com/news/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-weight: bold;text-decoration: none;font-size: 24px;color: #000000;letter-spacing: 0;">World News</a>
+                                            </td>
+                                            <td width="50%" align="right" valign="center">
+                                                <span style="padding-left: 10px;font-size: 15px;color: #939598;letter-spacing: 0;">08 January</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div>
+                                    <a href="https://www.rt.com/usa/543541-us-nuclear-tests-shoshone-nation/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;">
+                                        <img style="border: 0;width: 100%;height: auto;" alt="‘After 900 nuclear tests on our land, US wants to ethnically cleanse us’: meet the most bombed nation in the world" src="https://cdni.rt.com/files/2021.12/article/61bcb43c20302732264b7948.jpg"/>
+                                    </a>
+                                </div>
+                            
+                             <div style="margin-top: 30px;padding-left: 5%;padding-right: 5%;">
+                                  <div style="margin-top: 10px">
+                                     <a class="news-item-title" href="https://www.rt.com/usa/543541-us-nuclear-tests-shoshone-nation/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;margin: 0;font-size: 30px;line-height: 1.17;color: #000000;text-align: left;">‘After 900 nuclear tests on our land, US wants to ethnically cleanse us’: meet the most bombed nation in the world</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                       <a href="https://www.rt.com/usa/543541-us-nuclear-tests-shoshone-nation/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-size: 16px;line-height: 1.5;color: #000000;text-align: left;text-decoration: none;">'The most nuclear bombed nation on the planet’ is the unwanted accolade claimed by the Shoshone Native American tribe. This has had devastating effects for the community, and RT spoke with one campaigner fighting for justice.</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                        <a class="news-item-link" href="https://www.rt.com/usa/543541-us-nuclear-tests-shoshone-nation/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;display: block;height: 55px;border: solid 1px #000000;font-size: 16px;line-height: 55px;color: #000000;text-align: center;">Read more on the site</a>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                 
+                    <div style="padding-top: 40px;padding-bottom: 40px;">
+                        <div style="max-width: 800px;margin: 0 auto;">
+
+                             
+                                <div style="margin-bottom: 20px; padding-left: 10px; padding-right: 10px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr style="">
+                                            <td width="50%" valign="center">
+                                                <a href="https://www.rt.com/news/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-weight: bold;text-decoration: none;font-size: 24px;color: #000000;letter-spacing: 0;">World News</a>
+                                            </td>
+                                            <td width="50%" align="right" valign="center">
+                                                <span style="padding-left: 10px;font-size: 15px;color: #939598;letter-spacing: 0;">08 January</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div>
+                                    <a href="https://www.rt.com/news/545464-prince-andrew-sex-london/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;">
+                                        <img style="border: 0;width: 100%;height: auto;" alt="Maxwell trial witness reveals details of Prince Andrew’s alleged sex with his accuser" src="https://cdni.rt.com/files/2022.01/article/61d9aebf85f54075d34e410d.jpg"/>
+                                    </a>
+                                </div>
+                            
+                             <div style="margin-top: 30px;padding-left: 5%;padding-right: 5%;">
+                                  <div style="margin-top: 10px">
+                                     <a class="news-item-title" href="https://www.rt.com/news/545464-prince-andrew-sex-london/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;margin: 0;font-size: 30px;line-height: 1.17;color: #000000;text-align: left;">Maxwell trial witness reveals details of Prince Andrew’s alleged sex with his accuser</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                       <a href="https://www.rt.com/news/545464-prince-andrew-sex-london/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-size: 16px;line-height: 1.5;color: #000000;text-align: left;text-decoration: none;">Virginia Giuffre, who is suing Prince Andrew for sexual assault, told a witness in the trial of Ghislaine Maxwell that she had sex with the British royal in London in 2001, according to a new interview.</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                        <a class="news-item-link" href="https://www.rt.com/news/545464-prince-andrew-sex-london/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;display: block;height: 55px;border: solid 1px #000000;font-size: 16px;line-height: 55px;color: #000000;text-align: center;">Read more on the site</a>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                 
+                    <div style="padding-top: 40px;padding-bottom: 40px;">
+                        <div style="max-width: 800px;margin: 0 auto;">
+
+                             
+                                <div style="margin-bottom: 20px; padding-left: 10px; padding-right: 10px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr style="">
+                                            <td width="50%" valign="center">
+                                                <a href="https://www.rt.com&utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-weight: bold;text-decoration: none;font-size: 24px;color: #000000;letter-spacing: 0;"></a>
+                                            </td>
+                                            <td width="50%" align="right" valign="center">
+                                                <span style="padding-left: 10px;font-size: 15px;color: #939598;letter-spacing: 0;">08 January</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div>
+                                    <a href="https://www.rt.com/op-ed/545405-bitcoin-nft-digital-control/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;">
+                                        <img style="border: 0;width: 100%;height: auto;" alt="Slavoj Zizek: It’s naive to think Bitcoin & NFT give us freedom" src="https://cdni.rt.com/files/2022.01/article/61d887932030276caa5a5a46.jpg"/>
+                                    </a>
+                                </div>
+                            
+                             <div style="margin-top: 30px;padding-left: 5%;padding-right: 5%;">
+                                  <div style="margin-top: 10px">
+                                     <a class="news-item-title" href="https://www.rt.com/op-ed/545405-bitcoin-nft-digital-control/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;margin: 0;font-size: 30px;line-height: 1.17;color: #000000;text-align: left;">Slavoj Zizek: It’s naive to think Bitcoin & NFT give us freedom</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                       <a href="https://www.rt.com/op-ed/545405-bitcoin-nft-digital-control/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-size: 16px;line-height: 1.5;color: #000000;text-align: left;text-decoration: none;">In a world where digital control and manipulation have become a norm, many believe that cryptocurrency and Non-Fungible Tokens, or NFTs, enable freedom. But this is not exactly true.</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                        <a class="news-item-link" href="https://www.rt.com/op-ed/545405-bitcoin-nft-digital-control/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;display: block;height: 55px;border: solid 1px #000000;font-size: 16px;line-height: 55px;color: #000000;text-align: center;">Read more on the site</a>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                 
+                    <div style="padding-top: 40px;padding-bottom: 40px;">
+                        <div style="max-width: 800px;margin: 0 auto;">
+
+                             
+                                <div style="margin-bottom: 20px; padding-left: 10px; padding-right: 10px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr style="">
+                                            <td width="50%" valign="center">
+                                                <a href="https://www.rt.com/business/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-weight: bold;text-decoration: none;font-size: 24px;color: #000000;letter-spacing: 0;">Business News</a>
+                                            </td>
+                                            <td width="50%" align="right" valign="center">
+                                                <span style="padding-left: 10px;font-size: 15px;color: #939598;letter-spacing: 0;">08 January</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div>
+                                    <a href="https://www.rt.com/business/545453-china-gas-supplies-russia-australia/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;">
+                                        <img style="border: 0;width: 100%;height: auto;" alt="Analysts reveal why Beijing is going after Russian gas" src="https://cdni.rt.com/files/2022.01/article/61d9945020302707e75fa94c.jpg"/>
+                                    </a>
+                                </div>
+                            
+                             <div style="margin-top: 30px;padding-left: 5%;padding-right: 5%;">
+                                  <div style="margin-top: 10px">
+                                     <a class="news-item-title" href="https://www.rt.com/business/545453-china-gas-supplies-russia-australia/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;margin: 0;font-size: 30px;line-height: 1.17;color: #000000;text-align: left;">Analysts reveal why Beijing is going after Russian gas</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                       <a href="https://www.rt.com/business/545453-china-gas-supplies-russia-australia/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-size: 16px;line-height: 1.5;color: #000000;text-align: left;text-decoration: none;">Energy-hungry China is reportedly looking to boost its purchases of natural gas from Russia due to the ongoing trade row with Canberra, which may put at risk deliveries from Australia, China’s number one gas supplier.</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                        <a class="news-item-link" href="https://www.rt.com/business/545453-china-gas-supplies-russia-australia/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;display: block;height: 55px;border: solid 1px #000000;font-size: 16px;line-height: 55px;color: #000000;text-align: center;">Read more on the site</a>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                 
+                    <div style="padding-top: 40px;padding-bottom: 40px;">
+                        <div style="max-width: 800px;margin: 0 auto;">
+
+                             
+                                <div style="margin-bottom: 20px; padding-left: 10px; padding-right: 10px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr style="">
+                                            <td width="50%" valign="center">
+                                                <a href="https://www.rt.com/news/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-weight: bold;text-decoration: none;font-size: 24px;color: #000000;letter-spacing: 0;">World News</a>
+                                            </td>
+                                            <td width="50%" align="right" valign="center">
+                                                <span style="padding-left: 10px;font-size: 15px;color: #939598;letter-spacing: 0;">09 January</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div>
+                                    <a href="https://www.rt.com/news/545475-brazil-canyon-collapse-boats/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;">
+                                        <img style="border: 0;width: 100%;height: auto;" alt="Gigantic canyon rock slide hits tourist boats, killing at least 5 people (VIDEOS)" src="https://cdni.rt.com/files/2022.01/article/61da097f85f540023b4c25e9.jpg"/>
+                                    </a>
+                                </div>
+                            
+                             <div style="margin-top: 30px;padding-left: 5%;padding-right: 5%;">
+                                  <div style="margin-top: 10px">
+                                     <a class="news-item-title" href="https://www.rt.com/news/545475-brazil-canyon-collapse-boats/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;margin: 0;font-size: 30px;line-height: 1.17;color: #000000;text-align: left;">Gigantic canyon rock slide hits tourist boats, killing at least 5 people (VIDEOS)</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                       <a href="https://www.rt.com/news/545475-brazil-canyon-collapse-boats/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-size: 16px;line-height: 1.5;color: #000000;text-align: left;text-decoration: none;">At least 20 people went missing after a collapsing cliffside in the Brazilian state of Minas Gerais crushed three tourist boats on the river below, killing five people and injuring others. The navy is investigating the tragedy.</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                        <a class="news-item-link" href="https://www.rt.com/news/545475-brazil-canyon-collapse-boats/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;display: block;height: 55px;border: solid 1px #000000;font-size: 16px;line-height: 55px;color: #000000;text-align: center;">Read more on the site</a>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                 
+                    <div style="padding-top: 40px;padding-bottom: 40px;">
+                        <div style="max-width: 800px;margin: 0 auto;">
+
+                             
+                                <div style="margin-bottom: 20px; padding-left: 10px; padding-right: 10px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr style="">
+                                            <td width="50%" valign="center">
+                                                <a href="https://www.rt.com/sport/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-weight: bold;text-decoration: none;font-size: 24px;color: #000000;letter-spacing: 0;">Sport News</a>
+                                            </td>
+                                            <td width="50%" align="right" valign="center">
+                                                <span style="padding-left: 10px;font-size: 15px;color: #939598;letter-spacing: 0;">08 January</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div>
+                                    <a href="https://www.rt.com/sport/545450-novak-djokovic-covid-positive-test-december/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;">
+                                        <img style="border: 0;width: 100%;height: auto;" alt="Djokovic Covid infection leads to conspiracy theories" src="https://cdni.rt.com/files/2022.01/article/61d9981f85f540077c75a21e.jpg"/>
+                                    </a>
+                                </div>
+                            
+                             <div style="margin-top: 30px;padding-left: 5%;padding-right: 5%;">
+                                  <div style="margin-top: 10px">
+                                     <a class="news-item-title" href="https://www.rt.com/sport/545450-novak-djokovic-covid-positive-test-december/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;margin: 0;font-size: 30px;line-height: 1.17;color: #000000;text-align: left;">Djokovic Covid infection leads to conspiracy theories</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                       <a href="https://www.rt.com/sport/545450-novak-djokovic-covid-positive-test-december/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="font-size: 16px;line-height: 1.5;color: #000000;text-align: left;text-decoration: none;">Novak Djokovic's Australian Open legal appeal has copped fresh cynicism from some, while reports suggest that his December infection came after an exemption cut-off.</a>
+                                  </div>
+                                  <div style="margin-top: 20px">
+                                        <a class="news-item-link" href="https://www.rt.com/sport/545450-novak-djokovic-covid-positive-test-december/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Email" style="text-decoration: none;display: block;height: 55px;border: solid 1px #000000;font-size: 16px;line-height: 55px;color: #000000;text-align: center;">Read more on the site</a>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                 
+               </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+         
+        
+
+        <div style="padding-left: 5%;padding-right: 5%;margin-bottom: 40px;margin-top: 40px;">
+            <div style="max-width: 600px;width: 100%;margin: 0 auto;">
+                <table border="0" cellpadding="0" cellspacing="0" align="center">
+                    <tr>
+                        <td><a href="https://www.facebook.com/RTnews/" style="text-decoration: none;"><img src="https://cdn.rt.com/subscribe/social/fb_black.png" style="border: none;" alt="facebook"/></a></td>
+                        <td style="padding-left: 20px;"><a href="https://twitter.com/RT_com" style="text-decoration: none;"><img src="https://cdn.rt.com/subscribe/social/tw_black.png" style="border: none;" alt="twitter"/></a></td>
+                        <td style="padding-left: 20px;"><a href="https://www.youtube.com/user/RussiaToday" style="text-decoration: none;"><img src="https://cdn.rt.com/subscribe/social/yt_black.png" style="border: none;" alt="youtube"/></a></td>
+                        <td style="padding-left: 20px;"><a href="https://plus.google.com/+RTintl" style="text-decoration: none;"><img src="https://cdn.rt.com/subscribe/social/gp_black.png" style="border: none;" alt="gplus"/></a></td>
+                        <td style="padding-left: 20px;"><a href="https://www.instagram.com/rt/" style="text-decoration: none;"><img src="https://cdn.rt.com/subscribe/social/inst_black.png" style="border: none;" alt="instagram"/></a></td>
+                        <td style="padding-left: 20px;"><a href="https://vk.com/rt_international" style="text-decoration: none;"><img src="https://cdn.rt.com/subscribe/social/vk_black.png" style="border: none;" alt="vk"/></a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div style="max-width: 600px; margin: 0 auto; margin-bottom: 40px;">
+            <p style="margin: 60px 0 0;padding: 0 15px; text-align: center; word-wrap: break-word;">Borovaya 3/1, Moscow, Russia, 111020</p>
+        </div>
+
+        <div style="background-color: #F6F6F6;padding-top: 10px;padding-bottom: 10px;text-align: center;">
+            <a class="news-item-link cancel" href="https://subscribe.rt.com/unsubscribe/9cbb2d982701f10046f9b5ff881d66fc/c4b8c688-e47c-49f3-86fd-6feb89ca83df" style="text-decoration: none;border: none;font-size: 16px;color: #000000;text-align: center;margin: 0 auto;">Cancel subscription</a>
+        </div>
+
+    </div>
+</body>
+</html>
