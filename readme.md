@@ -70,7 +70,7 @@
 
 该项目生成的 html 文件托管在 GitHub Pages 和腾讯云储存桶[^腾讯云]上。GitHub Pages 有检测到项目更新便立即自动构建新页面的功能，腾讯云理论上也有，但不知为何不能正常工作，只能用每日定时构建，实现不那么及时的自动化。
 
-注：腾讯云储存桶现已停用，以规避法律风险。
+**注：腾讯云储存桶现已停用，以规避法律风险**。
 
 [^腾讯云]:自建静态网站 - CODING 帮助中心：https://help.coding.net/docs/ci/practice/static-website-paas.html
 
