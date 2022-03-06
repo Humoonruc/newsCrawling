@@ -8,9 +8,7 @@
 
 ### 平台入口
 
-- [国内入口](https://news-crawling-1305177755.cos-website.ap-hongkong.myqcloud.com/)
 - [海外入口](https://humoonruc.github.io/newsCrawling.github.io/)
-
 
 欲知每日大事，从此不必在众多新闻源中切换，关注该入口即可。
 
@@ -71,6 +69,8 @@
 以香港服务器上运行的 CODING 为主要的远程仓库，GitHub 为备份仓库。GitHub 的缺点在于从国内访问的网络状况不够稳定；内地的 Gitee 平台则面临比较严格的审查，敏感数据可能被删除。CODING 避免了这两个缺点。
 
 该项目生成的 html 文件托管在 GitHub Pages 和腾讯云储存桶[^腾讯云]上。GitHub Pages 有检测到项目更新便立即自动构建新页面的功能，腾讯云理论上也有，但不知为何不能正常工作，只能用每日定时构建，实现不那么及时的自动化。
+
+注：腾讯云储存桶现已停用，以规避法律风险。
 
 [^腾讯云]:自建静态网站 - CODING 帮助中心：https://help.coding.net/docs/ci/practice/static-website-paas.html
 
